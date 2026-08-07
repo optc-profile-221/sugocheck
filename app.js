@@ -377,16 +377,46 @@
         context.save();
         context.globalAlpha = current.owned ? 1 : .28;
         const image = images.get(character.id);
-        if (current.super || current.rainbow) {
-          const color = current.super ? '#d68aff' : '#62e4bb';
-          context.fillStyle = color; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
+        if (current.super) {
+          context.save();
+          context.shadowColor = '#d95cff';
+          context.shadowBlur = 11;
+          const superGradient = context.createLinearGradient(x - 4, rowY - 4, x + icon + 4, rowY + icon + 4);
+          superGradient.addColorStop(0, '#ffffff');
+          superGradient.addColorStop(.32, '#f06cff');
+          superGradient.addColorStop(.68, '#6657ff');
+          superGradient.addColorStop(1, '#45efff');
+          context.fillStyle = superGradient;
+          roundedRect(context, x - 4, rowY - 4, icon + 8, icon + 8, 9);
+          context.restore();
+          context.fillStyle = '#ffffff';
+          roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
+        } else if (current.rainbow) {
+          const rainbowGradient = typeof context.createConicGradient === 'function'
+            ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
+            : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
+          rainbowGradient.addColorStop(0, '#ff3154');
+          rainbowGradient.addColorStop(.18, '#ffe53d');
+          rainbowGradient.addColorStop(.36, '#35ef78');
+          rainbowGradient.addColorStop(.55, '#32d9ff');
+          rainbowGradient.addColorStop(.74, '#5968ff');
+          rainbowGradient.addColorStop(.88, '#bd4cff');
+          rainbowGradient.addColorStop(1, '#ff3154');
+          context.fillStyle = rainbowGradient;
+          roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
         } else if (current.owned) {
           context.fillStyle = '#ff6e69'; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
         }
         if (image) context.drawImage(image, x, rowY, icon, icon);
         else { context.fillStyle = '#172f3e'; roundedRect(context, x, rowY, icon, icon, 6); }
         context.restore();
-        if (current.pirate && keyImage) context.drawImage(keyImage, x + icon - 19, rowY + 2, 18, 18);
+        if (current.pirate && keyImage) {
+          context.save();
+          context.shadowColor = 'rgba(0,0,0,.9)';
+          context.shadowBlur = 4;
+          context.drawImage(keyImage, x + icon - 18, rowY - 7, 26, 26);
+          context.restore();
+        }
         if (current.llb > 0) {
           context.fillStyle = '#8bd8ff'; context.beginPath(); context.arc(x + icon - 9, rowY + icon - 9, 9, 0, Math.PI * 2); context.fill();
           context.fillStyle = '#052033'; context.font = '800 10px sans-serif'; context.textAlign = 'center'; context.fillText(String(current.llb), x + icon - 9, rowY + icon - 5.5); context.textAlign = 'left';
