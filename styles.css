@@ -126,7 +126,7 @@ button { color: inherit; }
 }
 .dot--super {
   border: 2px solid #fff;
-  background: repeating-conic-gradient(#3c78ff 0deg, #ffe53d 11.25deg, #ff3154 22.5deg, #bd4cff 33.75deg, #3c78ff 45deg);
+  background: repeating-conic-gradient(#52d9ff 0deg, #ffe53d 11.25deg, #ff3154 22.5deg, #bd4cff 33.75deg, #52d9ff 45deg);
   box-shadow: 0 0 8px #e78cff, 0 0 13px rgba(69,226,255,.8);
 }
 .dot--key { color: #5d4200; background: var(--gold); }
@@ -174,7 +174,7 @@ button { color: inherit; }
   box-shadow: 0 0 0 1px rgba(255,255,255,.18), 0 0 6px rgba(75,184,212,.28);
 }
 .unit.is-super {
-  background: repeating-conic-gradient(#3c78ff 0deg, #ffe53d 11.25deg, #ff3154 22.5deg, #bd4cff 33.75deg, #3c78ff 45deg);
+  background: repeating-conic-gradient(#52d9ff 0deg, #ffe53d 11.25deg, #ff3154 22.5deg, #bd4cff 33.75deg, #52d9ff 45deg);
   box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 0 10px rgba(71,205,255,.5);
 }
 .unit img { display: block; width: 100%; height: 100%; border-radius: 7px; object-fit: cover; pointer-events: none; }

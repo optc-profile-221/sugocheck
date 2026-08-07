@@ -462,7 +462,7 @@
             ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
           if (current.super) {
-            const superPattern = ['#3c78ff', '#ffe53d', '#ff3154', '#bd4cff'];
+            const superPattern = ['#52d9ff', '#ffe53d', '#ff3154', '#bd4cff'];
             const repeats = 8;
             for (let repeat = 0; repeat < repeats; repeat += 1) {
               superPattern.forEach((color, colorIndex) => {
