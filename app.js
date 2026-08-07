@@ -416,7 +416,7 @@
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
           const rainbowColors = current.super
             ? ['#ff3154', '#ffe53d', '#35ef78', '#32d9ff', '#5968ff', '#bd4cff', '#ff3154']
-            : ['#bd6f7b', '#c9b86f', '#72a984', '#6697aa', '#777bac', '#8177a7', '#bd6f7b'];
+            : ['#e45f73', '#e7cf55', '#55cb79', '#4bb8d4', '#7a71dd', '#ae5ed1', '#e45f73'];
           [0, .18, .36, .55, .74, .88, 1].forEach((stop, colorIndex) => {
             rainbowGradient.addColorStop(stop, rainbowColors[colorIndex]);
           });

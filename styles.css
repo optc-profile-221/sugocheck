@@ -169,8 +169,8 @@ button { color: inherit; }
 .unit.is-owned { opacity: 1; border-color: var(--red); box-shadow: inset 0 0 0 2px rgba(255,110,105,.45); }
 .unit.is-rainbow {
   border-color: transparent;
-  background: conic-gradient(#bd6f7b, #c9b86f, #72a984, #6697aa, #8177a7, #bd6f7b);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.13), 0 0 4px rgba(107,155,170,.18);
+  background: conic-gradient(#e45f73, #e7cf55, #55cb79, #4bb8d4, #7a71dd, #ae5ed1, #e45f73);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.18), 0 0 6px rgba(75,184,212,.28);
 }
 .unit.is-super {
   background: conic-gradient(#ff2f4f, #ffe23f, #35ed79, #2db7ff, #a54dff, #ff2f4f);
