@@ -121,12 +121,12 @@ button { color: inherit; }
 .dot { display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; font-size: 9px; font-style: normal; font-weight: 900; }
 .dot--owned { background: var(--red); }
 .dot--rainbow {
-  background: conic-gradient(#ff3b57, #ffdc38, #36e67c, #31b9ff, #9b57ff, #ff3b57);
+  background: conic-gradient(#f04f67 0deg, #a75be0 120deg, #f2cf45 240deg, #f04f67 360deg);
   box-shadow: 0 0 0 1px rgba(255,255,255,.28);
 }
 .dot--super {
   border: 2px solid #fff;
-  background: radial-gradient(circle, #fff 0 23%, #f6a9ff 35%, #7558ff 62%, #39e7ff 100%);
+  background: conic-gradient(#ff3154 0deg, #3c78ff 72deg, #ffe53d 144deg, #35ef78 216deg, #bd4cff 288deg, #ff3154 360deg);
   box-shadow: 0 0 8px #e78cff, 0 0 13px rgba(69,226,255,.8);
 }
 .dot--key { color: #5d4200; background: var(--gold); }
@@ -169,11 +169,11 @@ button { color: inherit; }
 .unit.is-owned { opacity: 1; border-color: var(--red); box-shadow: inset 0 0 0 2px rgba(255,110,105,.45); }
 .unit.is-rainbow {
   border-color: transparent;
-  background: conic-gradient(#e45f73, #e7cf55, #55cb79, #4bb8d4, #7a71dd, #ae5ed1, #e45f73);
+  background: conic-gradient(#f04f67 0deg, #a75be0 120deg, #f2cf45 240deg, #f04f67 360deg);
   box-shadow: 0 0 0 1px rgba(255,255,255,.18), 0 0 6px rgba(75,184,212,.28);
 }
 .unit.is-super {
-  background: conic-gradient(#ff2f4f, #ffe23f, #35ed79, #2db7ff, #a54dff, #ff2f4f);
+  background: conic-gradient(#ff3154 0deg, #3c78ff 72deg, #ffe53d 144deg, #35ef78 216deg, #bd4cff 288deg, #ff3154 360deg);
   box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 0 10px rgba(71,205,255,.5);
 }
 .unit img { display: block; width: 100%; height: 100%; border-radius: 7px; object-fit: cover; pointer-events: none; }

@@ -414,11 +414,11 @@
           const rainbowGradient = typeof context.createConicGradient === 'function'
             ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
-          const rainbowColors = current.super
-            ? ['#ff3154', '#ffe53d', '#35ef78', '#32d9ff', '#5968ff', '#bd4cff', '#ff3154']
-            : ['#e45f73', '#e7cf55', '#55cb79', '#4bb8d4', '#7a71dd', '#ae5ed1', '#e45f73'];
-          [0, .18, .36, .55, .74, .88, 1].forEach((stop, colorIndex) => {
-            rainbowGradient.addColorStop(stop, rainbowColors[colorIndex]);
+          const rainbowStops = current.super
+            ? [[0, '#ff3154'], [.2, '#3c78ff'], [.4, '#ffe53d'], [.6, '#35ef78'], [.8, '#bd4cff'], [1, '#ff3154']]
+            : [[0, '#f04f67'], [1 / 3, '#a75be0'], [2 / 3, '#f2cf45'], [1, '#f04f67']];
+          rainbowStops.forEach(([stop, color]) => {
+            rainbowGradient.addColorStop(stop, color);
           });
           context.fillStyle = rainbowGradient;
           roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
