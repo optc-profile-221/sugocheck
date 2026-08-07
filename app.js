@@ -66,8 +66,28 @@
     return !current.hidden && !(state.hideBase && character.baseForm);
   }
 
+  function getCategoryCharacters(category) {
+    const list = characters.filter((character) => character.category === category);
+    const categoryById = new Map(list.map((character) => [character.id, character]));
+    const ordered = [];
+    const added = new Set();
+
+    function appendEvolutionChain(character) {
+      if (!character || added.has(character.id)) return;
+      added.add(character.id);
+      ordered.push(character);
+      appendEvolutionChain(categoryById.get(character.evolvesTo));
+    }
+
+    list.forEach((character) => {
+      if (!categoryById.has(character.evolutionOf)) appendEvolutionChain(character);
+    });
+    list.forEach(appendEvolutionChain);
+    return ordered;
+  }
+
   function getAvailableCharacters(category) {
-    return characters.filter((character) => character.category === category && isAvailable(character));
+    return getCategoryCharacters(category).filter(isAvailable);
   }
 
   function iconPath(id) {
@@ -115,7 +135,7 @@
       const grid = document.createElement('div');
       grid.className = 'unit-grid';
       grid.dataset.grid = category.id;
-      characters.filter((character) => character.category === category.id).forEach((character) => grid.append(createUnit(character)));
+      getCategoryCharacters(category.id).forEach((character) => grid.append(createUnit(character)));
       details.append(grid);
       root.append(details);
     });
