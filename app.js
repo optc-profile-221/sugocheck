@@ -63,7 +63,7 @@
 
   function isAvailable(character) {
     const current = unitState(character.id);
-    return !current.hidden && !(state.hideBase && character.baseForm);
+    return !current.hidden && !(state.hideBase && character.evolutionOf);
   }
 
   function getCategoryCharacters(category) {
