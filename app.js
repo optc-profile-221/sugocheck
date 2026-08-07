@@ -3,12 +3,12 @@
 
   const STORAGE_KEY = 'sugo-logbook-clean-v1';
   const categoryConfig = [
-    { id: 'super', name: '초스고', note: '시대를 대표하는 특별한 스고', accent: '#ff7878', wide: true },
-    { id: 'anniversary', name: '주년 스고', note: '주년 기념 한정 캐릭터', accent: '#f2c85e', wide: true },
-    { id: 'pirate', name: '해적제 스고', note: '해적제 한정', accent: '#bb8cff', wide: false },
-    { id: 'treasure', name: '트맵 스고', note: '트레저 맵 한정', accent: '#59d2ba', wide: false },
-    { id: 'kizuna', name: '유대 스고', note: '유대 결전 한정', accent: '#63b5ff', wide: false },
-    { id: 'regular', name: '일반 스고', note: '상시 및 기타 스고', accent: '#8fa8b7', wide: true }
+    { id: 'super', name: '초스고', note: '초스고페스 한정', accent: '#ff7878', wide: true },
+    { id: 'anniversary', name: '주년 스고', note: '주년페스 한정', accent: '#f2c85e', wide: true },
+    { id: 'pirate', name: '해적제 스고', note: '해적제페스 한정', accent: '#bb8cff', wide: false },
+    { id: 'treasure', name: '트맵 스고', note: '트레저 맵 페스 한정', accent: '#59d2ba', wide: false },
+    { id: 'kizuna', name: '유대 스고', note: '유대 결전 페스 한정', accent: '#63b5ff', wide: false },
+    { id: 'regular', name: '일반 스고', note: '"통언뜬"', accent: '#8fa8b7', wide: true }
   ];
 
   let characters = [];
