@@ -423,12 +423,19 @@
           const rainbowGradient = typeof context.createConicGradient === 'function'
             ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
-          const rainbowStops = current.super
-            ? [[0, '#ff3154'], [.125, '#ff8a2f'], [.25, '#ffe53d'], [.375, '#35ef78'], [.5, '#32d9ff'], [.625, '#3c78ff'], [.75, '#9c4dff'], [.875, '#ff58c8'], [1, '#ff3154']]
-            : [[0, '#f04f67'], [1 / 3, '#a75be0'], [2 / 3, '#f2cf45'], [1, '#f04f67']];
-          rainbowStops.forEach(([stop, color]) => {
-            rainbowGradient.addColorStop(stop, color);
-          });
+          if (current.super) {
+            const superPattern = ['#3c78ff', '#ffe53d', '#ff3154', '#bd4cff'];
+            const repeats = 8;
+            for (let repeat = 0; repeat < repeats; repeat += 1) {
+              superPattern.forEach((color, colorIndex) => {
+                rainbowGradient.addColorStop((repeat + colorIndex / superPattern.length) / repeats, color);
+              });
+            }
+            rainbowGradient.addColorStop(1, superPattern[0]);
+          } else {
+            [[0, '#f04f67'], [1 / 3, '#a75be0'], [2 / 3, '#f2cf45'], [1, '#f04f67']]
+              .forEach(([stop, color]) => rainbowGradient.addColorStop(stop, color));
+          }
           context.fillStyle = rainbowGradient;
           roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
         } else if (current.owned) {
