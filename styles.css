@@ -126,7 +126,7 @@ button { color: inherit; }
 }
 .dot--super {
   border: 2px solid #fff;
-  background: conic-gradient(#ff3154 0deg, #3c78ff 72deg, #ffe53d 144deg, #35ef78 216deg, #bd4cff 288deg, #ff3154 360deg);
+  background: conic-gradient(#ff3154 0deg, #ff8a2f 45deg, #ffe53d 90deg, #35ef78 135deg, #32d9ff 180deg, #3c78ff 225deg, #9c4dff 270deg, #ff58c8 315deg, #ff3154 360deg);
   box-shadow: 0 0 8px #e78cff, 0 0 13px rgba(69,226,255,.8);
 }
 .dot--key { color: #5d4200; background: var(--gold); }
@@ -173,7 +173,7 @@ button { color: inherit; }
   box-shadow: 0 0 0 1px rgba(255,255,255,.18), 0 0 6px rgba(75,184,212,.28);
 }
 .unit.is-super {
-  background: conic-gradient(#ff3154 0deg, #3c78ff 72deg, #ffe53d 144deg, #35ef78 216deg, #bd4cff 288deg, #ff3154 360deg);
+  background: conic-gradient(#ff3154 0deg, #ff8a2f 45deg, #ffe53d 90deg, #35ef78 135deg, #32d9ff 180deg, #3c78ff 225deg, #9c4dff 270deg, #ff58c8 315deg, #ff3154 360deg);
   box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 0 10px rgba(71,205,255,.5);
 }
 .unit img { display: block; width: 100%; height: 100%; border-radius: 7px; object-fit: cover; pointer-events: none; }

@@ -415,7 +415,7 @@
             ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
           const rainbowStops = current.super
-            ? [[0, '#ff3154'], [.2, '#3c78ff'], [.4, '#ffe53d'], [.6, '#35ef78'], [.8, '#bd4cff'], [1, '#ff3154']]
+            ? [[0, '#ff3154'], [.125, '#ff8a2f'], [.25, '#ffe53d'], [.375, '#35ef78'], [.5, '#32d9ff'], [.625, '#3c78ff'], [.75, '#9c4dff'], [.875, '#ff58c8'], [1, '#ff3154']]
             : [[0, '#f04f67'], [1 / 3, '#a75be0'], [2 / 3, '#f2cf45'], [1, '#f04f67']];
           rainbowStops.forEach(([stop, color]) => {
             rainbowGradient.addColorStop(stop, color);
