@@ -223,7 +223,7 @@
       button.setAttribute('aria-checked', String(active));
     });
     $('#select-all').disabled = state.mode === 'hide';
-    $('#toggle-base').textContent = state.hideBase ? '초진화 캐릭터 표시' : '초진화 목록에서 제거';
+    $('#toggle-base').textContent = state.hideBase ? '초진화 캐릭터 표시' : '초진화 캐릭터 제거';
   }
 
   function mutateCharacter(id) {
