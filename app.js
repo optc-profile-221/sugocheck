@@ -192,7 +192,6 @@
     $('#count-pirate').textContent = `${pirate} / ${total}`;
     $('#progress-percent').textContent = `${percent}%`;
     $('#progress-ring').style.strokeDashoffset = String(314.16 * (1 - percent / 100));
-    $('#progress-message').textContent = owned === total && total > 0 ? '도감 완성! 위대한 항해를 마쳤습니다.' : `${total - owned}종을 더 만나면 도감이 완성됩니다.`;
     const hidden = characters.filter((character) => unitState(character.id).hidden).length;
     $('#hidden-count').textContent = hidden;
   }
@@ -508,7 +507,6 @@
       }
     } catch (error) {
       console.error(error);
-      $('#progress-message').textContent = '캐릭터 정보를 불러오지 못했습니다. 웹 서버에서 다시 열어주세요.';
     }
   }
 
