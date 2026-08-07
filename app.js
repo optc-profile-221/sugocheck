@@ -13,7 +13,7 @@
 
   let characters = [];
   let characterById = new Map();
-  let state = { mode: 'owned', hideBase: false, units: {} };
+  let state = { mode: 'owned', hideBase: false, hidePreEvolution: false, units: {} };
   let exportBlob = null;
   let exportUrl = null;
   let toastTimer = null;
@@ -47,6 +47,7 @@
       if (!stored || typeof stored !== 'object') return;
       state.mode = ['owned', 'rainbow', 'super', 'pirate', 'llb', 'hide'].includes(stored.mode) ? stored.mode : 'owned';
       state.hideBase = Boolean(stored.hideBase);
+      state.hidePreEvolution = Boolean(stored.hidePreEvolution);
       if (stored.units && typeof stored.units === 'object') {
         Object.entries(stored.units).forEach(([id, value]) => {
           state.units[id] = normalizeUnit(value);
@@ -63,7 +64,9 @@
 
   function isAvailable(character) {
     const current = unitState(character.id);
-    return !current.hidden && !(state.hideBase && character.evolutionOf);
+    return !current.hidden
+      && !(state.hideBase && character.evolutionOf)
+      && !(state.hidePreEvolution && character.evolvesTo);
   }
 
   function getCategoryCharacters(category) {
@@ -235,7 +238,14 @@
       button.setAttribute('aria-checked', String(active));
     });
     $('#select-all').disabled = state.mode === 'hide';
-    $('#toggle-base').textContent = state.hideBase ? '초진화 캐릭터 표시' : '초진화 캐릭터 제거';
+    const evolvedButton = $('#toggle-base');
+    evolvedButton.textContent = state.hideBase ? '초진화 형태 표시' : '초진화 형태 제거';
+    evolvedButton.classList.toggle('is-active', state.hideBase);
+    const preEvolutionButton = $('#toggle-pre-evolution');
+    if (preEvolutionButton) {
+      preEvolutionButton.textContent = state.hidePreEvolution ? '초진화 전 형태 표시' : '초진화 전 형태 제거';
+      preEvolutionButton.classList.toggle('is-active', state.hidePreEvolution);
+    }
   }
 
   function mutateCharacter(id) {
@@ -511,9 +521,10 @@
         event.preventDefault(); $('#search').focus();
       }
     });
-    $('#select-owned-all').addEventListener('click', selectAllOwned);
+    $('#select-owned-all')?.addEventListener('click', selectAllOwned);
     $('#select-all').addEventListener('click', applyModeToAll);
     $('#toggle-base').addEventListener('click', () => { state.hideBase = !state.hideBase; saveState(); syncView(); });
+    $('#toggle-pre-evolution')?.addEventListener('click', () => { state.hidePreEvolution = !state.hidePreEvolution; saveState(); syncView(); });
     $('#restore-hidden').addEventListener('click', () => {
       characters.forEach((character) => { unitState(character.id).hidden = false; });
       saveState(); syncView(); showToast('지운 캐릭터를 모두 복구했습니다.');
@@ -528,7 +539,7 @@
     });
     $('#reset').addEventListener('click', () => {
       if (!confirm('모든 체크 현황을 초기화할까요?')) return;
-      state = { mode: 'owned', hideBase: false, units: {} };
+      state = { mode: 'owned', hideBase: false, hidePreEvolution: false, units: {} };
       saveState(); syncView(); showToast('체크리스트를 초기화했습니다.');
     });
     $('#backup').addEventListener('click', () => $('#backup-dialog').showModal());
@@ -542,7 +553,12 @@
       try {
         const payload = JSON.parse(await file.text());
         if (payload.app !== 'sugo-logbook' || !payload.state?.units) throw new Error('잘못된 저장파일');
-        state = { mode: payload.state.mode || 'owned', hideBase: Boolean(payload.state.hideBase), units: {} };
+        state = {
+          mode: payload.state.mode || 'owned',
+          hideBase: Boolean(payload.state.hideBase),
+          hidePreEvolution: Boolean(payload.state.hidePreEvolution),
+          units: {}
+        };
         Object.entries(payload.state.units).forEach(([id, value]) => { state.units[id] = normalizeUnit(value); });
         saveState(); syncView(); $('#backup-dialog').close(); showToast('저장파일을 불러왔습니다.');
       } catch (error) {

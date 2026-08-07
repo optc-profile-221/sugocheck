@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sugo-logbook-v9';
+const CACHE_NAME = 'sugo-logbook-v12';
 const APP_SHELL = [
   './',
   './index.html',
