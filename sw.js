@@ -1,12 +1,11 @@
-const CACHE_NAME = 'sugo-logbook-v14';
+const CACHE_NAME = 'sugo-logbook-v15';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './data/characters.json',
-  './assets/pirate-limit-key.webp',
-  './assets/super-rainbow-key.png'
+  './assets/pirate-limit-key.webp'
 ];
 
 self.addEventListener('install', (event) => {

@@ -186,17 +186,6 @@
       key.remove();
     }
 
-    let superKey = $('.unit__super-key', button);
-    if (current.super && !superKey) {
-      superKey = document.createElement('img');
-      superKey.className = 'unit__super-key';
-      superKey.src = 'assets/super-rainbow-key.png';
-      superKey.alt = '';
-      button.append(superKey);
-    } else if (!current.super && superKey) {
-      superKey.remove();
-    }
-
     let level = $('.unit__llb', button);
     if (current.llb > 0 && !level) {
       level = document.createElement('span');
@@ -396,10 +385,9 @@
   async function makeShareImage() {
     const available = characters.filter(isAvailable);
     $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 0 / ${available.length}`;
-    const [images, keyImage, superKeyImage] = await Promise.all([
+    const [images, keyImage] = await Promise.all([
       loadImagesWithProgress(available, (done, total) => { $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 ${done} / ${total}`; }),
-      loadImage('assets/pirate-limit-key.webp'),
-      loadImage('assets/super-rainbow-key.png')
+      loadImage('assets/pirate-limit-key.webp')
     ]);
 
     const width = 1200;
@@ -487,14 +475,6 @@
           context.shadowColor = 'rgba(0,0,0,.9)';
           context.shadowBlur = 4;
           context.drawImage(keyImage, x + icon - 18, rowY - 7, 26, 26);
-          context.restore();
-        }
-        if (current.super && superKeyImage) {
-          context.save();
-          context.shadowColor = 'rgba(0,0,0,.9)';
-          context.shadowBlur = 4;
-          const superKeyX = current.pirate ? x + icon - 43 : x + icon - 18;
-          context.drawImage(superKeyImage, superKeyX, rowY - 7, 26, 26);
           context.restore();
         }
         if (current.llb > 0) {
