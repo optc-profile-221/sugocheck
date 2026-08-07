@@ -328,7 +328,7 @@
     const gap = 8;
     const columns = 17;
     const sectionGap = 18;
-    const headerHeight = 190;
+    const headerHeight = 100;
     const sections = categoryConfig.map((category) => {
       const units = getAvailableCharacters(category.id);
       const rows = Math.max(1, Math.ceil(units.length / columns));
@@ -346,16 +346,6 @@
     background.addColorStop(1, '#07131f');
     context.fillStyle = background;
     context.fillRect(0, 0, width, height);
-    context.fillStyle = 'rgba(85,216,210,.08)';
-    context.beginPath(); context.arc(140, 40, 240, 0, Math.PI * 2); context.fill();
-
-    context.fillStyle = '#55d8d2';
-    context.font = '800 14px sans-serif';
-    context.fillText('SUGO LOG · MY VOYAGE', margin, 42);
-    context.fillStyle = '#edf5f7';
-    context.font = '800 38px sans-serif';
-    context.fillText('나의 스고 항해일지', margin, 88);
-
     const owned = available.filter((character) => unitState(character.id).owned).length;
     const rainbow = available.filter((character) => unitState(character.id).rainbow || unitState(character.id).super).length;
     const superCount = available.filter((character) => unitState(character.id).super).length;
@@ -364,9 +354,9 @@
     metrics.forEach(([label, value], index) => {
       const x = margin + index * 275;
       context.fillStyle = 'rgba(255,255,255,.055)';
-      roundedRect(context, x, 112, 255, 56, 10);
-      context.fillStyle = '#91a4b0'; context.font = '13px sans-serif'; context.fillText(label, x + 14, 135);
-      context.fillStyle = '#edf5f7'; context.font = '800 18px sans-serif'; context.fillText(`${value} / ${available.length}`, x + 14, 158);
+      roundedRect(context, x, 22, 255, 56, 10);
+      context.fillStyle = '#91a4b0'; context.font = '13px sans-serif'; context.fillText(label, x + 14, 45);
+      context.fillStyle = '#edf5f7'; context.font = '800 18px sans-serif'; context.fillText(`${value} / ${available.length}`, x + 14, 68);
     });
 
     let y = headerHeight;
