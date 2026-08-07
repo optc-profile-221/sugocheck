@@ -17,6 +17,8 @@
   let exportBlob = null;
   let exportUrl = null;
   let toastTimer = null;
+  const undoStack = [];
+  const UNDO_LIMIT = 50;
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -60,6 +62,28 @@
 
   function saveState() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function cloneState() {
+    return JSON.parse(JSON.stringify(state));
+  }
+
+  function rememberUndo() {
+    undoStack.push(cloneState());
+    if (undoStack.length > UNDO_LIMIT) undoStack.shift();
+    $('#undo')?.removeAttribute('disabled');
+  }
+
+  function undoLastChange() {
+    const previous = undoStack.pop();
+    if (!previous) {
+      showToast('되돌릴 작업이 없습니다.');
+      return;
+    }
+    state = previous;
+    saveState();
+    syncView();
+    showToast('마지막 작업을 되돌렸습니다.');
   }
 
   function isAvailable(character) {
@@ -238,6 +262,7 @@
       button.setAttribute('aria-checked', String(active));
     });
     $('#select-all').disabled = state.mode === 'hide';
+    if ($('#undo')) $('#undo').disabled = undoStack.length === 0;
     const evolvedButton = $('#toggle-base');
     evolvedButton.textContent = state.hideBase ? '초진화 형태 표시' : '초진화 형태 제거';
     evolvedButton.classList.toggle('is-active', state.hideBase);
@@ -249,6 +274,7 @@
   }
 
   function mutateCharacter(id) {
+    rememberUndo();
     const current = unitState(id);
     if (state.mode === 'owned') {
       current.owned = !current.owned;
@@ -276,6 +302,7 @@
 
   function applyModeToAll() {
     if (state.mode === 'hide') return;
+    rememberUndo();
     characters.filter(isAvailable).forEach((character) => {
       const current = unitState(character.id);
       if (state.mode === 'owned') current.owned = true;
@@ -290,6 +317,7 @@
   }
 
   function selectAllOwned() {
+    rememberUndo();
     characters.filter(isAvailable).forEach((character) => {
       unitState(character.id).owned = true;
     });
@@ -517,15 +545,24 @@
 
     $('#search').addEventListener('input', syncView);
     document.addEventListener('keydown', (event) => {
+      const active = document.activeElement;
+      const editingText = active?.matches('input, textarea, [contenteditable="true"]');
+      if ((event.ctrlKey || event.metaKey) && !event.shiftKey && event.key.toLowerCase() === 'z' && !editingText) {
+        event.preventDefault();
+        undoLastChange();
+        return;
+      }
       if (event.key === '/' && document.activeElement !== $('#search')) {
         event.preventDefault(); $('#search').focus();
       }
     });
+    $('#undo')?.addEventListener('click', undoLastChange);
     $('#select-owned-all')?.addEventListener('click', selectAllOwned);
     $('#select-all').addEventListener('click', applyModeToAll);
-    $('#toggle-base').addEventListener('click', () => { state.hideBase = !state.hideBase; saveState(); syncView(); });
-    $('#toggle-pre-evolution')?.addEventListener('click', () => { state.hidePreEvolution = !state.hidePreEvolution; saveState(); syncView(); });
+    $('#toggle-base').addEventListener('click', () => { rememberUndo(); state.hideBase = !state.hideBase; saveState(); syncView(); });
+    $('#toggle-pre-evolution')?.addEventListener('click', () => { rememberUndo(); state.hidePreEvolution = !state.hidePreEvolution; saveState(); syncView(); });
     $('#restore-hidden').addEventListener('click', () => {
+      rememberUndo();
       characters.forEach((character) => { unitState(character.id).hidden = false; });
       saveState(); syncView(); showToast('지운 캐릭터를 모두 복구했습니다.');
     });
@@ -533,12 +570,14 @@
     $('#hidden-list').addEventListener('click', (event) => {
       const button = event.target.closest('[data-restore-id]');
       if (!button) return;
+      rememberUndo();
       unitState(Number(button.dataset.restoreId)).hidden = false;
       button.remove(); saveState(); syncView();
       if (!$('#hidden-list').children.length) renderHiddenList();
     });
     $('#reset').addEventListener('click', () => {
       if (!confirm('모든 체크 현황을 초기화할까요?')) return;
+      rememberUndo();
       state = { mode: 'owned', hideBase: false, hidePreEvolution: false, units: {} };
       saveState(); syncView(); showToast('체크리스트를 초기화했습니다.');
     });
@@ -553,6 +592,7 @@
       try {
         const payload = JSON.parse(await file.text());
         if (payload.app !== 'sugo-logbook' || !payload.state?.units) throw new Error('잘못된 저장파일');
+        rememberUndo();
         state = {
           mode: payload.state.mode || 'owned',
           hideBase: Boolean(payload.state.hideBase),
