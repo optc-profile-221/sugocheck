@@ -145,6 +145,7 @@
     button.classList.toggle('is-owned', current.owned);
     button.classList.toggle('is-rainbow', current.rainbow || current.super);
     button.classList.toggle('is-super', current.super);
+    button.classList.toggle('has-pirate-key', current.pirate);
     button.setAttribute('aria-pressed', String(current.owned));
 
     let key = $('.unit__key', button);
@@ -156,6 +157,17 @@
       button.append(key);
     } else if (!current.pirate && key) {
       key.remove();
+    }
+
+    let superKey = $('.unit__super-key', button);
+    if (current.super && !superKey) {
+      superKey = document.createElement('img');
+      superKey.className = 'unit__super-key';
+      superKey.src = 'assets/super-rainbow-key.png';
+      superKey.alt = '';
+      button.append(superKey);
+    } else if (!current.super && superKey) {
+      superKey.remove();
     }
 
     let level = $('.unit__llb', button);
@@ -337,9 +349,10 @@
   async function makeShareImage() {
     const available = characters.filter(isAvailable);
     $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 0 / ${available.length}`;
-    const [images, keyImage] = await Promise.all([
+    const [images, keyImage, superKeyImage] = await Promise.all([
       loadImagesWithProgress(available, (done, total) => { $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 ${done} / ${total}`; }),
-      loadImage('assets/pirate-limit-key.webp')
+      loadImage('assets/pirate-limit-key.webp'),
+      loadImage('assets/super-rainbow-key.png')
     ]);
 
     const width = 1200;
@@ -397,31 +410,16 @@
         context.save();
         context.globalAlpha = current.owned ? 1 : .28;
         const image = images.get(character.id);
-        if (current.super) {
-          context.save();
-          context.shadowColor = '#d95cff';
-          context.shadowBlur = 11;
-          const superGradient = context.createLinearGradient(x - 4, rowY - 4, x + icon + 4, rowY + icon + 4);
-          superGradient.addColorStop(0, '#ffffff');
-          superGradient.addColorStop(.32, '#f06cff');
-          superGradient.addColorStop(.68, '#6657ff');
-          superGradient.addColorStop(1, '#45efff');
-          context.fillStyle = superGradient;
-          roundedRect(context, x - 4, rowY - 4, icon + 8, icon + 8, 9);
-          context.restore();
-          context.fillStyle = '#ffffff';
-          roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
-        } else if (current.rainbow) {
+        if (current.rainbow || current.super) {
           const rainbowGradient = typeof context.createConicGradient === 'function'
             ? context.createConicGradient(0, x + icon / 2, rowY + icon / 2)
             : context.createLinearGradient(x - 3, rowY - 3, x + icon + 3, rowY + icon + 3);
-          rainbowGradient.addColorStop(0, '#ff3154');
-          rainbowGradient.addColorStop(.18, '#ffe53d');
-          rainbowGradient.addColorStop(.36, '#35ef78');
-          rainbowGradient.addColorStop(.55, '#32d9ff');
-          rainbowGradient.addColorStop(.74, '#5968ff');
-          rainbowGradient.addColorStop(.88, '#bd4cff');
-          rainbowGradient.addColorStop(1, '#ff3154');
+          const rainbowColors = current.super
+            ? ['#ff3154', '#ffe53d', '#35ef78', '#32d9ff', '#5968ff', '#bd4cff', '#ff3154']
+            : ['#bd6f7b', '#c9b86f', '#72a984', '#6697aa', '#777bac', '#8177a7', '#bd6f7b'];
+          [0, .18, .36, .55, .74, .88, 1].forEach((stop, colorIndex) => {
+            rainbowGradient.addColorStop(stop, rainbowColors[colorIndex]);
+          });
           context.fillStyle = rainbowGradient;
           roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
         } else if (current.owned) {
@@ -435,6 +433,14 @@
           context.shadowColor = 'rgba(0,0,0,.9)';
           context.shadowBlur = 4;
           context.drawImage(keyImage, x + icon - 18, rowY - 7, 26, 26);
+          context.restore();
+        }
+        if (current.super && superKeyImage) {
+          context.save();
+          context.shadowColor = 'rgba(0,0,0,.9)';
+          context.shadowBlur = 4;
+          const superKeyX = current.pirate ? x + icon - 43 : x + icon - 18;
+          context.drawImage(superKeyImage, superKeyX, rowY - 7, 26, 26);
           context.restore();
         }
         if (current.llb > 0) {
