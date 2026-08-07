@@ -166,7 +166,7 @@ button { color: inherit; }
   touch-action: manipulation;
 }
 .unit:hover { opacity: .7; transform: translateY(-2px); }
-.unit.is-owned { opacity: 1; border-color: var(--red); box-shadow: inset 0 0 0 2px rgba(255,110,105,.45); }
+.unit.is-owned { opacity: 1; border-color: #02070b; box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); }
 .unit.is-rainbow {
   border-color: transparent;
   background: conic-gradient(#f04f67 0deg, #a75be0 120deg, #f2cf45 240deg, #f04f67 360deg);

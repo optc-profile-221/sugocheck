@@ -279,6 +279,15 @@
     showToast('현재 모드를 전체 캐릭터에 적용했습니다.');
   }
 
+  function selectAllOwned() {
+    characters.filter(isAvailable).forEach((character) => {
+      unitState(character.id).owned = true;
+    });
+    saveState();
+    syncView();
+    showToast('캐릭터를 모두 선택했습니다.');
+  }
+
   function renderHiddenList() {
     const root = $('#hidden-list');
     root.replaceChildren();
@@ -423,7 +432,7 @@
           context.fillStyle = rainbowGradient;
           roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
         } else if (current.owned) {
-          context.fillStyle = '#ff6e69'; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
+          context.fillStyle = '#02070b'; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
         }
         if (image) context.drawImage(image, x, rowY, icon, icon);
         else { context.fillStyle = '#172f3e'; roundedRect(context, x, rowY, icon, icon, 6); }
@@ -495,6 +504,7 @@
         event.preventDefault(); $('#search').focus();
       }
     });
+    $('#select-owned-all').addEventListener('click', selectAllOwned);
     $('#select-all').addEventListener('click', applyModeToAll);
     $('#toggle-base').addEventListener('click', () => { state.hideBase = !state.hideBase; saveState(); syncView(); });
     $('#restore-hidden').addEventListener('click', () => {
