@@ -499,6 +499,17 @@
         if (image) context.drawImage(image, x, rowY, icon, icon);
         else { context.fillStyle = '#172f3e'; roundedRect(context, x, rowY, icon, icon, 6); }
         context.restore();
+        context.save();
+        const idText = String(character.id);
+        context.font = '800 8px sans-serif';
+        const idWidth = context.measureText(idText).width + 7;
+        context.fillStyle = 'rgba(2,9,14,.9)';
+        roundedRect(context, x - 3, rowY - 5, idWidth, 12, 4);
+        context.fillStyle = '#fff';
+        context.textAlign = 'left';
+        context.textBaseline = 'alphabetic';
+        context.fillText(idText, x, rowY + 4);
+        context.restore();
         if (current.pirate && keyImage) {
           context.save();
           context.shadowColor = 'rgba(0,0,0,.9)';
