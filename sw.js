@@ -1,10 +1,11 @@
-const CACHE_NAME = 'sugo-logbook-v16';
+const CACHE_NAME = 'sugo-logbook-v19';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './data/characters.json',
+  './assets/treasure-cruise-logo.png',
   './assets/pirate-limit-key.webp'
 ];
 

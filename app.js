@@ -158,7 +158,7 @@
 
       const summary = document.createElement('summary');
       summary.className = 'checklist__summary';
-      summary.innerHTML = `<div><h2>${category.name}</h2><p>${category.note}</p></div><span class="checklist__count" data-category-count></span><span class="checklist__chevron">⌄</span>`;
+      summary.innerHTML = `<div><h2>${category.name}</h2><p>${category.note}</p></div><span class="checklist__count" data-category-count></span><button type="button" class="category-toggle" data-category-toggle="${category.id}" role="switch" aria-checked="false" aria-label="${category.name} 전체선택"><span class="category-toggle__track" aria-hidden="true"></span><span class="category-toggle__label">선택</span></button><span class="checklist__chevron">⌄</span>`;
       details.append(summary);
 
       const grid = document.createElement('div');
@@ -219,6 +219,14 @@
       const unchecked = available.length - owned;
       const label = $(`[data-category="${category.id}"] [data-category-count]`);
       label.innerHTML = `<b>${available.length}</b>종 <span>[-${unchecked}]</span>`;
+      const categoryToggle = $(`[data-category-toggle="${category.id}"]`);
+      const allOwned = available.length > 0 && owned === available.length;
+      categoryToggle.classList.toggle('is-active', allOwned);
+      categoryToggle.setAttribute('aria-checked', String(allOwned));
+      categoryToggle.setAttribute('aria-label', `${category.name} ${allOwned ? '전체해제' : '전체선택'}`);
+      categoryToggle.title = allOwned ? `${category.name} 전체해제` : `${category.name} 전체선택`;
+      $('.category-toggle__label', categoryToggle).textContent = allOwned ? '해제' : '선택';
+      categoryToggle.disabled = available.length === 0;
       const grid = $(`[data-grid="${category.id}"]`);
       const hasSearchMatch = $$('.unit:not([hidden])', grid).length > 0;
       grid.closest('.checklist').hidden = Boolean(query) && !hasSearchMatch;
@@ -318,6 +326,22 @@
     saveState();
     syncView();
     showToast('캐릭터를 모두 선택했습니다.');
+  }
+
+  function toggleCategoryOwned(categoryId) {
+    const available = getAvailableCharacters(categoryId);
+    if (!available.length) return;
+    const allOwned = available.every((character) => unitState(character.id).owned);
+    rememberUndo();
+    available.forEach((character) => {
+      const current = unitState(character.id);
+      current.owned = !allOwned;
+      if (allOwned) Object.assign(current, { rainbow: false, super: false, pirate: false, llb: 0 });
+    });
+    saveState();
+    syncView();
+    const categoryName = categoryConfig.find((category) => category.id === categoryId)?.name || '해당 항목';
+    showToast(`${categoryName}를 모두 ${allOwned ? '해제' : '선택'}했습니다.`);
   }
 
   function renderHiddenList() {
@@ -547,6 +571,13 @@
     });
 
     $('#checklists').addEventListener('click', (event) => {
+      const categoryToggle = event.target.closest('[data-category-toggle]');
+      if (categoryToggle) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleCategoryOwned(categoryToggle.dataset.categoryToggle);
+        return;
+      }
       const button = event.target.closest('.unit[data-id]');
       if (button) mutateCharacter(Number(button.dataset.id));
     });

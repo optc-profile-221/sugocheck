@@ -46,17 +46,14 @@ button { color: inherit; }
   justify-content: space-between;
   gap: 20px;
 }
-.brand { display: flex; align-items: center; gap: 11px; letter-spacing: .06em; }
+.brand { display: flex; min-width: 0; align-items: center; gap: 11px; letter-spacing: .06em; }
 .brand__mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  aspect-ratio: 1;
-  border: 1px solid rgba(85, 216, 210, .5);
-  border-radius: 50% 50% 44% 56%;
-  color: var(--cyan);
-  font-weight: 900;
-  transform: rotate(-5deg);
+  display: block;
+  width: 126px;
+  height: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.55));
 }
 .brand b, .brand small { display: block; }
 .brand b { font-size: 14px; }
@@ -129,7 +126,7 @@ button { color: inherit; }
   background: repeating-conic-gradient(#52d9ff 0deg, #ffe53d 11.25deg, #ff3154 22.5deg, #bd4cff 33.75deg, #52d9ff 45deg);
   box-shadow: 0 0 8px #e78cff, 0 0 13px rgba(69,226,255,.8);
 }
-.dot--key { color: #5d4200; background: var(--gold); }
+.mode__key-icon { display: block; width: 20px; height: 20px; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,.8)); }
 .dot--llb { color: #fff; background: linear-gradient(180deg, #fff 0%, #ff8b5b 52%, #df2537 100%); font-size: 8px; text-shadow: 0 1px 2px #6c1018; }
 .dot--hide { background: #63727c; }
 .action { padding: 9px 12px; font-size: 12px; }
@@ -148,6 +145,45 @@ button { color: inherit; }
 .checklist__summary p { margin: 2px 0 0; color: var(--muted); font-size: 10px; }
 .checklist__count { margin-left: auto; color: var(--muted); font-size: 11px; white-space: nowrap; }
 .checklist__count b { color: var(--ink); font-size: 14px; }
+.category-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255,255,255,.035);
+  cursor: pointer;
+}
+.category-toggle:hover { border-color: rgba(85,216,210,.48); color: var(--ink); }
+.category-toggle:disabled { opacity: .35; cursor: not-allowed; }
+.category-toggle__track {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 14px;
+  border-radius: 99px;
+  background: #40515c;
+  transition: background .16s;
+}
+.category-toggle__track::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d7e0e5;
+  box-shadow: 0 1px 3px rgba(0,0,0,.55);
+  transition: transform .16s, background .16s;
+}
+.category-toggle__label { min-width: 16px; font-size: 9px; font-weight: 800; text-align: center; }
+.category-toggle.is-active { border-color: color-mix(in srgb, var(--accent, var(--cyan)) 55%, transparent); color: var(--ink); background: color-mix(in srgb, var(--accent, var(--cyan)) 10%, transparent); }
+.category-toggle.is-active .category-toggle__track { background: var(--accent, var(--cyan)); }
+.category-toggle.is-active .category-toggle__track::after { background: #fff; transform: translateX(11px); }
 .checklist__chevron { color: var(--muted); transition: transform .2s; }
 .checklist[open] .checklist__chevron { transform: rotate(180deg); }
 .unit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px; padding: 0 14px 16px; }
@@ -260,7 +296,9 @@ footer p { margin: 4px; }
 @media (max-width: 680px) {
   .hero__inner, .app-shell { width: min(100% - 20px, 1480px); }
   .hero__inner { min-height: 64px; }
-  .brand small, .search kbd { display: none; }
+  .brand { gap: 0; }
+  .brand__mark { width: 96px; }
+  .brand__copy, .search kbd { display: none; }
   .search { width: min(55vw, 260px); }
   .search input { padding-right: 12px; font-size: 13px; }
   .app-shell { margin-top: 14px; }
@@ -283,7 +321,7 @@ footer p { margin: 4px; }
   .unit img { border-radius: 5px; }
 }
 @media (max-width: 370px) {
-  .brand b { font-size: 12px; }
+  .brand__mark { width: 86px; }
   .unit-grid, .checklist--compact .unit-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
 }
 @media (prefers-reduced-motion: reduce) {
