@@ -19,6 +19,8 @@
   let toastTimer = null;
   const undoStack = [];
   const UNDO_LIMIT = 50;
+  const LLB_LABELS = ['', '105', '110', '120', '130', 'MAX'];
+  const LLB_COLORS = ['', '#ffc27d', '#ff9b5f', '#ff744f', '#f34843', '#df2537'];
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -192,7 +194,10 @@
       level.className = 'unit__llb';
       button.append(level);
     }
-    if (current.llb > 0) level.textContent = current.llb;
+    if (current.llb > 0) {
+      level.innerHTML = `<span class="unit__llb-prefix">Lv.</span><span class="unit__llb-value">${LLB_LABELS[current.llb]}</span>`;
+      level.style.setProperty('--llb-color', LLB_COLORS[current.llb]);
+    }
     else if (level) level.remove();
   }
 
@@ -478,8 +483,31 @@
           context.restore();
         }
         if (current.llb > 0) {
-          context.fillStyle = '#8bd8ff'; context.beginPath(); context.arc(x + icon - 9, rowY + icon - 9, 9, 0, Math.PI * 2); context.fill();
-          context.fillStyle = '#052033'; context.font = '800 10px sans-serif'; context.textAlign = 'center'; context.fillText(String(current.llb), x + icon - 9, rowY + icon - 5.5); context.textAlign = 'left';
+          const llbValue = LLB_LABELS[current.llb];
+          const baseline = rowY + icon - 4;
+          context.textAlign = 'left';
+          context.textBaseline = 'alphabetic';
+          context.font = '800 7px sans-serif';
+          const prefixWidth = context.measureText('Lv.').width;
+          context.font = '900 9px sans-serif';
+          const valueWidth = context.measureText(llbValue).width;
+          const boxWidth = prefixWidth + valueWidth + 7;
+          const boxX = x + icon - boxWidth - 2;
+          context.fillStyle = 'rgba(2,7,11,.82)';
+          roundedRect(context, boxX, baseline - 11, boxWidth, 14, 4);
+          context.shadowColor = 'rgba(0,0,0,.95)';
+          context.shadowBlur = 2;
+          context.font = '800 7px sans-serif';
+          context.fillStyle = '#fff';
+          context.fillText('Lv.', boxX + 3, baseline);
+          const valueGradient = context.createLinearGradient(0, baseline - 9, 0, baseline + 1);
+          valueGradient.addColorStop(0, '#fff');
+          valueGradient.addColorStop(.28, '#fff');
+          valueGradient.addColorStop(1, LLB_COLORS[current.llb]);
+          context.font = '900 9px sans-serif';
+          context.fillStyle = valueGradient;
+          context.fillText(llbValue, boxX + 3 + prefixWidth, baseline);
+          context.shadowBlur = 0;
         }
       });
       y += category.height + sectionGap;
