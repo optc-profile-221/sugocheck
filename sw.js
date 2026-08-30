@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sugo-logbook-v32';
+const CACHE_NAME = 'sugo-logbook-v33';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,6 +8,8 @@ const APP_SHELL = [
   './data/characters.json',
   './data/festival-rare-characters.json',
   './assets/treasure-cruise-logo.png',
+  './assets/backgrounds/optc-dark-pattern.png',
+  './assets/backgrounds/optc-world-map.png',
   './assets/pirate-limit-key.webp'
 ];
 

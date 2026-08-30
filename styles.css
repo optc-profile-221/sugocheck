@@ -707,3 +707,57 @@ footer { border-top-color: #5e4825; color: #95876e; background: rgba(18,12,8,.78
 @media (max-width: 680px) {
   .hero__inner, .app-shell { width: min(100% - 20px, 1100px); }
 }
+
+/* OPTC 원본 배경 이미지 적용 */
+body {
+  background-color: #150d08;
+  background-image:
+    linear-gradient(rgba(18, 11, 7, .26), rgba(10, 6, 4, .62)),
+    url("assets/backgrounds/optc-dark-pattern.png");
+  background-position: center top, center top;
+  background-size: auto, 452px auto;
+  background-repeat: repeat, repeat;
+  background-attachment: fixed;
+}
+body::before {
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.42), transparent 18%, transparent 82%, rgba(0,0,0,.42)),
+    radial-gradient(ellipse at center, transparent 24%, rgba(0,0,0,.44) 100%);
+}
+
+.hero {
+  background:
+    linear-gradient(180deg, rgba(32,23,17,.91), rgba(17,12,9,.97)),
+    url("assets/backgrounds/optc-dark-pattern.png") center 16% / 452px auto repeat;
+}
+
+.dashboard,
+.command-deck,
+.checklist,
+.sheet {
+  background-image:
+    linear-gradient(180deg, rgba(38,25,16,.78), rgba(22,14,9,.92)),
+    url("assets/backgrounds/optc-world-map.png");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.dashboard { background-position: center, center 26%; }
+.command-deck { background-position: center, center 58%; }
+.checklist { background-position: center, center 42%; }
+.sheet { background-position: center, center 72%; }
+
+.unit-grid {
+  background: linear-gradient(180deg, rgba(35,22,14,.24), rgba(18,11,7,.54));
+}
+
+footer {
+  background:
+    linear-gradient(rgba(14,9,6,.8), rgba(14,9,6,.92)),
+    url("assets/backgrounds/optc-dark-pattern.png") center 80% / 452px auto repeat;
+}
+
+@media (max-width: 680px) {
+  body { background-attachment: scroll; }
+  .dashboard, .command-deck, .checklist, .sheet { background-size: auto, auto 100%; }
+}
