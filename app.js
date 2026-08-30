@@ -245,14 +245,10 @@
     const rainbow = available.filter((character) => unitState(character.id).rainbow || unitState(character.id).super).length;
     const superCount = count('super');
     const pirate = count('pirate');
-    const percent = total ? Math.round((owned / total) * 100) : 0;
-
     $('#count-owned').textContent = `${owned} / ${total}`;
     $('#count-rainbow').textContent = `${rainbow} / ${total}`;
     $('#count-super').textContent = `${superCount} / ${total}`;
     $('#count-pirate').textContent = `${pirate} / ${total}`;
-    $('#progress-percent').textContent = `${percent}%`;
-    $('#progress-ring').style.strokeDashoffset = String(314.16 * (1 - percent / 100));
     const hidden = characters.filter((character) => unitState(character.id).hidden).length;
     $('#hidden-count').textContent = hidden;
   }

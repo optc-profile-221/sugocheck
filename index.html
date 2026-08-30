@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#07131f">
+  <meta name="theme-color" content="#35170d">
   <meta name="description" content="스고 보유/육성 현황">
   <title>스고컬렉션</title>
   <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,7 @@
     <div class="hero__inner">
       <div class="brand" aria-label="스고체크">
         <img class="brand__mark" src="assets/treasure-cruise-logo.png" alt="ONE PIECE TREASURE CRUISE">
-        <span class="brand__copy"><b>Legends Checklist</b><small>스고체크</small></span>
+        <span class="brand__copy"><b>스고 체크리스트</b><small>보유·육성 현황</small></span>
       </div>
       <label class="search">
         <span class="sr-only">캐릭터 검색</span>
@@ -27,15 +27,8 @@
   <main class="app-shell">
     <section class="dashboard" aria-label="전체 진행 현황">
       <div class="dashboard__intro">
-        <p class="eyebrow">OPTC Legends Checklist</p>
+        <p class="eyebrow">원피스 트레저 크루즈</p>
         <h1>스고 보유/육성 현황</h1>
-      </div>
-      <div class="progress-ring" aria-label="전체 보유율">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="progress-ring__track" cx="60" cy="60" r="50"></circle>
-          <circle id="progress-ring" class="progress-ring__value" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <strong id="progress-percent">0%</strong>
       </div>
       <div class="metrics">
         <div class="metric metric--owned"><span>전체 캐릭터</span><strong id="count-owned">0 / 0</strong></div>
@@ -76,13 +69,13 @@
   </footer>
 
   <dialog id="hidden-dialog" class="sheet">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">REMOVED</p><h2>지운 캐릭터</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">제외 목록</p><h2>지운 캐릭터</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
     <p class="sheet__help">복구할 캐릭터를 누르세요.</p>
     <div id="hidden-list" class="hidden-list"></div>
   </dialog>
 
   <dialog id="backup-dialog" class="sheet sheet--small">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">SAVE DATA</p><h2>저장파일 관리</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">저장 데이터</p><h2>저장파일 관리</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
     <p class="sheet__help">체크 현황은 이 브라우저에 자동 저장됩니다. 다른 기기로 옮길 때 JSON 파일을 이용하세요.</p>
     <div class="backup-actions">
       <button id="download-save" class="action action--primary">저장파일 내려받기</button>
@@ -91,7 +84,7 @@
   </dialog>
 
   <dialog id="export-dialog" class="sheet export-sheet">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">SHARE CARD</p><h2>도감 이미지</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">도감 공유</p><h2>도감 이미지</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
     <p id="export-status" class="sheet__help">이미지를 준비하고 있습니다.</p>
     <div id="export-preview" class="export-preview"></div>
     <button id="download-image" class="action action--primary" hidden>PNG 내려받기</button>
