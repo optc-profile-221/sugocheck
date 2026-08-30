@@ -259,7 +259,6 @@
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-checked', String(active));
     });
-    $('#select-all').disabled = state.mode === 'hide';
     if ($('#undo')) $('#undo').disabled = undoStack.length === 0;
     const evolvedButton = $('#toggle-base');
     evolvedButton.textContent = state.hideBase ? '초진화 형태 표시' : '초진화 형태 제거';
@@ -296,22 +295,6 @@
     }
     saveState();
     syncView();
-  }
-
-  function applyModeToAll() {
-    if (state.mode === 'hide') return;
-    rememberUndo();
-    characters.filter(isAvailable).forEach((character) => {
-      const current = unitState(character.id);
-      if (state.mode === 'owned') current.owned = true;
-      if (state.mode === 'rainbow') Object.assign(current, { owned: true, rainbow: true, super: false });
-      if (state.mode === 'super') Object.assign(current, { owned: true, rainbow: false, super: true });
-      if (state.mode === 'pirate') Object.assign(current, { owned: true, pirate: true });
-      if (state.mode === 'llb') Object.assign(current, { owned: true, llb: 5 });
-    });
-    saveState();
-    syncView();
-    showToast('현재 모드를 전체 캐릭터에 적용했습니다.');
   }
 
   function selectAllOwned() {
@@ -644,7 +627,6 @@
     });
     $('#undo')?.addEventListener('click', undoLastChange);
     $('#select-owned-all')?.addEventListener('click', selectAllOwned);
-    $('#select-all').addEventListener('click', applyModeToAll);
     $('#toggle-base').addEventListener('click', () => { rememberUndo(); state.hideBase = !state.hideBase; saveState(); syncView(); });
     $('#toggle-pre-evolution')?.addEventListener('click', () => { rememberUndo(); state.hidePreEvolution = !state.hidePreEvolution; saveState(); syncView(); });
     $('#restore-hidden').addEventListener('click', () => {
