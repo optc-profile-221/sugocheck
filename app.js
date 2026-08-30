@@ -404,7 +404,12 @@
   }
 
   async function makeShareImage() {
-    const available = characters.filter(isAvailable);
+    const expandedCategoryIds = new Set(
+      $$('.checklist[data-category]')
+        .filter((section) => section.open)
+        .map((section) => section.dataset.category)
+    );
+    const available = characters.filter((character) => expandedCategoryIds.has(character.category) && isAvailable(character));
     $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 0 / ${available.length}`;
     await document.fonts.ready;
     await Promise.all([
@@ -425,7 +430,7 @@
     const sectionGap = 18;
     const headerHeight = 126;
     const uiFont = '"S-Core Dream", sans-serif';
-    const sections = categoryConfig.map((category) => {
+    const sections = categoryConfig.filter((category) => expandedCategoryIds.has(category.id)).map((category) => {
       const units = getAvailableCharacters(category.id);
       const rows = Math.max(1, Math.ceil(units.length / columns));
       return { ...category, units, height: 72 + rows * (icon + gap) + 14 };
