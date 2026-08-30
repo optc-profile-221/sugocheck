@@ -9,17 +9,17 @@
   const EXPORT_NAME = IS_FESTIVAL_RARE ? 'festival-rare-logbook' : 'sugo-logbook';
   const EXPORT_TITLE = IS_FESTIVAL_RARE ? '페스 한정 레어 보유/육성 현황' : '스고 보유/육성 현황';
   const categoryConfig = IS_FESTIVAL_RARE ? [
-    { id: 'treasure', name: '트레저맵 한정', note: '트레저맵 페스 전용 레어', accent: '#59d2ba', wide: true },
-    { id: 'kizuna', name: '유대결전 한정', note: '유대결전 페스 전용 레어', accent: '#63b5ff', wide: true },
-    { id: 'pirate', name: '해적제 한정', note: '해적제 페스 전용 레어', accent: '#bb8cff', wide: true },
-    { id: 'support', name: '서포트 한정', note: '서포트 전용 레어', accent: '#f2c85e', wide: true }
+    { id: 'treasure', name: '트레저맵 한정', note: '트레저맵 페스 한정 가챠', accent: '#59d2ba', wide: true },
+    { id: 'kizuna', name: '유대결전 한정', note: '유대결전 페스 한정 가챠', accent: '#63b5ff', wide: true },
+    { id: 'pirate', name: '해적제 한정', note: '해적제 페스 한정 가챠', accent: '#bb8cff', wide: true },
+    { id: 'support', name: '서포트 한정', note: '서폿페스 한정 가챠', accent: '#f2c85e', wide: true }
   ] : [
     { id: 'super', name: '초스고', note: '초스고페스 한정', accent: '#ff7878', wide: true },
     { id: 'anniversary', name: '주년 스고', note: '주년페스 한정', accent: '#f2c85e', wide: true },
     { id: 'pirate', name: '해적제 스고', note: '해적제페스 한정', accent: '#bb8cff', wide: false },
     { id: 'treasure', name: '트맵 스고', note: '트레저 맵 페스 한정', accent: '#59d2ba', wide: false },
     { id: 'kizuna', name: '유대 스고', note: '유대 결전 페스 한정', accent: '#63b5ff', wide: false },
-    { id: 'regular', name: '일반 스고', note: '"통언뜬"', accent: '#8fa8b7', wide: true }
+    { id: 'regular', name: '일반 스고', note: '통상스고', accent: '#8fa8b7', wide: true }
   ];
 
   let characters = [];
