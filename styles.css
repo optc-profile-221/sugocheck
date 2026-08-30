@@ -673,6 +673,7 @@ body::before { background: radial-gradient(ellipse at center, transparent 28%, r
 .unit__id { border-color: #80683a; background: #21150e; }
 .toast { border-color: #80683a; background: linear-gradient(#4b311d, #24170f); }
 footer { border-top-color: #5e4825; color: #95876e; background: rgba(18,12,8,.78); }
+.footer__disclaimer { font-size: 10px; opacity: .78; }
 
 @media (max-width: 680px) {
   .hero__inner, .app-shell { width: min(100% - 20px, 1100px); }

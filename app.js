@@ -410,6 +410,12 @@
   async function makeShareImage() {
     const available = characters.filter(isAvailable);
     $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 0 / ${available.length}`;
+    await document.fonts.ready;
+    await Promise.all([
+      document.fonts.load('400 13px "S-Core Dream"'),
+      document.fonts.load('700 18px "S-Core Dream"'),
+      document.fonts.load('800 20px "S-Core Dream"')
+    ]);
     const [images, keyImage] = await Promise.all([
       loadImagesWithProgress(available, (done, total) => { $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 ${done} / ${total}`; }),
       loadImage('assets/pirate-limit-key.webp')
@@ -421,24 +427,40 @@
     const gap = 8;
     const columns = 17;
     const sectionGap = 18;
-    const headerHeight = 100;
+    const headerHeight = 126;
+    const uiFont = '"S-Core Dream", sans-serif';
     const sections = categoryConfig.map((category) => {
       const units = getAvailableCharacters(category.id);
       const rows = Math.max(1, Math.ceil(units.length / columns));
       return { ...category, units, height: 72 + rows * (icon + gap) + 14 };
     });
-    const height = headerHeight + sections.reduce((sum, category) => sum + category.height + sectionGap, 0) + margin;
+    const footerHeight = 48;
+    const height = headerHeight + sections.reduce((sum, category) => sum + category.height + sectionGap, 0) + margin + footerHeight;
     const canvas = document.createElement('canvas');
     canvas.width = width;
     canvas.height = height;
     const context = canvas.getContext('2d');
 
     const background = context.createLinearGradient(0, 0, width, height);
-    background.addColorStop(0, '#07131f');
-    background.addColorStop(.5, '#0b1e2c');
-    background.addColorStop(1, '#07131f');
+    background.addColorStop(0, '#17100b');
+    background.addColorStop(.5, '#2b1c12');
+    background.addColorStop(1, '#100b08');
     context.fillStyle = background;
     context.fillRect(0, 0, width, height);
+    context.fillStyle = 'rgba(171,133,70,.035)';
+    for (let line = -height; line < width; line += 110) {
+      context.save();
+      context.translate(line, 0);
+      context.rotate(-Math.PI / 4);
+      context.fillRect(0, 0, 2, height * 2);
+      context.restore();
+    }
+    context.fillStyle = '#e8e1d6';
+    context.font = `800 21px ${uiFont}`;
+    context.fillText('스고 보유/육성 현황', margin, 33);
+    context.fillStyle = '#9f8b65';
+    context.font = `400 11px ${uiFont}`;
+    context.fillText('ONE PIECE TREASURE CRUISE · 비공식 팬 제작 도구', margin, 48);
     const owned = available.filter((character) => unitState(character.id).owned).length;
     const rainbow = available.filter((character) => unitState(character.id).rainbow || unitState(character.id).super).length;
     const superCount = available.filter((character) => unitState(character.id).super).length;
@@ -446,21 +468,29 @@
     const metrics = [['전체', owned], ['무지개', rainbow], ['초무지개', superCount], ['해적제한돌', pirate]];
     metrics.forEach(([label, value], index) => {
       const x = margin + index * 275;
-      context.fillStyle = 'rgba(255,255,255,.055)';
-      roundedRect(context, x, 22, 255, 56, 10);
-      context.fillStyle = '#91a4b0'; context.font = '13px sans-serif'; context.fillText(label, x + 14, 45);
-      context.fillStyle = '#edf5f7'; context.font = '800 18px sans-serif'; context.fillText(`${value} / ${available.length}`, x + 14, 68);
+      context.fillStyle = '#362319';
+      roundedRect(context, x, 59, 255, 52, 7);
+      context.strokeStyle = '#80683a';
+      context.lineWidth = 2;
+      context.beginPath(); context.roundRect(x, 59, 255, 52, 7); context.stroke();
+      context.fillStyle = '#b9aa8a'; context.font = `500 12px ${uiFont}`; context.fillText(label, x + 14, 79);
+      context.fillStyle = '#f0ebe3'; context.font = `800 17px ${uiFont}`; context.fillText(`${value} / ${available.length}`, x + 14, 101);
     });
 
     let y = headerHeight;
     sections.forEach((category) => {
-      context.fillStyle = 'rgba(16,42,57,.94)';
+      context.fillStyle = '#2b1c12';
       roundedRect(context, margin, y, width - margin * 2, category.height, 16);
-      context.fillStyle = category.accent;
+      context.strokeStyle = '#7d622e';
+      context.lineWidth = 2;
+      context.beginPath(); context.roundRect(margin, y, width - margin * 2, category.height, 16); context.stroke();
+      context.fillStyle = '#4d2018';
+      roundedRect(context, margin + 8, y + 8, width - margin * 2 - 16, 42, 9);
+      context.fillStyle = '#9a7b3e';
       roundedRect(context, margin + 17, y + 19, 5, 27, 3);
-      context.fillStyle = '#edf5f7'; context.font = '800 20px sans-serif'; context.fillText(category.name, margin + 34, y + 40);
+      context.fillStyle = '#eee8dc'; context.font = `800 20px ${uiFont}`; context.fillText(category.name, margin + 34, y + 40);
       const unchecked = category.units.filter((character) => !unitState(character.id).owned).length;
-      context.fillStyle = '#91a4b0'; context.font = '13px sans-serif';
+      context.fillStyle = '#b9a474'; context.font = `500 13px ${uiFont}`;
       context.fillText(`총 ${category.units.length}종  [-${unchecked}]`, width - margin - 150, y + 39);
 
       category.units.forEach((character, index) => {
@@ -490,16 +520,16 @@
           context.fillStyle = rainbowGradient;
           roundedRect(context, x - 3, rowY - 3, icon + 6, icon + 6, 8);
         } else if (current.owned) {
-          context.fillStyle = '#02070b'; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
+          context.fillStyle = '#17100b'; roundedRect(context, x - 2, rowY - 2, icon + 4, icon + 4, 7);
         }
         if (image) context.drawImage(image, x, rowY, icon, icon);
-        else { context.fillStyle = '#172f3e'; roundedRect(context, x, rowY, icon, icon, 6); }
+        else { context.fillStyle = '#332217'; roundedRect(context, x, rowY, icon, icon, 6); }
         context.restore();
         context.save();
         const idText = String(character.id);
-        context.font = '800 8px sans-serif';
+        context.font = `800 8px ${uiFont}`;
         const idWidth = context.measureText(idText).width + 7;
-        context.fillStyle = 'rgba(2,9,14,.9)';
+        context.fillStyle = 'rgba(23,16,11,.92)';
         roundedRect(context, x - 3, rowY - 5, idWidth, 12, 4);
         context.fillStyle = '#fff';
         context.textAlign = 'left';
@@ -543,6 +573,16 @@
       });
       y += category.height + sectionGap;
     });
+
+    context.textAlign = 'center';
+    context.fillStyle = '#95876e';
+    context.font = `500 10px ${uiFont}`;
+    context.fillText('© Eiichiro Oda/Shueisha, Toei Animation © Bandai Namco Entertainment Inc.', width / 2, height - 30);
+    context.globalAlpha = .78;
+    context.font = `400 9px ${uiFont}`;
+    context.fillText('This is an unofficial fan-made tool and is not affiliated with or endorsed by the rights holders or the official service.', width / 2, height - 14);
+    context.globalAlpha = 1;
+    context.textAlign = 'left';
 
     return new Promise((resolve, reject) => canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error('PNG 변환 실패')), 'image/png'));
   }
