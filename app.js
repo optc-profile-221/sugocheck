@@ -1,8 +1,19 @@
 (() => {
   'use strict';
 
-  const STORAGE_KEY = 'sugo-logbook-clean-v1';
-  const categoryConfig = [
+  const IS_FESTIVAL_RARE = document.body.dataset.collection === 'festival-rare';
+  const STORAGE_KEY = IS_FESTIVAL_RARE ? 'festival-rare-logbook-v1' : 'sugo-logbook-clean-v1';
+  const APP_ID = IS_FESTIVAL_RARE ? 'festival-rare-logbook' : 'sugo-logbook';
+  const DATA_URL = IS_FESTIVAL_RARE ? 'data/festival-rare-characters.json' : 'data/characters.json';
+  const ICON_DIR = IS_FESTIVAL_RARE ? 'assets/rare-icons' : 'assets/icons';
+  const EXPORT_NAME = IS_FESTIVAL_RARE ? 'festival-rare-logbook' : 'sugo-logbook';
+  const EXPORT_TITLE = IS_FESTIVAL_RARE ? '페스 한정 레어 보유/육성 현황' : '스고 보유/육성 현황';
+  const categoryConfig = IS_FESTIVAL_RARE ? [
+    { id: 'treasure', name: '트레저맵 한정', note: '트레저맵 페스 전용 레어', accent: '#59d2ba', wide: true },
+    { id: 'kizuna', name: '유대결전 한정', note: '유대결전 페스 전용 레어', accent: '#63b5ff', wide: true },
+    { id: 'pirate', name: '해적제 한정', note: '해적제 페스 전용 레어', accent: '#bb8cff', wide: true },
+    { id: 'support', name: '서포트 한정', note: '서포트 전용 레어', accent: '#f2c85e', wide: true }
+  ] : [
     { id: 'super', name: '초스고', note: '초스고페스 한정', accent: '#ff7878', wide: true },
     { id: 'anniversary', name: '주년 스고', note: '주년페스 한정', accent: '#f2c85e', wide: true },
     { id: 'pirate', name: '해적제 스고', note: '해적제페스 한정', accent: '#bb8cff', wide: false },
@@ -120,7 +131,7 @@
   }
 
   function iconPath(id) {
-    return `assets/icons/${id}.png`;
+    return `${ICON_DIR}/${id}.png`;
   }
 
   function createUnit(character) {
@@ -261,11 +272,13 @@
     });
     if ($('#undo')) $('#undo').disabled = undoStack.length === 0;
     const evolvedButton = $('#toggle-base');
-    evolvedButton.textContent = state.hideBase ? '초진화 형태 표시' : '초진화 형태 제거';
+    const evolvedLabel = IS_FESTIVAL_RARE ? '진화 후 형태' : '초진화 형태';
+    evolvedButton.textContent = `${evolvedLabel} ${state.hideBase ? '표시' : '제거'}`;
     evolvedButton.classList.toggle('is-active', state.hideBase);
     const preEvolutionButton = $('#toggle-pre-evolution');
     if (preEvolutionButton) {
-      preEvolutionButton.textContent = state.hidePreEvolution ? '초진화 전 형태 표시' : '초진화 전 형태 제거';
+      const preEvolutionLabel = IS_FESTIVAL_RARE ? '진화 전 형태' : '초진화 전 형태';
+      preEvolutionButton.textContent = `${preEvolutionLabel} ${state.hidePreEvolution ? '표시' : '제거'}`;
       preEvolutionButton.classList.toggle('is-active', state.hidePreEvolution);
     }
   }
@@ -440,7 +453,7 @@
     }
     context.fillStyle = '#e8e1d6';
     context.font = `800 21px ${uiFont}`;
-    context.fillText('스고 보유/육성 현황', margin, 33);
+    context.fillText(EXPORT_TITLE, margin, 33);
     context.fillStyle = '#9f8b65';
     context.font = `400 11px ${uiFont}`;
     context.fillText('ONE PIECE TREASURE CRUISE · 비공식 팬 제작 도구', margin, 48);
@@ -581,7 +594,7 @@
       exportUrl = URL.createObjectURL(exportBlob);
       const preview = new Image();
       preview.src = exportUrl;
-      preview.alt = '스고 항해일지 이미지 미리보기';
+      preview.alt = `${EXPORT_TITLE} 이미지 미리보기`;
       $('#export-preview').append(preview);
       $('#export-status').textContent = '이미지가 완성되었습니다.';
       $('#download-image').hidden = false;
@@ -651,15 +664,15 @@
     });
     $('#backup').addEventListener('click', () => $('#backup-dialog').showModal());
     $('#download-save').addEventListener('click', () => {
-      const payload = { app: 'sugo-logbook', version: 1, exportedAt: new Date().toISOString(), state };
-      downloadBlob(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }), 'sugo-logbook-save.json');
+      const payload = { app: APP_ID, version: 1, exportedAt: new Date().toISOString(), state };
+      downloadBlob(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }), `${EXPORT_NAME}-save.json`);
     });
     $('#upload-save').addEventListener('change', async (event) => {
       const file = event.target.files[0];
       if (!file) return;
       try {
         const payload = JSON.parse(await file.text());
-        if (payload.app !== 'sugo-logbook' || !payload.state?.units) throw new Error('잘못된 저장파일');
+        if (payload.app !== APP_ID || !payload.state?.units) throw new Error('잘못된 저장파일');
         rememberUndo();
         state = {
           mode: payload.state.mode || 'owned',
@@ -676,12 +689,12 @@
       }
     });
     $('#export-image').addEventListener('click', exportImage);
-    $('#download-image').addEventListener('click', () => exportBlob && downloadBlob(exportBlob, 'sugo-logbook.png'));
+    $('#download-image').addEventListener('click', () => exportBlob && downloadBlob(exportBlob, `${EXPORT_NAME}.png`));
   }
 
   async function start() {
     try {
-      const response = await fetch('data/characters.json');
+      const response = await fetch(DATA_URL);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       characters = await response.json();
       characterById = new Map(characters.map((character) => [Number(character.id), character]));

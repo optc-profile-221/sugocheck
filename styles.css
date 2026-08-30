@@ -609,6 +609,35 @@ body::before { background: radial-gradient(ellipse at center, transparent 28%, r
 .search::before, .search::after { filter: saturate(.55) brightness(.75); }
 
 .app-shell { width: min(1100px, calc(100% - 32px)); }
+.collection-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 7px;
+  border: 2px solid #6f572c;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #2d2017, #17100b);
+  box-shadow: inset 0 0 0 1px #140d08, 0 4px 12px rgba(0,0,0,.32);
+}
+.collection-nav__link {
+  padding: 11px 14px;
+  border: 1px solid #634b27;
+  border-radius: 5px;
+  color: #cbbfa8;
+  background: linear-gradient(180deg, #49301e, #2c1b12);
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+}
+.collection-nav__link:hover { border-color: #92743b; color: #f0e9dd; }
+.collection-nav__link.is-active {
+  border-color: #a88443;
+  color: #fff7e8;
+  background: linear-gradient(180deg, #9a4819, #6d2b0f 62%, #431908);
+  box-shadow: inset 0 0 0 1px #321106;
+}
 .dashboard, .command-deck, .checklist, .sheet {
   border-color: #7d622e;
   background-color: #2b1c12;

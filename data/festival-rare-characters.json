@@ -1,0 +1,3570 @@
+[
+  {
+    "id": 1803,
+    "name": "롤로노아 조로",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1804
+  },
+  {
+    "id": 1804,
+    "name": "롤로노아 조로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 1803
+  },
+  {
+    "id": 1805,
+    "name": "광대 버기",
+    "stars": "4",
+    "type": "QCK",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1806
+  },
+  {
+    "id": 1806,
+    "name": "버기 선장",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure",
+    "evolutionOf": 1805
+  },
+  {
+    "id": 1848,
+    "name": "아카이누",
+    "stars": "4",
+    "type": "STR",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1849
+  },
+  {
+    "id": 1849,
+    "name": "사카즈키",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure",
+    "evolutionOf": 1848
+  },
+  {
+    "id": 1850,
+    "name": "스쿼드",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1851
+  },
+  {
+    "id": 1851,
+    "name": "거대 소용돌이 거미 스쿼드",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 1850
+  },
+  {
+    "id": 1884,
+    "name": "니코 로빈",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1885
+  },
+  {
+    "id": 1885,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 1884
+  },
+  {
+    "id": 1886,
+    "name": "글라디우스",
+    "stars": "4",
+    "type": "QCK",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1887
+  },
+  {
+    "id": 1887,
+    "name": "글라디우스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure",
+    "evolutionOf": 1886
+  },
+  {
+    "id": 1911,
+    "name": "우루지",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1912
+  },
+  {
+    "id": 1912,
+    "name": "우루지",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 1911
+  },
+  {
+    "id": 1913,
+    "name": "네펠타리 비비",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1914
+  },
+  {
+    "id": 1914,
+    "name": "네펠타리 비비",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 1913
+  },
+  {
+    "id": 1936,
+    "name": "마샬 D. 티치",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1937
+  },
+  {
+    "id": 1937,
+    "name": "검은 수염",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 1936
+  },
+  {
+    "id": 1938,
+    "name": "삿치",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1939
+  },
+  {
+    "id": 1939,
+    "name": "쌍검의 삿치",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 1938
+  },
+  {
+    "id": 1967,
+    "name": "보아 행콕",
+    "stars": "4",
+    "type": "STR",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1968
+  },
+  {
+    "id": 1968,
+    "name": "보아 행콕",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure",
+    "evolutionOf": 1967
+  },
+  {
+    "id": 1969,
+    "name": "미스 발렌타인",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 1970
+  },
+  {
+    "id": 1970,
+    "name": "미스 발렌타인",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 1969
+  },
+  {
+    "id": 2008,
+    "name": "바솔로뮤 쿠마",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2009
+  },
+  {
+    "id": 2009,
+    "name": "바솔로뮤 쿠마",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 2008
+  },
+  {
+    "id": 2010,
+    "name": "모네",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2011
+  },
+  {
+    "id": 2011,
+    "name": "모네",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 2010
+  },
+  {
+    "id": 2059,
+    "name": "벤 베크맨",
+    "stars": "4",
+    "type": "STR",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2060
+  },
+  {
+    "id": 2060,
+    "name": "벤 베크맨",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure",
+    "evolutionOf": 2059
+  },
+  {
+    "id": 2061,
+    "name": "스크래치멘 아푸",
+    "stars": "4",
+    "type": "STR",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2062
+  },
+  {
+    "id": 2062,
+    "name": "‘바다천둥’ 스크래치멘 아푸",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure",
+    "evolutionOf": 2061
+  },
+  {
+    "id": 2131,
+    "name": "엠포리오 이반코프",
+    "stars": "4",
+    "type": "PSY",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2132
+  },
+  {
+    "id": 2132,
+    "name": "엠포리오 이반코프",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure",
+    "evolutionOf": 2131
+  },
+  {
+    "id": 2133,
+    "name": "조즈",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2134
+  },
+  {
+    "id": 2134,
+    "name": "‘다이아몬드’ 조즈",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 2133
+  },
+  {
+    "id": 2135,
+    "name": "Mr.1",
+    "stars": "4",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2168,
+    "name": "이누아라시",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2169
+  },
+  {
+    "id": 2169,
+    "name": "‘낮의 왕’ 이누아라시",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 2168
+  },
+  {
+    "id": 2170,
+    "name": "시실리안",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2171
+  },
+  {
+    "id": 2171,
+    "name": "전력의 시실리안",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 2170
+  },
+  {
+    "id": 2206,
+    "name": "몽키 D. 루피",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2207
+  },
+  {
+    "id": 2207,
+    "name": "몽키 D. 루피",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 2206
+  },
+  {
+    "id": 2208,
+    "name": "간 폴",
+    "stars": "4",
+    "type": "INT",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2209
+  },
+  {
+    "id": 2209,
+    "name": "간 폴",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure",
+    "evolutionOf": 2208
+  },
+  {
+    "id": 2256,
+    "name": "쥬라큘 미호크",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2257,
+    "name": "포트거스 D. 에이스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2258,
+    "name": "히그마",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 2259
+  },
+  {
+    "id": 2259,
+    "name": "히그마",
+    "stars": "5+",
+    "type": "STR",
+    "category": "treasure",
+    "evolutionOf": 2258
+  },
+  {
+    "id": 2295,
+    "name": "모리아",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2296,
+    "name": "레일리",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2297,
+    "name": "페로나",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2358,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2359,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2360,
+    "name": "네코마무시",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2383,
+    "name": "유스타스 키드",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2384,
+    "name": "바질 호킨스",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2385,
+    "name": "스크래치멘 아푸",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2437,
+    "name": "코라손",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2438,
+    "name": "트라팔가 로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2466,
+    "name": "징베",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2467,
+    "name": "파운드",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2506,
+    "name": "A･O",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2507,
+    "name": "키자루",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2508,
+    "name": "마르코",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2553,
+    "name": "록스타",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2554,
+    "name": "야솝",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2555,
+    "name": "럭키 루",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2579,
+    "name": "묘스가르드 성",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2580,
+    "name": "사이",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2581,
+    "name": "넵튠",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2612,
+    "name": "빅 맘",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2613,
+    "name": "카이도",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2614,
+    "name": "도플라밍고",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2687,
+    "name": "센고쿠",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2688,
+    "name": "비스타",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2725,
+    "name": "소낙비 칸주로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2726,
+    "name": "안개의 라이조",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2727,
+    "name": "여우불 킨에몬",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2759,
+    "name": "아론",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2760,
+    "name": "미스 더블 핑거",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2761,
+    "name": "칼리파",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2790,
+    "name": "코즈키 모모노스케",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2820,
+    "name": "유스타스 키드",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2821,
+    "name": "바질 호킨스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2822,
+    "name": "트라팔가 로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2847,
+    "name": "맨셸리",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2848,
+    "name": "슈거",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2849,
+    "name": "베이비 5",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2876,
+    "name": "Mr.0",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 2877,
+    "name": "미스 올 선데이",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2878,
+    "name": "언럭키즈",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2910,
+    "name": "호디 존스",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2911,
+    "name": "케이미",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 2912,
+    "name": "반더 덱켄 9세",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 2992,
+    "name": "쿄시로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2993,
+    "name": "규키마루",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 2994,
+    "name": "오키쿠",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3019,
+    "name": "빈스모크 이치디",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3020,
+    "name": "빈스모크 니디",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3021,
+    "name": "빈스모크 욘디",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3056,
+    "name": "네펠타리 비비",
+    "stars": "4",
+    "type": "PSY",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 3057
+  },
+  {
+    "id": 3057,
+    "name": "네펠타리 비비",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure",
+    "evolutionOf": 3056
+  },
+  {
+    "id": 3058,
+    "name": "페로나",
+    "stars": "4",
+    "type": "DEX",
+    "category": "treasure",
+    "baseForm": true,
+    "evolvesTo": 3059
+  },
+  {
+    "id": 3059,
+    "name": "페로나",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure",
+    "evolutionOf": 3058
+  },
+  {
+    "id": 3087,
+    "name": "닭 백작",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3088,
+    "name": "나좀즈",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3089,
+    "name": "알라딘",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3112,
+    "name": "상디 할로윈 디너",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3113,
+    "name": "시폰 스위트 마더",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3114,
+    "name": "빅 맘 스위트 할로윈 나이트",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3146,
+    "name": "루피타로",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3147,
+    "name": "효 할아범",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3148,
+    "name": "도봉",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3190,
+    "name": "몽키 D. 루피",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3191,
+    "name": "에이스",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3192,
+    "name": "사보",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3214,
+    "name": "상고로",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3215,
+    "name": "프라노스케",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3216,
+    "name": "우소하치",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3236,
+    "name": "오링",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3237,
+    "name": "쵸파에몬",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3238,
+    "name": "오타마",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3270,
+    "name": "키자루",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3271,
+    "name": "몽키 D. 가프",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3272,
+    "name": "오니구모",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3294,
+    "name": "반 오거",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3295,
+    "name": "도크 Q",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3296,
+    "name": "라피트",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3363,
+    "name": "상디",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3365,
+    "name": "몽키 D. 루피",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3366,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3367,
+    "name": "나미",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3386,
+    "name": "키쿠노죠",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3387,
+    "name": "라이조",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3388,
+    "name": "카와마츠",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3412,
+    "name": "타시기",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3413,
+    "name": "마키",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3414,
+    "name": "히나",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3439,
+    "name": "롤로노아 조로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3440,
+    "name": "상디",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3441,
+    "name": "나미",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3442,
+    "name": "브룩",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3461,
+    "name": "코알라 할로윈 나이트 파티",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3463,
+    "name": "카라스 할로윈 크로우",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3464,
+    "name": "몰리 할로윈 좀비 나이트",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3482,
+    "name": "Sir 크로커다일",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3484,
+    "name": "로브 루치",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3485,
+    "name": "갓 에넬",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3502,
+    "name": "킨에몬",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3503,
+    "name": "덴지로",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3504,
+    "name": "오츠루",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3522,
+    "name": "Mr.2 봉쿠레",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3524,
+    "name": "시저 클라운",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3525,
+    "name": "엠포리오 이반코프",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3542,
+    "name": "캐럿&완다",
+    "stars": "5",
+    "type": "",
+    "category": "treasure"
+  },
+  {
+    "id": 3544,
+    "name": "페드로",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3545,
+    "name": "페콤즈",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 3562,
+    "name": "이조&키쿠노죠",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3564,
+    "name": "이누아라시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3565,
+    "name": "네코마무시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3584,
+    "name": "나미",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3585,
+    "name": "오타마",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3586,
+    "name": "우솝",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3640,
+    "name": "마샬 D. 티치",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3642,
+    "name": "지저스 바제스",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3643,
+    "name": "비의 시류",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3659,
+    "name": "나미",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3660,
+    "name": "로빈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3661,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3686,
+    "name": "징베",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3687,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3688,
+    "name": "롤로노아 조로",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3732,
+    "name": "스모커",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3733,
+    "name": "타시기",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3734,
+    "name": "히나",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3774,
+    "name": "징베",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3776,
+    "name": "애늙은이 쵸파",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3777,
+    "name": "상디",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3798,
+    "name": "갓 에넬",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3799,
+    "name": "오움",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3800,
+    "name": "게다츠&슈라&사토리",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3819,
+    "name": "마르코",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3820,
+    "name": "화이티 베이",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3821,
+    "name": "마샬 D. 티치",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3860,
+    "name": "쥬얼리 보니",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3862,
+    "name": "마샬 D. 티치",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3863,
+    "name": "‘괴승’ 우루지",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3932,
+    "name": "나미&캐럿",
+    "stars": "5",
+    "type": "",
+    "category": "treasure"
+  },
+  {
+    "id": 3934,
+    "name": "샬롯 푸딩",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 3935,
+    "name": "샬롯 스무디",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 3962,
+    "name": "시모츠키 우시마루",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 3963,
+    "name": "후게츠 오무스비",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3964,
+    "name": "우즈키 텐푸라",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3978,
+    "name": "조로",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3979,
+    "name": "상디",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 3980,
+    "name": "라이조",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4002,
+    "name": "나미&카리나",
+    "stars": "5",
+    "type": "",
+    "category": "treasure"
+  },
+  {
+    "id": 4004,
+    "name": "레이즈 맥스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4005,
+    "name": "더블 다운&리카&템포",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4051,
+    "name": "사카즈키",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4052,
+    "name": "쿠로우마",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4072,
+    "name": "나미",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4073,
+    "name": "히요리",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4092,
+    "name": "상디",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4093,
+    "name": "나미",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4094,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4134,
+    "name": "Dr. 베가펑크 ‘에디슨’&Dr. 베가펑크 ‘피타고라스’",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4135,
+    "name": "Dr. 베가펑크 ‘요크’",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4180,
+    "name": "카야",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4181,
+    "name": "양파&피망&홍당무",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4194,
+    "name": "톰",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4195,
+    "name": "아이스버그",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4228,
+    "name": "스튜시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4229,
+    "name": "S-스네이크&S-호크&S-샤크",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4249,
+    "name": "코비",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4251,
+    "name": "몽키 D. 가프",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4252,
+    "name": "쿠잔",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4283,
+    "name": "센토마루",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4284,
+    "name": "파시피스타 마크 Ⅲ",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4301,
+    "name": "린드 버그",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4302,
+    "name": "벨로 베티",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4315,
+    "name": "Sir 크로커다일",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4316,
+    "name": "쥬라큘 미호크",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4346,
+    "name": "코즈키 히요리",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4347,
+    "name": "페로나",
+    "stars": "5",
+    "type": "PSY",
+    "category": "treasure"
+  },
+  {
+    "id": 4402,
+    "name": "마샬 D. 티치",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4404,
+    "name": "마르코",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4420,
+    "name": "코알라",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4421,
+    "name": "핵",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4484,
+    "name": "빈스모크 이치디",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4485,
+    "name": "빈스모크 니디",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4486,
+    "name": "빈스모크 욘디",
+    "stars": "5",
+    "type": "DEX",
+    "category": "treasure"
+  },
+  {
+    "id": 4500,
+    "name": "클라우 D. 클로버",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4501,
+    "name": "시저 클라운",
+    "stars": "5",
+    "type": "STR",
+    "category": "treasure"
+  },
+  {
+    "id": 4516,
+    "name": "비올라",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4517,
+    "name": "맨셸리 ",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4545,
+    "name": "사카즈키",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4546,
+    "name": "센토마루",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4592,
+    "name": "스탄센",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4593,
+    "name": "골드버그&게루즈",
+    "stars": "5",
+    "type": "INT",
+    "category": "treasure"
+  },
+  {
+    "id": 4609,
+    "name": "도크 Q",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4610,
+    "name": "쿠잔",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4624,
+    "name": "론즈",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 4625,
+    "name": "존 자이언트",
+    "stars": "5",
+    "type": "QCK",
+    "category": "treasure"
+  },
+  {
+    "id": 2756,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 2793,
+    "name": "모네",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 2832,
+    "name": "아카이누",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 2853,
+    "name": "벨로 베티",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 2887,
+    "name": "나이트메어 루피",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 2888,
+    "name": "나미",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 2889,
+    "name": "브룩",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 2996,
+    "name": "썬더소니아&마리골드",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 2997,
+    "name": "마가렛",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 2998,
+    "name": "뇽 할멈",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3120,
+    "name": "베크맨 밤중 담배 한 모금",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3121,
+    "name": "야솝 어두운 밤 속 저격",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3149,
+    "name": "베포&샤치&펭귄",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3151,
+    "name": "트라팔가 로",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3152,
+    "name": "조로주로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3203,
+    "name": "상디&푸딩",
+    "stars": "5",
+    "type": "",
+    "category": "kizuna"
+  },
+  {
+    "id": 3205,
+    "name": "샬롯 시폰",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3212,
+    "name": "캐럿",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3242,
+    "name": "페로스페로",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3274,
+    "name": "크로커다일",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3299,
+    "name": "파이어 탱크 해적단",
+    "stars": "5",
+    "type": "",
+    "category": "kizuna"
+  },
+  {
+    "id": 3301,
+    "name": "빈스모크 저지",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3302,
+    "name": "브룩",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3348,
+    "name": "에이스&사보",
+    "stars": "5",
+    "type": "",
+    "category": "kizuna"
+  },
+  {
+    "id": 3370,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3371,
+    "name": "우솝",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3372,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3390,
+    "name": "토키&모모노스케&히요리",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3392,
+    "name": "킨에몬",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3418,
+    "name": "Mr.2 봉쿠레",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3445,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3446,
+    "name": "쵸파&우솝",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3447,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3468,
+    "name": "비올라 할로윈 댄스파티",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3487,
+    "name": "버기",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3488,
+    "name": "백계의 크로",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3507,
+    "name": "카이도&대간판",
+    "stars": "5",
+    "type": "",
+    "category": "kizuna"
+  },
+  {
+    "id": 3509,
+    "name": "오로치",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3528,
+    "name": "포트거스 D. 에이스",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3529,
+    "name": "마르코",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3548,
+    "name": "미야기&트리스탄",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3549,
+    "name": "밀키",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3568,
+    "name": "코무라사키",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3569,
+    "name": "시노부",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3589,
+    "name": "드레이크",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3591,
+    "name": "롤로노아 조로",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3623,
+    "name": "흰 수염",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3624,
+    "name": "비스타",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3646,
+    "name": "버기&갤디노",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3647,
+    "name": "이나즈마",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3664,
+    "name": "우솝",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3665,
+    "name": "브룩",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3690,
+    "name": "샬롯 오븐",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3691,
+    "name": "샬롯 브륄레",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3692,
+    "name": "샬롯 카타쿠리",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3714,
+    "name": "로빈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3715,
+    "name": "나미",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3716,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3737,
+    "name": "X 드레이크",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3738,
+    "name": "코비",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3760,
+    "name": "몽키 D. 루피",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3761,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3779,
+    "name": "보아 행콕",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3781,
+    "name": "쥬얼리 보니",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3782,
+    "name": "샬롯 푸딩",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 3803,
+    "name": "바르톨로메오",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3804,
+    "name": "캐번디시",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3823,
+    "name": "샬롯 페로스페로",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3825,
+    "name": "가뭄해 잭",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3843,
+    "name": "컬리 다단",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3844,
+    "name": "마키&우프 슬랩",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3865,
+    "name": "디아만테",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3866,
+    "name": "트레볼",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3867,
+    "name": "피카",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 3916,
+    "name": "도플라밍고&크로커다일",
+    "stars": "5",
+    "type": "",
+    "category": "kizuna"
+  },
+  {
+    "id": 3918,
+    "name": "겟코 모리아",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3919,
+    "name": "쥬라큘 미호크",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 3937,
+    "name": "히요리",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3938,
+    "name": "바오황",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 3966,
+    "name": "빈스모크 레이주",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 3968,
+    "name": "이치디&니디&욘디",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4007,
+    "name": "아인",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4009,
+    "name": "빈즈",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4034,
+    "name": "카이도",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4035,
+    "name": "Sir 크로커다일",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4055,
+    "name": "스피드&햄릿",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4075,
+    "name": "마르코",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4076,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4114,
+    "name": "토비롯포",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4116,
+    "name": "바질 호킨스",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4136,
+    "name": "Dr. 베가펑크",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4138,
+    "name": "Dr. 베가펑크 ‘샤카’",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4166,
+    "name": "S-스네이크",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4168,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4169,
+    "name": "브룩",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4183,
+    "name": "Dr. 히루루크",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4184,
+    "name": "Dr. 쿠레하",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4198,
+    "name": "요키",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4254,
+    "name": "바스코 샷",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4271,
+    "name": "비비&와포루",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4272,
+    "name": "모르건즈",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4286,
+    "name": "Dr. 베가펑크",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4304,
+    "name": "후카보시",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4320,
+    "name": "Dr. 베가펑크 ‘아틀라스’",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4334,
+    "name": "재브라",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4349,
+    "name": "네펠타리 코브라",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 4375,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "kizuna"
+  },
+  {
+    "id": 4376,
+    "name": "징베",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4406,
+    "name": "돈키호테 도플라밍고",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4423,
+    "name": "Dr. 베가펑크",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4437,
+    "name": "카아시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4457,
+    "name": "아발로 피사로",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4473,
+    "name": "코라손",
+    "stars": "5",
+    "type": "QCK",
+    "category": "kizuna"
+  },
+  {
+    "id": 4488,
+    "name": "Dr. 베가펑크 ‘릴리스’",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4503,
+    "name": "바질 호킨스",
+    "stars": "5",
+    "type": "DEX",
+    "category": "kizuna"
+  },
+  {
+    "id": 4519,
+    "name": "야마토",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4533,
+    "name": "지저스 바제스",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 4548,
+    "name": "혼고",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4578,
+    "name": "도베르만",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4595,
+    "name": "니코 올비아",
+    "stars": "5",
+    "type": "STR",
+    "category": "kizuna"
+  },
+  {
+    "id": 4627,
+    "name": "실버즈 레일리",
+    "stars": "5",
+    "type": "INT",
+    "category": "kizuna"
+  },
+  {
+    "id": 2931,
+    "name": "오타마",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 2932,
+    "name": "‘다이아몬드’ 조즈",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 2933,
+    "name": "네코마무시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 2978,
+    "name": "상디",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3000,
+    "name": "스튜시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3025,
+    "name": "흰 수염",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3061,
+    "name": "카르가라&노랜드",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3062,
+    "name": "코니스",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3063,
+    "name": "카쿠",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3095,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3096,
+    "name": "레오&위커&커브",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3125,
+    "name": "오즈",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3130,
+    "name": "트라팔가 로",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3158,
+    "name": "소바 마스크",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3206,
+    "name": "캐번디시",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3243,
+    "name": "병정 아저씨&레베카",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3244,
+    "name": "에넬",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3292,
+    "name": "시류",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3328,
+    "name": "스모커",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3362,
+    "name": "장성 크래커",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3395,
+    "name": "가반",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3409,
+    "name": "겟코 모리아",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3410,
+    "name": "키자루",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3426,
+    "name": "바솔로뮤 쿠마",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3428,
+    "name": "아론",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3458,
+    "name": "스무디",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3459,
+    "name": "슈트로이젠",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3480,
+    "name": "코비",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3501,
+    "name": "오움",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3521,
+    "name": "그로키 몬스터즈",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3541,
+    "name": "도르돈",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3561,
+    "name": "보아 썬더소니아",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3566,
+    "name": "브로기",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3581,
+    "name": "우루지",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3583,
+    "name": "도리",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3605,
+    "name": "코라손",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3636,
+    "name": "샬롯 스무디",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3638,
+    "name": "프랑키",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3639,
+    "name": "세뇨르 핑크",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3658,
+    "name": "페루",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3679,
+    "name": "우솝",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3703,
+    "name": "후지토라",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3704,
+    "name": "키자루",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3729,
+    "name": "몽키 D. 가프",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3731,
+    "name": "송곳 칭자오",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 3751,
+    "name": "오로치",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3753,
+    "name": "쿠로즈미 칸주로",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3771,
+    "name": "페이지 원",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3797,
+    "name": "킹",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3817,
+    "name": "크로커스",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3818,
+    "name": "노즈돈&선벨",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3836,
+    "name": "블루잼",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3837,
+    "name": "포르쉐미",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3858,
+    "name": "스크래치멘 아푸",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 3875,
+    "name": "사사키",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3876,
+    "name": "후즈 후",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3904,
+    "name": "엠포리오 이반코프",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3906,
+    "name": "이나즈마",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 3929,
+    "name": "보아 마리골드",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 3930,
+    "name": "히나",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3953,
+    "name": "카와마츠",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 3977,
+    "name": "잠발",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4001,
+    "name": "시키",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4026,
+    "name": "더글라스 불릿",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 4027,
+    "name": "앤",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 4049,
+    "name": "네코마무시",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4069,
+    "name": "포트거스 D. 에이스",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4090,
+    "name": "롤로노아 조로",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 4091,
+    "name": "브룩",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4148,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4178,
+    "name": "깅",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 4192,
+    "name": "하그왈 D 사우로",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 4207,
+    "name": "하찌",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 4248,
+    "name": "산후안 울프",
+    "stars": "5",
+    "type": "DEX",
+    "category": "pirate"
+  },
+  {
+    "id": 4264,
+    "name": "츠루",
+    "stars": "5",
+    "type": "STR",
+    "category": "pirate"
+  },
+  {
+    "id": 4360,
+    "name": "사카즈키",
+    "stars": "5",
+    "type": "PSY",
+    "category": "pirate"
+  },
+  {
+    "id": 4386,
+    "name": "Dr. 베가펑크 ‘릴리스’&베가포스 01",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4400,
+    "name": "캐럿",
+    "stars": "5",
+    "type": "QCK",
+    "category": "pirate"
+  },
+  {
+    "id": 4415,
+    "name": "알파",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 4590,
+    "name": "나미",
+    "stars": "5",
+    "type": "INT",
+    "category": "pirate"
+  },
+  {
+    "id": 2388,
+    "name": "마키",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 2389,
+    "name": "츠루",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 2390,
+    "name": "코니스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 2391,
+    "name": "사보",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 2392,
+    "name": "아이스버그",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 2435,
+    "name": "다가마",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 2436,
+    "name": "올럼버스",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 2460,
+    "name": "샬롯 오븐",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 2461,
+    "name": "나좀즈",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 2501,
+    "name": "코우시로",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 2502,
+    "name": "슈트로이젠",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 2800,
+    "name": "샬롯 브륄레",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 2851,
+    "name": "캐럿",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 3159,
+    "name": "샬롯 다이후쿠",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 3160,
+    "name": "시저 클라운",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 3161,
+    "name": "슈텐마루",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 3162,
+    "name": "겟코 모리아",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 3200,
+    "name": "니코 로빈",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3201,
+    "name": "토니토니 쵸파",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3265,
+    "name": "Mr.1&미스 더블 핑거",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 3266,
+    "name": "Mr.3&미스 골든 위크",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3267,
+    "name": "Mr.4&미스 메리크리스마스",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3268,
+    "name": "Mr.5&미스 발렌타인",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 3465,
+    "name": "쥬라큘 미호크",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 3500,
+    "name": "포트거스 D. 에이스",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 3530,
+    "name": "사보",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 3570,
+    "name": "오토코",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 3622,
+    "name": "화이티 베이",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 3667,
+    "name": "네펠타리 비비",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 3717,
+    "name": "브룩",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 3759,
+    "name": "캐럿",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3802,
+    "name": "퀸",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 3846,
+    "name": "코넬리아&코타츠",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 3901,
+    "name": "오타마",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 3914,
+    "name": "거대 소용돌이 거미 스쿼드",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 3939,
+    "name": "모다",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 3982,
+    "name": "코즈키 모모노스케",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 4036,
+    "name": "바르톨로메오",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 4077,
+    "name": "이누아라시&네코마무시",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 4117,
+    "name": "바오황",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 4165,
+    "name": "우솝",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 4196,
+    "name": "라분",
+    "stars": "5",
+    "type": "INT",
+    "category": "support"
+  },
+  {
+    "id": 4236,
+    "name": "부들부들 푸르르",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 4255,
+    "name": "돌 중장",
+    "stars": "5",
+    "type": "STR",
+    "category": "support"
+  },
+  {
+    "id": 4273,
+    "name": "쥬얼리 보니",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 4305,
+    "name": "시라호시",
+    "stars": "5",
+    "type": "PSY",
+    "category": "support"
+  },
+  {
+    "id": 4332,
+    "name": "후쿠로",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 4377,
+    "name": "S-스네이크",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 4407,
+    "name": "알비다&코비",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 4438,
+    "name": "오이모",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 4474,
+    "name": "베라미",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  },
+  {
+    "id": 4504,
+    "name": "게르니카&마하&요셉",
+    "stars": "5",
+    "type": "DEX",
+    "category": "support"
+  },
+  {
+    "id": 4534,
+    "name": "반 오거",
+    "stars": "5",
+    "type": "QCK",
+    "category": "support"
+  }
+]

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
-<body>
+<body data-collection="sugo">
   <header class="hero">
     <div class="hero__inner">
       <div class="brand" aria-label="스고체크">
@@ -25,6 +25,10 @@
   </header>
 
   <main class="app-shell">
+    <nav class="collection-nav" aria-label="도감 선택">
+      <a class="collection-nav__link is-active" href="index.html" aria-current="page">스고 캐릭터</a>
+      <a class="collection-nav__link" href="festival-rare.html">페스 한정 레어</a>
+    </nav>
     <section class="dashboard" aria-label="전체 진행 현황">
       <div class="dashboard__intro">
         <p class="eyebrow">원피스 트레저 크루즈</p>
