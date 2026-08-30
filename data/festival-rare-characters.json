@@ -978,13 +978,6 @@
     "category": "treasure"
   },
   {
-    "id": 3363,
-    "name": "상디",
-    "stars": "5",
-    "type": "PSY",
-    "category": "treasure"
-  },
-  {
     "id": 3365,
     "name": "몽키 D. 루피",
     "stars": "5",
@@ -1076,13 +1069,6 @@
     "category": "treasure"
   },
   {
-    "id": 3461,
-    "name": "코알라 할로윈 나이트 파티",
-    "stars": "5",
-    "type": "DEX",
-    "category": "treasure"
-  },
-  {
     "id": 3463,
     "name": "카라스 할로윈 크로우",
     "stars": "5",
@@ -1092,13 +1078,6 @@
   {
     "id": 3464,
     "name": "몰리 할로윈 좀비 나이트",
-    "stars": "5",
-    "type": "DEX",
-    "category": "treasure"
-  },
-  {
-    "id": 3482,
-    "name": "Sir 크로커다일",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1139,13 +1118,6 @@
     "category": "treasure"
   },
   {
-    "id": 3522,
-    "name": "Mr.2 봉쿠레",
-    "stars": "5",
-    "type": "PSY",
-    "category": "treasure"
-  },
-  {
     "id": 3524,
     "name": "시저 클라운",
     "stars": "5",
@@ -1160,13 +1132,6 @@
     "category": "treasure"
   },
   {
-    "id": 3542,
-    "name": "캐럿&완다",
-    "stars": "5",
-    "type": "",
-    "category": "treasure"
-  },
-  {
     "id": 3544,
     "name": "페드로",
     "stars": "5",
@@ -1178,13 +1143,6 @@
     "name": "페콤즈",
     "stars": "5",
     "type": "STR",
-    "category": "treasure"
-  },
-  {
-    "id": 3562,
-    "name": "이조&키쿠노죠",
-    "stars": "5",
-    "type": "QCK",
     "category": "treasure"
   },
   {
@@ -1220,13 +1178,6 @@
     "name": "우솝",
     "stars": "5",
     "type": "QCK",
-    "category": "treasure"
-  },
-  {
-    "id": 3640,
-    "name": "마샬 D. 티치",
-    "stars": "5",
-    "type": "INT",
     "category": "treasure"
   },
   {
@@ -1300,20 +1251,6 @@
     "category": "treasure"
   },
   {
-    "id": 3734,
-    "name": "히나",
-    "stars": "5",
-    "type": "QCK",
-    "category": "treasure"
-  },
-  {
-    "id": 3774,
-    "name": "징베",
-    "stars": "5",
-    "type": "PSY",
-    "category": "treasure"
-  },
-  {
     "id": 3776,
     "name": "애늙은이 쵸파",
     "stars": "5",
@@ -1370,13 +1307,6 @@
     "category": "treasure"
   },
   {
-    "id": 3860,
-    "name": "쥬얼리 보니",
-    "stars": "5",
-    "type": "PSY",
-    "category": "treasure"
-  },
-  {
     "id": 3862,
     "name": "마샬 D. 티치",
     "stars": "5",
@@ -1388,13 +1318,6 @@
     "name": "‘괴승’ 우루지",
     "stars": "5",
     "type": "PSY",
-    "category": "treasure"
-  },
-  {
-    "id": 3932,
-    "name": "나미&캐럿",
-    "stars": "5",
-    "type": "",
     "category": "treasure"
   },
   {
@@ -1451,13 +1374,6 @@
     "name": "라이조",
     "stars": "5",
     "type": "INT",
-    "category": "treasure"
-  },
-  {
-    "id": 4002,
-    "name": "나미&카리나",
-    "stars": "5",
-    "type": "",
     "category": "treasure"
   },
   {
@@ -1577,13 +1493,6 @@
     "name": "S-스네이크&S-호크&S-샤크",
     "stars": "5",
     "type": "DEX",
-    "category": "treasure"
-  },
-  {
-    "id": 4249,
-    "name": "코비",
-    "stars": "5",
-    "type": "PSY",
     "category": "treasure"
   },
   {
@@ -1895,13 +1804,6 @@
     "category": "kizuna"
   },
   {
-    "id": 3203,
-    "name": "상디&푸딩",
-    "stars": "5",
-    "type": "",
-    "category": "kizuna"
-  },
-  {
     "id": 3205,
     "name": "샬롯 시폰",
     "stars": "5",
@@ -1930,13 +1832,6 @@
     "category": "kizuna"
   },
   {
-    "id": 3299,
-    "name": "파이어 탱크 해적단",
-    "stars": "5",
-    "type": "",
-    "category": "kizuna"
-  },
-  {
     "id": 3301,
     "name": "빈스모크 저지",
     "stars": "5",
@@ -1948,13 +1843,6 @@
     "name": "브룩",
     "stars": "5",
     "type": "INT",
-    "category": "kizuna"
-  },
-  {
-    "id": 3348,
-    "name": "에이스&사보",
-    "stars": "5",
-    "type": "",
     "category": "kizuna"
   },
   {
@@ -1976,13 +1864,6 @@
     "name": "프랑키",
     "stars": "5",
     "type": "PSY",
-    "category": "kizuna"
-  },
-  {
-    "id": 3390,
-    "name": "토키&모모노스케&히요리",
-    "stars": "5",
-    "type": "STR",
     "category": "kizuna"
   },
   {
@@ -2042,13 +1923,6 @@
     "category": "kizuna"
   },
   {
-    "id": 3507,
-    "name": "카이도&대간판",
-    "stars": "5",
-    "type": "",
-    "category": "kizuna"
-  },
-  {
     "id": 3509,
     "name": "오로치",
     "stars": "5",
@@ -2095,13 +1969,6 @@
     "name": "시노부",
     "stars": "5",
     "type": "DEX",
-    "category": "kizuna"
-  },
-  {
-    "id": 3589,
-    "name": "드레이크",
-    "stars": "5",
-    "type": "STR",
     "category": "kizuna"
   },
   {
@@ -2224,13 +2091,6 @@
     "category": "kizuna"
   },
   {
-    "id": 3779,
-    "name": "보아 행콕",
-    "stars": "5",
-    "type": "STR",
-    "category": "kizuna"
-  },
-  {
     "id": 3781,
     "name": "쥬얼리 보니",
     "stars": "5",
@@ -2254,13 +2114,6 @@
   {
     "id": 3804,
     "name": "캐번디시",
-    "stars": "5",
-    "type": "DEX",
-    "category": "kizuna"
-  },
-  {
-    "id": 3823,
-    "name": "샬롯 페로스페로",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2308,13 +2161,6 @@
     "category": "kizuna"
   },
   {
-    "id": 3916,
-    "name": "도플라밍고&크로커다일",
-    "stars": "5",
-    "type": "",
-    "category": "kizuna"
-  },
-  {
     "id": 3918,
     "name": "겟코 모리아",
     "stars": "5",
@@ -2343,24 +2189,10 @@
     "category": "kizuna"
   },
   {
-    "id": 3966,
-    "name": "빈스모크 레이주",
-    "stars": "5",
-    "type": "DEX",
-    "category": "kizuna"
-  },
-  {
     "id": 3968,
     "name": "이치디&니디&욘디",
     "stars": "5",
     "type": "STR",
-    "category": "kizuna"
-  },
-  {
-    "id": 4007,
-    "name": "아인",
-    "stars": "5",
-    "type": "QCK",
     "category": "kizuna"
   },
   {
@@ -2406,13 +2238,6 @@
     "category": "kizuna"
   },
   {
-    "id": 4114,
-    "name": "토비롯포",
-    "stars": "5",
-    "type": "STR",
-    "category": "kizuna"
-  },
-  {
     "id": 4116,
     "name": "바질 호킨스",
     "stars": "5",
@@ -2420,24 +2245,10 @@
     "category": "kizuna"
   },
   {
-    "id": 4136,
-    "name": "Dr. 베가펑크",
-    "stars": "5",
-    "type": "INT",
-    "category": "kizuna"
-  },
-  {
     "id": 4138,
     "name": "Dr. 베가펑크 ‘샤카’",
     "stars": "5",
     "type": "INT",
-    "category": "kizuna"
-  },
-  {
-    "id": 4166,
-    "name": "S-스네이크",
-    "stars": "5",
-    "type": "DEX",
     "category": "kizuna"
   },
   {
@@ -2749,13 +2560,6 @@
     "category": "pirate"
   },
   {
-    "id": 3244,
-    "name": "에넬",
-    "stars": "5",
-    "type": "PSY",
-    "category": "pirate"
-  },
-  {
     "id": 3292,
     "name": "시류",
     "stars": "5",
@@ -2788,20 +2592,6 @@
     "name": "겟코 모리아",
     "stars": "5",
     "type": "DEX",
-    "category": "pirate"
-  },
-  {
-    "id": 3410,
-    "name": "키자루",
-    "stars": "5",
-    "type": "DEX",
-    "category": "pirate"
-  },
-  {
-    "id": 3426,
-    "name": "바솔로뮤 쿠마",
-    "stars": "5",
-    "type": "STR",
     "category": "pirate"
   },
   {
@@ -2868,13 +2658,6 @@
     "category": "pirate"
   },
   {
-    "id": 3581,
-    "name": "우루지",
-    "stars": "5",
-    "type": "INT",
-    "category": "pirate"
-  },
-  {
     "id": 3583,
     "name": "도리",
     "stars": "5",
@@ -2884,13 +2667,6 @@
   {
     "id": 3605,
     "name": "코라손",
-    "stars": "5",
-    "type": "QCK",
-    "category": "pirate"
-  },
-  {
-    "id": 3636,
-    "name": "샬롯 스무디",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2938,13 +2714,6 @@
     "category": "pirate"
   },
   {
-    "id": 3729,
-    "name": "몽키 D. 가프",
-    "stars": "5",
-    "type": "DEX",
-    "category": "pirate"
-  },
-  {
     "id": 3731,
     "name": "송곳 칭자오",
     "stars": "5",
@@ -2952,24 +2721,10 @@
     "category": "pirate"
   },
   {
-    "id": 3751,
-    "name": "오로치",
-    "stars": "5",
-    "type": "QCK",
-    "category": "pirate"
-  },
-  {
     "id": 3753,
     "name": "쿠로즈미 칸주로",
     "stars": "5",
     "type": "QCK",
-    "category": "pirate"
-  },
-  {
-    "id": 3771,
-    "name": "페이지 원",
-    "stars": "5",
-    "type": "STR",
     "category": "pirate"
   },
   {
@@ -3008,13 +2763,6 @@
     "category": "pirate"
   },
   {
-    "id": 3858,
-    "name": "스크래치멘 아푸",
-    "stars": "5",
-    "type": "INT",
-    "category": "pirate"
-  },
-  {
     "id": 3875,
     "name": "사사키",
     "stars": "5",
@@ -3026,13 +2774,6 @@
     "name": "후즈 후",
     "stars": "5",
     "type": "STR",
-    "category": "pirate"
-  },
-  {
-    "id": 3904,
-    "name": "엠포리오 이반코프",
-    "stars": "5",
-    "type": "QCK",
     "category": "pirate"
   },
   {
@@ -3052,13 +2793,6 @@
   {
     "id": 3930,
     "name": "히나",
-    "stars": "5",
-    "type": "PSY",
-    "category": "pirate"
-  },
-  {
-    "id": 3953,
-    "name": "카와마츠",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
