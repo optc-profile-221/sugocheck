@@ -7,6 +7,6 @@ ALLOWED_ORIGIN = "https://optc-profile-221.github.io"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "sugocheck-private-metrics"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_name = "prod-d1-tutorial"
+database_id = "8dae7d81-5a9b-4ce0-a7e9-626ac6c5a768"
 migrations_dir = "migrations"

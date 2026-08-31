@@ -6,30 +6,28 @@ VISITOR_HASH_SECRET과 ADMIN_TOKEN을 파일에 기록하거나 GitHub에 올리
 1. Node.js 설치 후 이 폴더에서 Cloudflare Wrangler를 실행합니다.
    npx wrangler login
 
-2. APAC 위치에 D1 데이터베이스를 생성합니다.
-   npx wrangler d1 create sugocheck-private-metrics --location=apac
+2. 현재 연결된 D1 데이터베이스는 Cloudflare 빠른 시작에서 만든 prod-d1-tutorial이며,
+   database_id는 wrangler.toml에 이미 입력되어 있습니다.
 
-3. 출력된 database_id를 wrangler.toml의 REPLACE_WITH_D1_DATABASE_ID 자리에 입력합니다.
+3. 테이블을 생성합니다.
+   npm run migrate
 
-4. 테이블을 생성합니다.
-   npx wrangler d1 migrations apply sugocheck-private-metrics --remote
-
-5. 충분히 긴 임의 문자열 두 개를 각각 비밀값으로 등록합니다.
+4. 충분히 긴 임의 문자열 두 개를 각각 비밀값으로 등록합니다.
    npx wrangler secret put VISITOR_HASH_SECRET
    npx wrangler secret put ADMIN_TOKEN
 
-6. Worker를 배포합니다.
+5. Worker를 배포합니다.
    npx wrangler deploy
 
-7. 출력된 https://...workers.dev 주소를 메인 프로젝트의 index.html과
+6. 출력된 https://...workers.dev 주소를 메인 프로젝트의 index.html과
    festival-rare.html에 있는 sugocheck-metrics-endpoint meta content에 동일하게 입력합니다.
    이후 sw.js CACHE_NAME을 다음 버전으로 올립니다.
 
-8. 브라우저에서 https://여기에_WORKER주소/admin 을 열고 ADMIN_TOKEN을 입력하면
+7. 브라우저에서 https://여기에_WORKER주소/admin 을 열고 ADMIN_TOKEN을 입력하면
    일일/누적 방문자와 국가·지역 통계를 확인할 수 있습니다. 관리자 페이지 링크는
    본 사이트에 표시되지 않으며 토큰 없이는 통계 데이터에 접근할 수 없습니다.
 
-9. PowerShell 조회 예시:
+8. PowerShell 조회 예시:
    Invoke-RestMethod -Headers @{ Authorization = "Bearer 여기에_ADMIN_TOKEN" } `
      -Uri "https://여기에_WORKER주소/stats?days=30"
 
