@@ -1,0 +1,12 @@
+{
+  "name": "sugocheck-private-metrics",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "migrate": "wrangler d1 migrations apply sugocheck-private-metrics --remote"
+  }
+}
