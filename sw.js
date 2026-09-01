@@ -1,9 +1,10 @@
-const CACHE_NAME = 'sugo-logbook-v37';
+const CACHE_NAME = 'sugo-logbook-v38';
 const APP_SHELL = [
   './',
   './index.html',
   './festival-rare.html',
   './styles.css',
+  './i18n.js',
   './app.js',
   './site-metrics.js',
   './data/characters.json',

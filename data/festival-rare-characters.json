@@ -2,6 +2,7 @@
   {
     "id": 1803,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - East Blue Pirate",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -11,6 +12,7 @@
   {
     "id": 1804,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - East Blue Master Swordsman",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -19,6 +21,7 @@
   {
     "id": 1805,
     "name": "광대 버기",
+    "nameEn": "Buggy the Clown - Unbeatable Chop-Chop Man",
     "stars": "4",
     "type": "QCK",
     "category": "treasure",
@@ -28,6 +31,7 @@
   {
     "id": 1806,
     "name": "버기 선장",
+    "nameEn": "Captain Buggy - Unbeatable Chop-Chop Man",
     "stars": "5",
     "type": "QCK",
     "category": "treasure",
@@ -36,6 +40,7 @@
   {
     "id": 1848,
     "name": "아카이누",
+    "nameEn": "Akainu - Trembling Calamity",
     "stars": "4",
     "type": "STR",
     "category": "treasure",
@@ -45,6 +50,7 @@
   {
     "id": 1849,
     "name": "사카즈키",
+    "nameEn": "Sakazuki - Trembling Calamity",
     "stars": "5",
     "type": "STR",
     "category": "treasure",
@@ -53,6 +59,7 @@
   {
     "id": 1850,
     "name": "스쿼드",
+    "nameEn": "Squard - Traitorous Son",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -62,6 +69,7 @@
   {
     "id": 1851,
     "name": "거대 소용돌이 거미 스쿼드",
+    "nameEn": "Whirl Spider Squard - Traitorous Son",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -70,6 +78,7 @@
   {
     "id": 1884,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Accomplice of the Revolution",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -79,6 +88,7 @@
   {
     "id": 1885,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Slicing Winds Captor",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -87,6 +97,7 @@
   {
     "id": 1886,
     "name": "글라디우스",
+    "nameEn": "Gladius - Guardian of the Third Step",
     "stars": "4",
     "type": "QCK",
     "category": "treasure",
@@ -96,6 +107,7 @@
   {
     "id": 1887,
     "name": "글라디우스",
+    "nameEn": "Gladius - Blast to Capture Slicing Winds",
     "stars": "5",
     "type": "QCK",
     "category": "treasure",
@@ -104,6 +116,7 @@
   {
     "id": 1911,
     "name": "우루지",
+    "nameEn": "Urouge - Destructive Temptations",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -113,6 +126,7 @@
   {
     "id": 1912,
     "name": "우루지",
+    "nameEn": "Urouge - Mercy of 108 Temptations",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -121,6 +135,7 @@
   {
     "id": 1913,
     "name": "네펠타리 비비",
+    "nameEn": "Nefeltari Vivi - Long-Sleeved Kimono Beauty",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -130,6 +145,7 @@
   {
     "id": 1914,
     "name": "네펠타리 비비",
+    "nameEn": "Nefeltari Vivi - Comfortably Elegant Dignitary",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -138,6 +154,7 @@
   {
     "id": 1936,
     "name": "마샬 D. 티치",
+    "nameEn": "Marshall D. Teach - The Darkness that Challenges the Sun",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -147,6 +164,7 @@
   {
     "id": 1937,
     "name": "검은 수염",
+    "nameEn": "Blackbeard - The Darkness that Challenges the Sun",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -155,6 +173,7 @@
   {
     "id": 1938,
     "name": "삿치",
+    "nameEn": "Thatch - Dual-Wielding Swordsman Clutching Darkness",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -164,6 +183,7 @@
   {
     "id": 1939,
     "name": "쌍검의 삿치",
+    "nameEn": "Twin-Blade Thatch - Soul Mourned by Flame",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -172,6 +192,7 @@
   {
     "id": 1967,
     "name": "보아 행콕",
+    "nameEn": "Boa Hancock - Be My Valentine",
     "stars": "4",
     "type": "STR",
     "category": "treasure",
@@ -181,6 +202,7 @@
   {
     "id": 1968,
     "name": "보아 행콕",
+    "nameEn": "Boa Hancock - You're My Valentine",
     "stars": "5",
     "type": "STR",
     "category": "treasure",
@@ -189,6 +211,7 @@
   {
     "id": 1969,
     "name": "미스 발렌타인",
+    "nameEn": "Miss Valentine - Be My Valentine",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -198,6 +221,7 @@
   {
     "id": 1970,
     "name": "미스 발렌타인",
+    "nameEn": "Miss Valentine - You're My Valentine",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -206,6 +230,7 @@
   {
     "id": 2008,
     "name": "바솔로뮤 쿠마",
+    "nameEn": "Bartholomew Kuma - Warlord Who Crushes Hope",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -215,6 +240,7 @@
   {
     "id": 2009,
     "name": "바솔로뮤 쿠마",
+    "nameEn": "Bartholomew Kuma - The Promised Tyrant",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -223,6 +249,7 @@
   {
     "id": 2010,
     "name": "모네",
+    "nameEn": "Monet - Woman Who Attacks the Weak",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -232,6 +259,7 @@
   {
     "id": 2011,
     "name": "모네",
+    "nameEn": "Monet - Snow Woman Who Challenges a Wild Beast",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -240,6 +268,7 @@
   {
     "id": 2059,
     "name": "벤 베크맨",
+    "nameEn": "Ben Beckman - Light-Stopping Gun Barrel",
     "stars": "4",
     "type": "STR",
     "category": "treasure",
@@ -249,6 +278,7 @@
   {
     "id": 2060,
     "name": "벤 베크맨",
+    "nameEn": "Ben Beckman - Light-Threatening Gun Barrel",
     "stars": "5",
     "type": "STR",
     "category": "treasure",
@@ -257,6 +287,7 @@
   {
     "id": 2061,
     "name": "스크래치멘 아푸",
+    "nameEn": "Scratchmen Apoo - Light-Shaking Sound",
     "stars": "4",
     "type": "STR",
     "category": "treasure",
@@ -266,6 +297,7 @@
   {
     "id": 2062,
     "name": "‘바다천둥’ 스크래치멘 아푸",
+    "nameEn": "\"Roar of the Sea\" Scratchmen Apoo - Light-Shaking Sound",
     "stars": "5",
     "type": "STR",
     "category": "treasure",
@@ -274,6 +306,7 @@
   {
     "id": 2131,
     "name": "엠포리오 이반코프",
+    "nameEn": "Emporio Ivankov - New Kama: A New Human",
     "stars": "4",
     "type": "PSY",
     "category": "treasure",
@@ -283,6 +316,7 @@
   {
     "id": 2132,
     "name": "엠포리오 이반코프",
+    "nameEn": "Emporio Ivankov - God of Queens",
     "stars": "5",
     "type": "PSY",
     "category": "treasure",
@@ -291,6 +325,7 @@
   {
     "id": 2133,
     "name": "조즈",
+    "nameEn": "Jozu - Sand-Proof Diamond",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -300,6 +335,7 @@
   {
     "id": 2134,
     "name": "‘다이아몬드’ 조즈",
+    "nameEn": "Diamond Jozu - Sandstorm-Resistant Diamond",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -308,6 +344,7 @@
   {
     "id": 2135,
     "name": "Mr.1",
+    "nameEn": "Mr. 1 - The Blade that Creates Utopia",
     "stars": "4",
     "type": "QCK",
     "category": "treasure"
@@ -315,6 +352,7 @@
   {
     "id": 2168,
     "name": "이누아라시",
+    "nameEn": "Dogstorm - Mokomo Dukedom's Greatest Warrior",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -324,6 +362,7 @@
   {
     "id": 2169,
     "name": "‘낮의 왕’ 이누아라시",
+    "nameEn": "Dogstorm: King of the Day - Mokomo Dukedom's Greatest Warrior",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -332,6 +371,7 @@
   {
     "id": 2170,
     "name": "시실리안",
+    "nameEn": "Shishilian - Mokomo Dukedom's Dogstorm Musketeers Captain",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -341,6 +381,7 @@
   {
     "id": 2171,
     "name": "전력의 시실리안",
+    "nameEn": "Full-Power Shishilian - Mokomo Dukedom's Dogstorm Musketeers Captain",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -349,6 +390,7 @@
   {
     "id": 2206,
     "name": "몽키 D. 루피",
+    "nameEn": "Monkey D. Luffy - Natural Enemy of Skypiea's One and Only Kami",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -358,6 +400,7 @@
   {
     "id": 2207,
     "name": "몽키 D. 루피",
+    "nameEn": "Monkey D. Luffy - Song of the Island",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -366,6 +409,7 @@
   {
     "id": 2208,
     "name": "간 폴",
+    "nameEn": "Ganfor - Guide of Skypiea",
     "stars": "4",
     "type": "INT",
     "category": "treasure",
@@ -375,6 +419,7 @@
   {
     "id": 2209,
     "name": "간 폴",
+    "nameEn": "Ganfor - Return to Grace",
     "stars": "5",
     "type": "INT",
     "category": "treasure",
@@ -383,6 +428,7 @@
   {
     "id": 2256,
     "name": "쥬라큘 미호크",
+    "nameEn": "Dracule Mihawk - Master Swordsman",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -390,6 +436,7 @@
   {
     "id": 2257,
     "name": "포트거스 D. 에이스",
+    "nameEn": "Portgas D. Ace - Spade Pirates",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -397,6 +444,7 @@
   {
     "id": 2258,
     "name": "히그마",
+    "nameEn": "Higuma - Wanted Man",
     "stars": "5",
     "type": "STR",
     "category": "treasure",
@@ -406,6 +454,7 @@
   {
     "id": 2259,
     "name": "히그마",
+    "nameEn": "Higuma - Leader of the Mountain Bandits",
     "stars": "5+",
     "type": "STR",
     "category": "treasure",
@@ -414,6 +463,7 @@
   {
     "id": 2295,
     "name": "모리아",
+    "nameEn": "Moria - Shadowy Lantern: Midnight Halloween Parade",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -421,6 +471,7 @@
   {
     "id": 2296,
     "name": "레일리",
+    "nameEn": "Rayleigh - Demon Lord: Midnight Halloween Parade",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -428,6 +479,7 @@
   {
     "id": 2297,
     "name": "페로나",
+    "nameEn": "Perona - Ghost Nurse: Midnight Halloween Parade",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -435,6 +487,7 @@
   {
     "id": 2358,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Holy Night Reindeer",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -442,6 +495,7 @@
   {
     "id": 2359,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Christmas Surprise",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -449,6 +503,7 @@
   {
     "id": 2360,
     "name": "네코마무시",
+    "nameEn": "Cat Viper - King of the Holy Night",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -456,6 +511,7 @@
   {
     "id": 2383,
     "name": "유스타스 키드",
+    "nameEn": "Eustass Kid - Problematic Pirate Alliance",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -463,6 +519,7 @@
   {
     "id": 2384,
     "name": "바질 호킨스",
+    "nameEn": "Basil Hawkins - Problematic Pirate Alliance",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -470,6 +527,7 @@
   {
     "id": 2385,
     "name": "스크래치멘 아푸",
+    "nameEn": "Scratchmen Apoo - Problematic Pirate Alliance",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -477,6 +535,7 @@
   {
     "id": 2437,
     "name": "코라손",
+    "nameEn": "Corazon - Plan to Save Law",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -484,6 +543,7 @@
   {
     "id": 2438,
     "name": "트라팔가 로",
+    "nameEn": "Trafalgar Law - 13 Year Wait",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -491,6 +551,7 @@
   {
     "id": 2466,
     "name": "징베",
+    "nameEn": "Jinbe - Tea Party Intruder",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -498,6 +559,7 @@
   {
     "id": 2467,
     "name": "파운드",
+    "nameEn": "Pound - Blessing for a Daughter",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -505,6 +567,7 @@
   {
     "id": 2506,
     "name": "A･O",
+    "nameEn": "A.O.",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -512,6 +575,7 @@
   {
     "id": 2507,
     "name": "키자루",
+    "nameEn": "Kizaru - Unclear Reaction",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -519,6 +583,7 @@
   {
     "id": 2508,
     "name": "마르코",
+    "nameEn": "Marco - Tranquil Blue Flame",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -526,6 +591,7 @@
   {
     "id": 2553,
     "name": "록스타",
+    "nameEn": "Rockstar",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -533,6 +599,7 @@
   {
     "id": 2554,
     "name": "야솝",
+    "nameEn": "Yasopp - Red-Hair Pirates Officer",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -540,6 +607,7 @@
   {
     "id": 2555,
     "name": "럭키 루",
+    "nameEn": "Lucky Roux - Red-Hair Pirates Officer",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -547,6 +615,7 @@
   {
     "id": 2579,
     "name": "묘스가르드 성",
+    "nameEn": "Saint Myosgard",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -554,6 +623,7 @@
   {
     "id": 2580,
     "name": "사이",
+    "nameEn": "Sai - Kano Kingdom Soldier at the Reverie",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -561,6 +631,7 @@
   {
     "id": 2581,
     "name": "넵튠",
+    "nameEn": "Neptune - King of the Ryugu Kingdom at the Reverie",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -568,6 +639,7 @@
   {
     "id": 2612,
     "name": "빅 맘",
+    "nameEn": "Big Mom - Four Emperors in Contact",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -575,6 +647,7 @@
   {
     "id": 2613,
     "name": "카이도",
+    "nameEn": "Kaido - One of the Four Emperors",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -582,6 +655,7 @@
   {
     "id": 2614,
     "name": "도플라밍고",
+    "nameEn": "Doflamingo - Lonely Solitary Cell",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -589,6 +663,7 @@
   {
     "id": 2687,
     "name": "센고쿠",
+    "nameEn": "Sengoku - Cunning Officer in the Paramount War",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -596,6 +671,7 @@
   {
     "id": 2688,
     "name": "비스타",
+    "nameEn": "Vista - Flower Sword in the Paramount War",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -603,6 +679,7 @@
   {
     "id": 2725,
     "name": "소낙비 칸주로",
+    "nameEn": "Evening Shower Kanjuro - Samurai from 20 Years in the Past",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -610,6 +687,7 @@
   {
     "id": 2726,
     "name": "안개의 라이조",
+    "nameEn": "Raizo of the Mist - Ninja from 20 Years in the Past",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -617,6 +695,7 @@
   {
     "id": 2727,
     "name": "여우불 킨에몬",
+    "nameEn": "Foxfire Kin'emon - Samurai from 20 Years in the Past",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -624,6 +703,7 @@
   {
     "id": 2759,
     "name": "아론",
+    "nameEn": "Arlong - Ruler of Coco Village",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -631,6 +711,7 @@
   {
     "id": 2760,
     "name": "미스 더블 핑거",
+    "nameEn": "Miss Doublefinger - Battle in the Alley Behind Medi Assembly Hall",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -638,6 +719,7 @@
   {
     "id": 2761,
     "name": "칼리파",
+    "nameEn": "Kalifa - Bubble Master",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -645,6 +727,7 @@
   {
     "id": 2790,
     "name": "코즈키 모모노스케",
+    "nameEn": "Kozuki Momonosuke",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -652,6 +735,7 @@
   {
     "id": 2820,
     "name": "유스타스 키드",
+    "nameEn": "Eustass Kid - The Shining Stars of the Prison Yard",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -659,6 +743,7 @@
   {
     "id": 2821,
     "name": "바질 호킨스",
+    "nameEn": "Basil Hawkins - He Who Follows the Powerful",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -666,6 +751,7 @@
   {
     "id": 2822,
     "name": "트라팔가 로",
+    "nameEn": "Trafalgar Law - Ninja-Pirate-Mink-Samurai Alliance",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -673,6 +759,7 @@
   {
     "id": 2847,
     "name": "맨셸리",
+    "nameEn": "Mansherry - Dande-Donor Request",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -680,6 +767,7 @@
   {
     "id": 2848,
     "name": "슈거",
+    "nameEn": "Sugar - Defeating the Hero",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -687,6 +775,7 @@
   {
     "id": 2849,
     "name": "베이비 5",
+    "nameEn": "Baby 5 - The Arms-Arms Fruit's Full-Body Weapon",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -694,6 +783,7 @@
   {
     "id": 2876,
     "name": "Mr.0",
+    "nameEn": "Mr. 0 - Duel in the Underground Temple",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -701,6 +791,7 @@
   {
     "id": 2877,
     "name": "미스 올 선데이",
+    "nameEn": "Miss All Sunday - Flower-Flower Fruit User",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -708,6 +799,7 @@
   {
     "id": 2878,
     "name": "언럭키즈",
+    "nameEn": "Unluckies",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -715,6 +807,7 @@
   {
     "id": 2910,
     "name": "호디 존스",
+    "nameEn": "Hody Jones - Coup d'Etat of Betrayal",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -722,6 +815,7 @@
   {
     "id": 2911,
     "name": "케이미",
+    "nameEn": "Camie - Many Friends",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -729,6 +823,7 @@
   {
     "id": 2912,
     "name": "반더 덱켄 9세",
+    "nameEn": "Vander Decken IX - Proof of a Twisted Love",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -736,6 +831,7 @@
   {
     "id": 2992,
     "name": "쿄시로",
+    "nameEn": "Kyoshiro - Mercy Towards the Guilty",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -743,6 +839,7 @@
   {
     "id": 2993,
     "name": "규키마루",
+    "nameEn": "Gyukimaru",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -750,6 +847,7 @@
   {
     "id": 2994,
     "name": "오키쿠",
+    "nameEn": "Okiku - Teahouse Girl with a Secret",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -757,6 +855,7 @@
   {
     "id": 3019,
     "name": "빈스모크 이치디",
+    "nameEn": "Vinsmoke Ichiji - The Science Military's True Worth",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -764,6 +863,7 @@
   {
     "id": 3020,
     "name": "빈스모크 니디",
+    "nameEn": "Vinsmoke Niji - The Science Military's True Worth",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -771,6 +871,7 @@
   {
     "id": 3021,
     "name": "빈스모크 욘디",
+    "nameEn": "Vinsmoke Yonji - The Science Military's True Worth",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -778,6 +879,7 @@
   {
     "id": 3056,
     "name": "네펠타리 비비",
+    "nameEn": "Nefeltari Vivi - Princess at the Summer Festival",
     "stars": "4",
     "type": "PSY",
     "category": "treasure",
@@ -787,6 +889,7 @@
   {
     "id": 3057,
     "name": "네펠타리 비비",
+    "nameEn": "Nefeltari Vivi - Princess Enjoying the Summer Festival",
     "stars": "5",
     "type": "PSY",
     "category": "treasure",
@@ -795,6 +898,7 @@
   {
     "id": 3058,
     "name": "페로나",
+    "nameEn": "Perona - Ghost Princess at the Summer Festival",
     "stars": "4",
     "type": "DEX",
     "category": "treasure",
@@ -804,6 +908,7 @@
   {
     "id": 3059,
     "name": "페로나",
+    "nameEn": "Perona - Ghost Princess Enjoying the Summer Festival",
     "stars": "5",
     "type": "DEX",
     "category": "treasure",
@@ -812,6 +917,7 @@
   {
     "id": 3087,
     "name": "닭 백작",
+    "nameEn": "Count Niwatori - Feud from Five Years Ago",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -819,6 +925,7 @@
   {
     "id": 3088,
     "name": "나좀즈",
+    "nameEn": "Mystoms - Mystery Savior",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -826,6 +933,7 @@
   {
     "id": 3089,
     "name": "알라딘",
+    "nameEn": "Aladdin - Last Bastion",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -833,6 +941,7 @@
   {
     "id": 3112,
     "name": "상디 할로윈 디너",
+    "nameEn": "Sanji: Halloween Dinner - Happy Spooky Halloween!",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -840,6 +949,7 @@
   {
     "id": 3113,
     "name": "시폰 스위트 마더",
+    "nameEn": "Chiffon: Sweet Mother - Happy Spooky Halloween!",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -847,6 +957,7 @@
   {
     "id": 3114,
     "name": "빅 맘 스위트 할로윈 나이트",
+    "nameEn": "Big Mom: Sweet Halloween Night - Happy Spooky Halloween!",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -854,6 +965,7 @@
   {
     "id": 3146,
     "name": "루피타로",
+    "nameEn": "Luffytaro - Prisoners' Hope",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -861,6 +973,7 @@
   {
     "id": 3147,
     "name": "효 할아범",
+    "nameEn": "Old Man Hyo",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -868,6 +981,7 @@
   {
     "id": 3148,
     "name": "도봉",
+    "nameEn": "Dobon - Excavation Labor Camp Vice Warden",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -875,6 +989,7 @@
   {
     "id": 3190,
     "name": "몽키 D. 루피",
+    "nameEn": "Monkey D. Luffy - Delinquent Kids' Christmas",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -882,6 +997,7 @@
   {
     "id": 3191,
     "name": "에이스",
+    "nameEn": "Ace - Delinquent Kids' Christmas",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -889,6 +1005,7 @@
   {
     "id": 3192,
     "name": "사보",
+    "nameEn": "Sabo - Delinquent Kids' Christmas",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -896,6 +1013,7 @@
   {
     "id": 3214,
     "name": "상고로",
+    "nameEn": "Sangoro - Beauty Before One's Very Eyes",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -903,6 +1021,7 @@
   {
     "id": 3215,
     "name": "프라노스케",
+    "nameEn": "Franosuke - Beauty Before One's Very Eyes",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -910,6 +1029,7 @@
   {
     "id": 3216,
     "name": "우소하치",
+    "nameEn": "Usohachi - Beauty Before One's Very Eyes",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -917,6 +1037,7 @@
   {
     "id": 3236,
     "name": "오링",
+    "nameEn": "Olin - Emperor with Amnesia",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -924,6 +1045,7 @@
   {
     "id": 3237,
     "name": "쵸파에몬",
+    "nameEn": "Chopperemon - Shocking Encounter",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -931,6 +1053,7 @@
   {
     "id": 3238,
     "name": "오타마",
+    "nameEn": "Otama - Unrelenting Advance",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -938,6 +1061,7 @@
   {
     "id": 3270,
     "name": "키자루",
+    "nameEn": "Kizaru - Justice Confronting Evil",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -945,6 +1069,7 @@
   {
     "id": 3271,
     "name": "몽키 D. 가프",
+    "nameEn": "Monkey D. Garp - Between Evil and Justice",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -952,6 +1077,7 @@
   {
     "id": 3272,
     "name": "오니구모",
+    "nameEn": "Onigumo - Justice Confronting Evil",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -959,6 +1085,7 @@
   {
     "id": 3294,
     "name": "반 오거",
+    "nameEn": "Van Ogre - Unmatched Sniper",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -966,6 +1093,7 @@
   {
     "id": 3295,
     "name": "도크 Q",
+    "nameEn": "Doc Q - Lucky Man",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -973,6 +1101,7 @@
   {
     "id": 3296,
     "name": "라피트",
+    "nameEn": "Lafitte - Fifth Ship Captain of the Blackbeard Pirates",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -980,6 +1109,7 @@
   {
     "id": 3365,
     "name": "몽키 D. 루피",
+    "nameEn": "Monkey D. Luffy - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -987,6 +1117,7 @@
   {
     "id": 3366,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -994,6 +1125,7 @@
   {
     "id": 3367,
     "name": "나미",
+    "nameEn": "Nami - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1001,6 +1133,7 @@
   {
     "id": 3386,
     "name": "키쿠노죠",
+    "nameEn": "Kikunojo - Akazaya Samurai",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1008,6 +1141,7 @@
   {
     "id": 3387,
     "name": "라이조",
+    "nameEn": "Raizo - Akazaya Samurai",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1015,6 +1149,7 @@
   {
     "id": 3388,
     "name": "카와마츠",
+    "nameEn": "Kawamatsu - Akazaya Samurai",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1022,6 +1157,7 @@
   {
     "id": 3412,
     "name": "타시기",
+    "nameEn": "Tashigi - Captain Watching the Summer Festival",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1029,6 +1165,7 @@
   {
     "id": 3413,
     "name": "마키",
+    "nameEn": "Makino - Proprietor Running the Summer Festival",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1036,6 +1173,7 @@
   {
     "id": 3414,
     "name": "히나",
+    "nameEn": "Hina - Black Cage Watching the Summer Festival",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1043,6 +1181,7 @@
   {
     "id": 3439,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - Swordsman in Disguise",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1050,6 +1189,7 @@
   {
     "id": 3440,
     "name": "상디",
+    "nameEn": "Sanji - Cook in Disguise",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1057,6 +1197,7 @@
   {
     "id": 3441,
     "name": "나미",
+    "nameEn": "Nami - Navigator in Disguise",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1064,6 +1205,7 @@
   {
     "id": 3442,
     "name": "브룩",
+    "nameEn": "Brook - Musician in Disguise",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1071,6 +1213,7 @@
   {
     "id": 3463,
     "name": "카라스 할로윈 크로우",
+    "nameEn": "Karasu: Halloween Crow - Night of Halloween",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1078,6 +1221,7 @@
   {
     "id": 3464,
     "name": "몰리 할로윈 좀비 나이트",
+    "nameEn": "Morley: Zombie-Filled Halloween Night - Night of Halloween",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1085,6 +1229,7 @@
   {
     "id": 3484,
     "name": "로브 루치",
+    "nameEn": "Rob Lucci - Six Powers Taken to the Extreme",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1092,6 +1237,7 @@
   {
     "id": 3485,
     "name": "갓 에넬",
+    "nameEn": "Kami Eneru - Omnipotent Kami of Lightning",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1099,6 +1245,7 @@
   {
     "id": 3502,
     "name": "킨에몬",
+    "nameEn": "Kin'emon - With His Liege",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1106,6 +1253,7 @@
   {
     "id": 3503,
     "name": "덴지로",
+    "nameEn": "Denjiro - With His Liege",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1113,6 +1261,7 @@
   {
     "id": 3504,
     "name": "오츠루",
+    "nameEn": "Otsuru - Waitress",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1120,6 +1269,7 @@
   {
     "id": 3524,
     "name": "시저 클라운",
+    "nameEn": "Caesar Clown - Ruler of the Land of the Dead",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1127,6 +1277,7 @@
   {
     "id": 3525,
     "name": "엠포리오 이반코프",
+    "nameEn": "Emporio Ivankov - Surprising Entrance",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1134,6 +1285,7 @@
   {
     "id": 3544,
     "name": "페드로",
+    "nameEn": "Pedro - For the Dawn",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1141,6 +1293,7 @@
   {
     "id": 3545,
     "name": "페콤즈",
+    "nameEn": "Pekoms - Rampaging Sulong",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1148,6 +1301,7 @@
   {
     "id": 3564,
     "name": "이누아라시",
+    "nameEn": "Dogstorm - Sulong Facing the Dragon",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1155,6 +1309,7 @@
   {
     "id": 3565,
     "name": "네코마무시",
+    "nameEn": "Cat Viper - Sulong Facing the Dragon",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1162,6 +1317,7 @@
   {
     "id": 3584,
     "name": "나미",
+    "nameEn": "Nami - Tearful Plea",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1169,6 +1325,7 @@
   {
     "id": 3585,
     "name": "오타마",
+    "nameEn": "Otama - Into the Battle With Komachiyo",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1176,6 +1333,7 @@
   {
     "id": 3586,
     "name": "우솝",
+    "nameEn": "Usopp - Tearful Struggle",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1183,6 +1341,7 @@
   {
     "id": 3642,
     "name": "지저스 바제스",
+    "nameEn": "Jesus Burgess - Champion Targeting Power-Users",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1190,6 +1349,7 @@
   {
     "id": 3643,
     "name": "비의 시류",
+    "nameEn": "Shiryu of the Rain - User of the Clear-Clear Fruit",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1197,6 +1357,7 @@
   {
     "id": 3659,
     "name": "나미",
+    "nameEn": "Nami - Navigator Relaxing at Sea",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1204,6 +1365,7 @@
   {
     "id": 3660,
     "name": "로빈",
+    "nameEn": "Robin - Archaeologist Gazing at the Sea",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1211,6 +1373,7 @@
   {
     "id": 3661,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Ship Doctor Floating in the Sea",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1218,6 +1381,7 @@
   {
     "id": 3686,
     "name": "징베",
+    "nameEn": "Jinbe - Straw Hat Pirates Enjoying the FES",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1225,6 +1389,7 @@
   {
     "id": 3687,
     "name": "프랑키",
+    "nameEn": "Franky - Straw Hat Pirates Enjoying the FES",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1232,6 +1397,7 @@
   {
     "id": 3688,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - Straw Hat Pirates Enjoying the FES",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1239,6 +1405,7 @@
   {
     "id": 3732,
     "name": "스모커",
+    "nameEn": "Smoker - Swapped Navy Officer",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1246,6 +1413,7 @@
   {
     "id": 3733,
     "name": "타시기",
+    "nameEn": "Tashigi - Swapped Navy Officer",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1253,6 +1421,7 @@
   {
     "id": 3776,
     "name": "애늙은이 쵸파",
+    "nameEn": "Baby Gramps Chopper",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1260,6 +1429,7 @@
   {
     "id": 3777,
     "name": "상디",
+    "nameEn": "Sanji - Carrying the Wounded",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1267,6 +1437,7 @@
   {
     "id": 3798,
     "name": "갓 에넬",
+    "nameEn": "Kami Eneru - Kami Who Obliterates All",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1274,6 +1445,7 @@
   {
     "id": 3799,
     "name": "오움",
+    "nameEn": "Ohm - Inescapable Iron Challenge",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1281,6 +1453,7 @@
   {
     "id": 3800,
     "name": "게다츠&슈라&사토리",
+    "nameEn": "Gedatsu & Shura & Satori",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1288,6 +1461,7 @@
   {
     "id": 3819,
     "name": "마르코",
+    "nameEn": "Marco - Young Blue Bird Dancing in Battle",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1295,6 +1469,7 @@
   {
     "id": 3820,
     "name": "화이티 베이",
+    "nameEn": "Whitey Bay - Young Witch Dancing at Sunset",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1302,6 +1477,7 @@
   {
     "id": 3821,
     "name": "마샬 D. 티치",
+    "nameEn": "Marshall D. Teach - Young Pirate Rushing to Battle",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1309,6 +1485,7 @@
   {
     "id": 3862,
     "name": "마샬 D. 티치",
+    "nameEn": "Marshall D. Teach - Testing His Stolen Powers",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1316,6 +1493,7 @@
   {
     "id": 3863,
     "name": "‘괴승’ 우루지",
+    "nameEn": "\"Mad Monk\" Urouge - All-Out Retaliation",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1323,6 +1501,7 @@
   {
     "id": 3934,
     "name": "샬롯 푸딩",
+    "nameEn": "Charlotte Pudding - Falling Tears",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1330,6 +1509,7 @@
   {
     "id": 3935,
     "name": "샬롯 스무디",
+    "nameEn": "Charlotte Smoothie - Welcoming Guests",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1337,6 +1517,7 @@
   {
     "id": 3962,
     "name": "시모츠키 우시마루",
+    "nameEn": "Shimotsuki Ushimaru",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1344,6 +1525,7 @@
   {
     "id": 3963,
     "name": "후게츠 오무스비",
+    "nameEn": "Fugetsu Omusubi",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1351,6 +1533,7 @@
   {
     "id": 3964,
     "name": "우즈키 텐푸라",
+    "nameEn": "Uzuki Tempura",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1358,6 +1541,7 @@
   {
     "id": 3978,
     "name": "조로",
+    "nameEn": "Zoro - Peerless Lending a Favor",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1365,6 +1549,7 @@
   {
     "id": 3979,
     "name": "상디",
+    "nameEn": "Sanji - Peerless Returning the Favor",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1372,6 +1557,7 @@
   {
     "id": 3980,
     "name": "라이조",
+    "nameEn": "Raizo - Face-Off Within the Flames",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1379,6 +1565,7 @@
   {
     "id": 4004,
     "name": "레이즈 맥스",
+    "nameEn": "Raise Max",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1386,6 +1573,7 @@
   {
     "id": 4005,
     "name": "더블 다운&리카&템포",
+    "nameEn": "Double Down & Ricca & Tempo",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1393,6 +1581,7 @@
   {
     "id": 4051,
     "name": "사카즈키",
+    "nameEn": "Sakazuki - Justice Eradicating Evil",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1400,6 +1589,7 @@
   {
     "id": 4052,
     "name": "쿠로우마",
+    "nameEn": "Kurouma",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1407,6 +1597,7 @@
   {
     "id": 4072,
     "name": "나미",
+    "nameEn": "Nami - Relaxing Moment in the Bath",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1414,6 +1605,7 @@
   {
     "id": 4073,
     "name": "히요리",
+    "nameEn": "Hiyori - Casual Conversation in the Bath",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1421,6 +1613,7 @@
   {
     "id": 4092,
     "name": "상디",
+    "nameEn": "Sanji - Encountering the Beauty",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1428,6 +1621,7 @@
   {
     "id": 4093,
     "name": "나미",
+    "nameEn": "Nami - Foreseeing a New Place",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1435,6 +1629,7 @@
   {
     "id": 4094,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Locating the Enemy",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1442,6 +1637,7 @@
   {
     "id": 4134,
     "name": "Dr. 베가펑크 ‘에디슨’&Dr. 베가펑크 ‘피타고라스’",
+    "nameEn": "Dr. Vegapunk \"Edison the Thinker\" & Dr. Vegapunk \"Pythagoras the Wise\" - PUNK-03 & PUNK-04",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1449,6 +1645,7 @@
   {
     "id": 4135,
     "name": "Dr. 베가펑크 ‘요크’",
+    "nameEn": "Dr. Vegapunk \"York the Greedy\" - PUNK-06",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1456,6 +1653,7 @@
   {
     "id": 4180,
     "name": "카야",
+    "nameEn": "Kaya - Unexpected News",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1463,6 +1661,7 @@
   {
     "id": 4181,
     "name": "양파&피망&홍당무",
+    "nameEn": "Onion & Pepper & Carrot - Maintaining the Fire of Ambition",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1470,6 +1669,7 @@
   {
     "id": 4194,
     "name": "톰",
+    "nameEn": "Tom - Pride of Being Neither Good nor Evil",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1477,6 +1677,7 @@
   {
     "id": 4195,
     "name": "아이스버그",
+    "nameEn": "Iceburg - Assisting the Ship of Dreams",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1484,6 +1685,7 @@
   {
     "id": 4228,
     "name": "스튜시",
+    "nameEn": "Stussy - Grasping an Unusual Situation",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1491,6 +1693,7 @@
   {
     "id": 4229,
     "name": "S-스네이크&S-호크&S-샤크",
+    "nameEn": "S-Snake & S-Hawk & S-Shark",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1498,6 +1701,7 @@
   {
     "id": 4251,
     "name": "몽키 D. 가프",
+    "nameEn": "Monkey D. Garp - Self-Training Battleship Bag",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1505,6 +1709,7 @@
   {
     "id": 4252,
     "name": "쿠잔",
+    "nameEn": "Kuzan - Imitating His Mentor's Battleship Bag",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1512,6 +1717,7 @@
   {
     "id": 4283,
     "name": "센토마루",
+    "nameEn": "Sentomaru - Vegapunk's Bodyguard",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1519,6 +1725,7 @@
   {
     "id": 4284,
     "name": "파시피스타 마크 Ⅲ",
+    "nameEn": "Pacifista Mk. III",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1526,6 +1733,7 @@
   {
     "id": 4301,
     "name": "린드 버그",
+    "nameEn": "Lindbergh - Assaulting Army Captain",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1533,6 +1741,7 @@
   {
     "id": 4302,
     "name": "벨로 베티",
+    "nameEn": "Belo Betty - Welcoming Army Captain",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1540,6 +1749,7 @@
   {
     "id": 4315,
     "name": "Sir 크로커다일",
+    "nameEn": "Sir Crocodile - Executives Seeing the Stone",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1547,6 +1757,7 @@
   {
     "id": 4316,
     "name": "쥬라큘 미호크",
+    "nameEn": "Dracule Mihawk - Executives Seeing the Stone",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1554,6 +1765,7 @@
   {
     "id": 4346,
     "name": "코즈키 히요리",
+    "nameEn": "Kozuki Hiyori - Napping with the Swordsman",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1561,6 +1773,7 @@
   {
     "id": 4347,
     "name": "페로나",
+    "nameEn": "Perona - Devoted Care",
     "stars": "5",
     "type": "PSY",
     "category": "treasure"
@@ -1568,6 +1781,7 @@
   {
     "id": 4402,
     "name": "마샬 D. 티치",
+    "nameEn": "Marshall D. Teach - Incoming News",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1575,6 +1789,7 @@
   {
     "id": 4404,
     "name": "마르코",
+    "nameEn": "Marco - Incoming News",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1582,6 +1797,7 @@
   {
     "id": 4420,
     "name": "코알라",
+    "nameEn": "Koala - Tears of Relief",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1589,6 +1805,7 @@
   {
     "id": 4421,
     "name": "핵",
+    "nameEn": "Hack - Shocking News",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1596,6 +1813,7 @@
   {
     "id": 4484,
     "name": "빈스모크 이치디",
+    "nameEn": "Vinsmoke Ichiji - Evil Warriors Led by Garuda",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1603,6 +1821,7 @@
   {
     "id": 4485,
     "name": "빈스모크 니디",
+    "nameEn": "Vinsmoke Niji - Evil Warriors Led by Garuda",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1610,6 +1829,7 @@
   {
     "id": 4486,
     "name": "빈스모크 욘디",
+    "nameEn": "Vinsmoke Yonji - Evil Warriors Led by Garuda",
     "stars": "5",
     "type": "DEX",
     "category": "treasure"
@@ -1617,6 +1837,7 @@
   {
     "id": 4500,
     "name": "클라우 D. 클로버",
+    "nameEn": "Clou D. Clover - Erased Histories",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1624,6 +1845,7 @@
   {
     "id": 4501,
     "name": "시저 클라운",
+    "nameEn": "Caesar Clown - Laughing at Slaughter",
     "stars": "5",
     "type": "STR",
     "category": "treasure"
@@ -1631,6 +1853,7 @@
   {
     "id": 4516,
     "name": "비올라",
+    "nameEn": "Viola - An Officer's Responsibility",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1638,6 +1861,7 @@
   {
     "id": 4517,
     "name": "맨셸리 ",
+    "nameEn": "Mansherry - Gratefully-Accepted Healing Power",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1645,6 +1869,7 @@
   {
     "id": 4545,
     "name": "사카즈키",
+    "nameEn": "Sakazuki - Fleet Admiral Receiving the Report",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1652,6 +1877,7 @@
   {
     "id": 4546,
     "name": "센토마루",
+    "nameEn": "Sentomaru - Remembering the Old Days",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1659,6 +1885,7 @@
   {
     "id": 4592,
     "name": "스탄센",
+    "nameEn": "Stansen",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1666,6 +1893,7 @@
   {
     "id": 4593,
     "name": "골드버그&게루즈",
+    "nameEn": "Goldberg & Gerd",
     "stars": "5",
     "type": "INT",
     "category": "treasure"
@@ -1673,6 +1901,7 @@
   {
     "id": 4609,
     "name": "도크 Q",
+    "nameEn": "Doc Q - Apparent Fatigue",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1680,6 +1909,7 @@
   {
     "id": 4610,
     "name": "쿠잔",
+    "nameEn": "Kuzan - Inescapable Freeze",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1687,6 +1917,7 @@
   {
     "id": 4624,
     "name": "론즈",
+    "nameEn": "Lonz - Giants Attacking Whitebeard",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1694,6 +1925,7 @@
   {
     "id": 4625,
     "name": "존 자이언트",
+    "nameEn": "John Giant - Giants Attacking Whitebeard",
     "stars": "5",
     "type": "QCK",
     "category": "treasure"
@@ -1701,6 +1933,7 @@
   {
     "id": 2756,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Kung Fu Style",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1708,6 +1941,7 @@
   {
     "id": 2793,
     "name": "모네",
+    "nameEn": "Monet - White Christmas Party",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1715,6 +1949,7 @@
   {
     "id": 2832,
     "name": "아카이누",
+    "nameEn": "Akainu - Critical Moment of an Era",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1722,6 +1957,7 @@
   {
     "id": 2853,
     "name": "벨로 베티",
+    "nameEn": "Belo Betty - During the Revolutionary Army Strategy Meeting Break",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -1729,6 +1965,7 @@
   {
     "id": 2887,
     "name": "나이트메어 루피",
+    "nameEn": "Nightmare Luffy - Nightmare-Ending Warrior",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1736,6 +1973,7 @@
   {
     "id": 2888,
     "name": "나미",
+    "nameEn": "Nami - Thriller Bark's Beautiful Bride",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1743,6 +1981,7 @@
   {
     "id": 2889,
     "name": "브룩",
+    "nameEn": "Brook - Humming Swordsman",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1750,6 +1989,7 @@
   {
     "id": 2996,
     "name": "썬더소니아&마리골드",
+    "nameEn": "Sandersonia & Marigold - The Snake-Snake Fruit Sisters",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1757,6 +1997,7 @@
   {
     "id": 2997,
     "name": "마가렛",
+    "nameEn": "Marguerite - Straw Hat Luffy's Savior",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1764,6 +2005,7 @@
   {
     "id": 2998,
     "name": "뇽 할멈",
+    "nameEn": "Grandma Nyon",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1771,6 +2013,7 @@
   {
     "id": 3120,
     "name": "베크맨 밤중 담배 한 모금",
+    "nameEn": "Beckman: Evening Respite - Happy Spooky Halloween!",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1778,6 +2021,7 @@
   {
     "id": 3121,
     "name": "야솝 어두운 밤 속 저격",
+    "nameEn": "Yasopp: Sharpshooter in the Night - Happy Spooky Halloween!",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1785,6 +2029,7 @@
   {
     "id": 3149,
     "name": "베포&샤치&펭귄",
+    "nameEn": "Bepo & Shachi & Penguin",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1792,6 +2037,7 @@
   {
     "id": 3151,
     "name": "트라팔가 로",
+    "nameEn": "Trafalgar Law - Troubles Ahead",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1799,6 +2045,7 @@
   {
     "id": 3152,
     "name": "조로주로",
+    "nameEn": "Zorojuro - Three-Sword Style Ronin",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1806,6 +2053,7 @@
   {
     "id": 3205,
     "name": "샬롯 시폰",
+    "nameEn": "Charlotte Chiffon - For My Family, With Love",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1813,6 +2061,7 @@
   {
     "id": 3212,
     "name": "캐럿",
+    "nameEn": "Carrot - Carrot-Carrying Rabbit",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1820,6 +2069,7 @@
   {
     "id": 3242,
     "name": "페로스페로",
+    "nameEn": "Perospero - Candy Entering Enemy Territory",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1827,6 +2077,7 @@
   {
     "id": 3274,
     "name": "크로커다일",
+    "nameEn": "Crocodile - Sand Entering the Battlefield",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1834,6 +2085,7 @@
   {
     "id": 3301,
     "name": "빈스모크 저지",
+    "nameEn": "Vinsmoke Judge - Electrifying Garuda",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1841,6 +2093,7 @@
   {
     "id": 3302,
     "name": "브룩",
+    "nameEn": "Brook - Soul King's Hidden Strength",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1848,6 +2101,7 @@
   {
     "id": 3370,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -1855,6 +2109,7 @@
   {
     "id": 3371,
     "name": "우솝",
+    "nameEn": "Usopp - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -1862,6 +2117,7 @@
   {
     "id": 3372,
     "name": "프랑키",
+    "nameEn": "Franky - MUGIWARA 56",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -1869,6 +2125,7 @@
   {
     "id": 3392,
     "name": "킨에몬",
+    "nameEn": "Kin'emon - Confronting the Betrayer",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1876,6 +2133,7 @@
   {
     "id": 3418,
     "name": "Mr.2 봉쿠레",
+    "nameEn": "Mr. 2 Bon Clay - Kama Twirling Through Hell",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1883,6 +2141,7 @@
   {
     "id": 3445,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Archeologist in Disguise",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -1890,6 +2149,7 @@
   {
     "id": 3446,
     "name": "쵸파&우솝",
+    "nameEn": "Chopper & Usopp - Ship Doctor and Sniper in Disguise",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1897,6 +2157,7 @@
   {
     "id": 3447,
     "name": "프랑키",
+    "nameEn": "Franky - Shipwright in Disguise",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1904,6 +2165,7 @@
   {
     "id": 3468,
     "name": "비올라 할로윈 댄스파티",
+    "nameEn": "Viola: Halloween Dance Party - Night of Halloween",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1911,6 +2173,7 @@
   {
     "id": 3487,
     "name": "버기",
+    "nameEn": "Buggy - Battle at Orange Town",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1918,6 +2181,7 @@
   {
     "id": 3488,
     "name": "백계의 크로",
+    "nameEn": "Captain Kuro of the Thousand Plans - Battle on the Hill",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1925,6 +2189,7 @@
   {
     "id": 3509,
     "name": "오로치",
+    "nameEn": "Orochi - Irate Shogun",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1932,6 +2197,7 @@
   {
     "id": 3528,
     "name": "포트거스 D. 에이스",
+    "nameEn": "Portgas D. Ace - Memories of the Land of Wano",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1939,6 +2205,7 @@
   {
     "id": 3529,
     "name": "마르코",
+    "nameEn": "Marco - Azure Bird Arriving in Wano",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1946,6 +2213,7 @@
   {
     "id": 3548,
     "name": "미야기&트리스탄",
+    "nameEn": "Miyagi & Tristan",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1953,6 +2221,7 @@
   {
     "id": 3549,
     "name": "밀키",
+    "nameEn": "Milky",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1960,6 +2229,7 @@
   {
     "id": 3568,
     "name": "코무라사키",
+    "nameEn": "Komurasaki - Oiran's Way of Life",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -1967,6 +2237,7 @@
   {
     "id": 3569,
     "name": "시노부",
+    "nameEn": "Shinobu - Mature Charm",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1974,6 +2245,7 @@
   {
     "id": 3591,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - Advancing to the Top",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -1981,6 +2253,7 @@
   {
     "id": 3623,
     "name": "흰 수염",
+    "nameEn": "Whitebeard - Meeting in Uncharted Lands",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1988,6 +2261,7 @@
   {
     "id": 3624,
     "name": "비스타",
+    "nameEn": "Vista - Clashing Young Pirate",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -1995,6 +2269,7 @@
   {
     "id": 3646,
     "name": "버기&갤디노",
+    "nameEn": "Buggy & Galdino - Forming the Prison Break Alliance",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2002,6 +2277,7 @@
   {
     "id": 3647,
     "name": "이나즈마",
+    "nameEn": "Inazuma - Snipping Through the Ground",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2009,6 +2285,7 @@
   {
     "id": 3664,
     "name": "우솝",
+    "nameEn": "Usopp - Sniper Enjoying the Sea",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2016,6 +2293,7 @@
   {
     "id": 3665,
     "name": "브룩",
+    "nameEn": "Brook - Musician Playing at Sea",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2023,6 +2301,7 @@
   {
     "id": 3690,
     "name": "샬롯 오븐",
+    "nameEn": "Charlotte Oven - Burning Fists at the FES",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2030,6 +2309,7 @@
   {
     "id": 3691,
     "name": "샬롯 브륄레",
+    "nameEn": "Charlotte Brulee - Mirrors at the FES",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2037,6 +2317,7 @@
   {
     "id": 3692,
     "name": "샬롯 카타쿠리",
+    "nameEn": "Charlotte Katakuri - Brother Saving His Sister",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2044,6 +2325,7 @@
   {
     "id": 3714,
     "name": "로빈",
+    "nameEn": "Robin - Archaeologist Entering Battle",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2051,6 +2333,7 @@
   {
     "id": 3715,
     "name": "나미",
+    "nameEn": "Nami - Navigator Entering Battle",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2058,6 +2341,7 @@
   {
     "id": 3716,
     "name": "프랑키",
+    "nameEn": "Franky - Shipwright Entering Battle",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2065,6 +2349,7 @@
   {
     "id": 3737,
     "name": "X 드레이크",
+    "nameEn": "X Drake - Navy HQ Top Secret Special Force Captain of \"SWORD\"",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2072,6 +2357,7 @@
   {
     "id": 3738,
     "name": "코비",
+    "nameEn": "Coby - Navy HQ Captain and Member of \"SWORD\"",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2079,6 +2365,7 @@
   {
     "id": 3760,
     "name": "몽키 D. 루피",
+    "nameEn": "Monkey D. Luffy - Armored for Battle",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2086,6 +2373,7 @@
   {
     "id": 3761,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Armored for Battle",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2093,6 +2381,7 @@
   {
     "id": 3781,
     "name": "쥬얼리 보니",
+    "nameEn": "Jewelry Bonney - Escape from the Pursuers",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2100,6 +2389,7 @@
   {
     "id": 3782,
     "name": "샬롯 푸딩",
+    "nameEn": "Charlotte Pudding - Revealed Third Eye",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2107,6 +2397,7 @@
   {
     "id": 3803,
     "name": "바르톨로메오",
+    "nameEn": "Bartolomeo - Impenetrable Protection",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2114,6 +2405,7 @@
   {
     "id": 3804,
     "name": "캐번디시",
+    "nameEn": "Cavendish - Beautiful Swordsmanship",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2121,6 +2413,7 @@
   {
     "id": 3825,
     "name": "가뭄해 잭",
+    "nameEn": "Jack the Drought - Fierce Battle on the Roof",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2128,6 +2421,7 @@
   {
     "id": 3843,
     "name": "컬리 다단",
+    "nameEn": "Curly Dadan - Life-Risking Rescue",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2135,6 +2429,7 @@
   {
     "id": 3844,
     "name": "마키&우프 슬랩",
+    "nameEn": "Makino & Woop Slap",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2142,6 +2437,7 @@
   {
     "id": 3865,
     "name": "디아만테",
+    "nameEn": "Diamante - Merciless Ripple-Ripple",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2149,6 +2445,7 @@
   {
     "id": 3866,
     "name": "트레볼",
+    "nameEn": "Trebol - Inescapable Stick-Stick",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2156,6 +2453,7 @@
   {
     "id": 3867,
     "name": "피카",
+    "nameEn": "Pica - Pulverizing Stones",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2163,6 +2461,7 @@
   {
     "id": 3918,
     "name": "겟코 모리아",
+    "nameEn": "Gecko Moria - Shadow Harvester",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2170,6 +2469,7 @@
   {
     "id": 3919,
     "name": "쥬라큘 미호크",
+    "nameEn": "Dracule Mihawk - Impeding World Strongest Swordsman",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2177,6 +2477,7 @@
   {
     "id": 3937,
     "name": "히요리",
+    "nameEn": "Hiyori - Confident Smile",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2184,6 +2485,7 @@
   {
     "id": 3938,
     "name": "바오황",
+    "nameEn": "Bao Huang",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2191,6 +2493,7 @@
   {
     "id": 3968,
     "name": "이치디&니디&욘디",
+    "nameEn": "Ichiji & Niji & Yonji",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2198,6 +2501,7 @@
   {
     "id": 4009,
     "name": "빈즈",
+    "nameEn": "Binz - Entrapping Grow-Grow Fruit",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2205,6 +2509,7 @@
   {
     "id": 4034,
     "name": "카이도",
+    "nameEn": "Kaido - Beast Ruler of Wano",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2212,6 +2517,7 @@
   {
     "id": 4035,
     "name": "Sir 크로커다일",
+    "nameEn": "Sir Crocodile - Ruler of the Sands",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2219,6 +2525,7 @@
   {
     "id": 4055,
     "name": "스피드&햄릿",
+    "nameEn": "Speed & Hamlet",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2226,6 +2533,7 @@
   {
     "id": 4075,
     "name": "마르코",
+    "nameEn": "Marco - Power of Former Whitebeard Pirates First Division Commander",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2233,6 +2541,7 @@
   {
     "id": 4076,
     "name": "프랑키",
+    "nameEn": "Franky - Arms to Catch the Swordsman",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2240,6 +2549,7 @@
   {
     "id": 4116,
     "name": "바질 호킨스",
+    "nameEn": "Basil Hawkins - Laughing at the Scapegoat",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2247,6 +2557,7 @@
   {
     "id": 4138,
     "name": "Dr. 베가펑크 ‘샤카’",
+    "nameEn": "Dr. Vegapunk \"Shaka the Good\" - PUNK-01",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2254,6 +2565,7 @@
   {
     "id": 4168,
     "name": "프랑키",
+    "nameEn": "Franky - Perv in Future Clothing",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2261,6 +2573,7 @@
   {
     "id": 4169,
     "name": "브룩",
+    "nameEn": "Brook - Excited Over Future Clothing",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2268,6 +2581,7 @@
   {
     "id": 4183,
     "name": "Dr. 히루루크",
+    "nameEn": "Dr. Hiriluk - Bonded by Skull and Crossbones",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2275,6 +2589,7 @@
   {
     "id": 4184,
     "name": "Dr. 쿠레하",
+    "nameEn": "Dr. Kureha - Parting With the Foolish Boy",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2282,6 +2597,7 @@
   {
     "id": 4198,
     "name": "요키",
+    "nameEn": "Yorki - Rumbar Pirates Captain",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2289,6 +2605,7 @@
   {
     "id": 4254,
     "name": "바스코 샷",
+    "nameEn": "Vasco Shot - Drunken Immolating Flame",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2296,6 +2613,7 @@
   {
     "id": 4271,
     "name": "비비&와포루",
+    "nameEn": "Vivi & Wapol",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2303,6 +2621,7 @@
   {
     "id": 4272,
     "name": "모르건즈",
+    "nameEn": "Morgans - World-Shaking Entertainer",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2310,6 +2629,7 @@
   {
     "id": 4286,
     "name": "Dr. 베가펑크",
+    "nameEn": "Dr. Vegapunk - A Sudden Request",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2317,6 +2637,7 @@
   {
     "id": 4304,
     "name": "후카보시",
+    "nameEn": "Fukaboshi - Rushing Eldest Brother",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2324,6 +2645,7 @@
   {
     "id": 4320,
     "name": "Dr. 베가펑크 ‘아틀라스’",
+    "nameEn": "Dr. Vegapunk \"Atlas the Violent\" - Guidance to the Lab",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2331,6 +2653,7 @@
   {
     "id": 4334,
     "name": "재브라",
+    "nameEn": "Jabra - CP0 Abducting the Princess",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2338,6 +2661,7 @@
   {
     "id": 4349,
     "name": "네펠타리 코브라",
+    "nameEn": "Nefeltari Cobra - The King's Resolve",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2345,6 +2669,7 @@
   {
     "id": 4375,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Gratitude to the Ship Doctor",
     "stars": "5",
     "type": "PSY",
     "category": "kizuna"
@@ -2352,6 +2677,7 @@
   {
     "id": 4376,
     "name": "징베",
+    "nameEn": "Jinbe - Completing the Mission",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2359,6 +2685,7 @@
   {
     "id": 4406,
     "name": "돈키호테 도플라밍고",
+    "nameEn": "Donquixote Doflamingo - Grinning for the New Warlord",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2366,6 +2693,7 @@
   {
     "id": 4423,
     "name": "Dr. 베가펑크",
+    "nameEn": "Dr. Vegapunk - Tearful Procedure",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2373,6 +2701,7 @@
   {
     "id": 4437,
     "name": "카아시",
+    "nameEn": "Kashii - Crewmate of the Giant Pirate Crew",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2380,6 +2709,7 @@
   {
     "id": 4457,
     "name": "아발로 피사로",
+    "nameEn": "Avalo Pizarro - Island-Man Stopping the Destruction",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2387,6 +2717,7 @@
   {
     "id": 4473,
     "name": "코라손",
+    "nameEn": "Corazon - Revealing His Objectives",
     "stars": "5",
     "type": "QCK",
     "category": "kizuna"
@@ -2394,6 +2725,7 @@
   {
     "id": 4488,
     "name": "Dr. 베가펑크 ‘릴리스’",
+    "nameEn": "Dr. Vegapunk \"Lilith the Evil\" - Solution-Calculating Satellite",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2401,6 +2733,7 @@
   {
     "id": 4503,
     "name": "바질 호킨스",
+    "nameEn": "Basil Hawkins - Playtime with the Misfortunate One",
     "stars": "5",
     "type": "DEX",
     "category": "kizuna"
@@ -2408,6 +2741,7 @@
   {
     "id": 4519,
     "name": "야마토",
+    "nameEn": "Yamato - Enjoyable Time at the Festival",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2415,6 +2749,7 @@
   {
     "id": 4533,
     "name": "지저스 바제스",
+    "nameEn": "Jesus Burgess - Hurled Boulder",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2422,6 +2757,7 @@
   {
     "id": 4548,
     "name": "혼고",
+    "nameEn": "Hongo - Punishing the \"Man-Eater\"",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2429,6 +2765,7 @@
   {
     "id": 4578,
     "name": "도베르만",
+    "nameEn": "Doberman - Commanding the Artillery Barrage",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2436,6 +2773,7 @@
   {
     "id": 4595,
     "name": "니코 올비아",
+    "nameEn": "Nico Olvia - Entrusting to her Daughter",
     "stars": "5",
     "type": "STR",
     "category": "kizuna"
@@ -2443,6 +2781,7 @@
   {
     "id": 4627,
     "name": "실버즈 레일리",
+    "nameEn": "Silvers Rayleigh - Recalling That Night",
     "stars": "5",
     "type": "INT",
     "category": "kizuna"
@@ -2450,6 +2789,7 @@
   {
     "id": 2931,
     "name": "오타마",
+    "nameEn": "Otama - Bonding with Komachiyo",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2457,6 +2797,7 @@
   {
     "id": 2932,
     "name": "‘다이아몬드’ 조즈",
+    "nameEn": "Diamond Jozu - Ice-Shattering Diamond",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2464,6 +2805,7 @@
   {
     "id": 2933,
     "name": "네코마무시",
+    "nameEn": "Cat Viper - Stubborn King of the Night",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2471,6 +2813,7 @@
   {
     "id": 2978,
     "name": "상디",
+    "nameEn": "Sanji - Flames of Anger Burning",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2478,6 +2821,7 @@
   {
     "id": 3000,
     "name": "스튜시",
+    "nameEn": "Stussy - Behind-the-Scenes Dark Justice",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2485,6 +2829,7 @@
   {
     "id": 3025,
     "name": "흰 수염",
+    "nameEn": "Whitebeard - At the Top, but Not on the Throne",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2492,6 +2837,7 @@
   {
     "id": 3061,
     "name": "카르가라&노랜드",
+    "nameEn": "Calgara & Noland - Ringing the Bell of Promise",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2499,6 +2845,7 @@
   {
     "id": 3062,
     "name": "코니스",
+    "nameEn": "Conis - The Girl Who Defies a God",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2506,6 +2853,7 @@
   {
     "id": 3063,
     "name": "카쿠",
+    "nameEn": "Kaku - CP-AIGIS 0",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2513,6 +2861,7 @@
   {
     "id": 3095,
     "name": "프랑키",
+    "nameEn": "Franky - The Greatest Transformation of All Time",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2520,6 +2869,7 @@
   {
     "id": 3096,
     "name": "레오&위커&커브",
+    "nameEn": "Leo & Wicca & Cub",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2527,6 +2877,7 @@
   {
     "id": 3125,
     "name": "오즈",
+    "nameEn": "Oars - Destructive Power of the Continent Puller",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2534,6 +2885,7 @@
   {
     "id": 3130,
     "name": "트라팔가 로",
+    "nameEn": "Trafalgar Law - Trapped Heart",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2541,6 +2893,7 @@
   {
     "id": 3158,
     "name": "소바 마스크",
+    "nameEn": "Soba Mask - Invisible Warrior",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2548,6 +2901,7 @@
   {
     "id": 3206,
     "name": "캐번디시",
+    "nameEn": "Cavendish - Nobleman of Love",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2555,6 +2909,7 @@
   {
     "id": 3243,
     "name": "병정 아저씨&레베카",
+    "nameEn": "Toy Soldier & Rebecca",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2562,6 +2917,7 @@
   {
     "id": 3292,
     "name": "시류",
+    "nameEn": "Shiryu - Traitorous Head Jailer",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2569,6 +2925,7 @@
   {
     "id": 3328,
     "name": "스모커",
+    "nameEn": "Smoker - Striking a Warlord of the Sea",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2576,6 +2933,7 @@
   {
     "id": 3362,
     "name": "장성 크래커",
+    "nameEn": "General Cracker - True Identity of the Hardened Warrior",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2583,6 +2941,7 @@
   {
     "id": 3395,
     "name": "가반",
+    "nameEn": "Gaban",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2590,6 +2949,7 @@
   {
     "id": 3409,
     "name": "겟코 모리아",
+    "nameEn": "Gecko Moria - Man who Controls the Shadows",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2597,6 +2957,7 @@
   {
     "id": 3428,
     "name": "아론",
+    "nameEn": "Arlong - Threat of Fish-Men",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2604,6 +2965,7 @@
   {
     "id": 3458,
     "name": "스무디",
+    "nameEn": "Smoothie - Sweet General Blocking the Path",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2611,6 +2973,7 @@
   {
     "id": 3459,
     "name": "슈트로이젠",
+    "nameEn": "Streusen - Chef Who Leads a Life of Fluff",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2618,6 +2981,7 @@
   {
     "id": 3480,
     "name": "코비",
+    "nameEn": "Coby - Young Man Rising Through the Ranks",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2625,6 +2989,7 @@
   {
     "id": 3501,
     "name": "오움",
+    "nameEn": "Ohm - Fierce Aerial Fight",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2632,6 +2997,7 @@
   {
     "id": 3521,
     "name": "그로키 몬스터즈",
+    "nameEn": "Groggy Monsters",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2639,6 +3005,7 @@
   {
     "id": 3541,
     "name": "도르돈",
+    "nameEn": "Dalton - Raging Bison",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2646,6 +3013,7 @@
   {
     "id": 3561,
     "name": "보아 썬더소니아",
+    "nameEn": "Boa Sandersonia - Eight-Headed Snake",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2653,6 +3021,7 @@
   {
     "id": 3566,
     "name": "브로기",
+    "nameEn": "Broggy - For the Pride of the Elbaph",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2660,6 +3029,7 @@
   {
     "id": 3583,
     "name": "도리",
+    "nameEn": "Dorry - For the Pride of the Elbaph",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2667,6 +3037,7 @@
   {
     "id": 3605,
     "name": "코라손",
+    "nameEn": "Corazon - The Kindhearted Man's Final Fight",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2674,6 +3045,7 @@
   {
     "id": 3638,
     "name": "프랑키",
+    "nameEn": "Franky - A Man's Combat",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2681,6 +3053,7 @@
   {
     "id": 3639,
     "name": "세뇨르 핑크",
+    "nameEn": "Senor Pink - Falling Memories",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2688,6 +3061,7 @@
   {
     "id": 3658,
     "name": "페루",
+    "nameEn": "Pell - Kingdom Protecting Falcon",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2695,6 +3069,7 @@
   {
     "id": 3679,
     "name": "우솝",
+    "nameEn": "Usopp - Straw Hat Pirates Enjoying the FES",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2702,6 +3077,7 @@
   {
     "id": 3703,
     "name": "후지토라",
+    "nameEn": "Fujitora - Invading Navy Admiral",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2709,6 +3085,7 @@
   {
     "id": 3704,
     "name": "키자루",
+    "nameEn": "Kizaru - Invading Navy Admiral",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2716,6 +3093,7 @@
   {
     "id": 3731,
     "name": "송곳 칭자오",
+    "nameEn": "Chin Jao the Drill - Proud Drill Head",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2723,6 +3101,7 @@
   {
     "id": 3753,
     "name": "쿠로즈미 칸주로",
+    "nameEn": "Kurozumi Kanjuro - Hidden Informant",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2730,6 +3109,7 @@
   {
     "id": 3797,
     "name": "킹",
+    "nameEn": "King - Impeding Wildfire",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2737,6 +3117,7 @@
   {
     "id": 3817,
     "name": "크로커스",
+    "nameEn": "Crocus - Ship Doctor of the Roger Pirates",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2744,6 +3125,7 @@
   {
     "id": 3818,
     "name": "노즈돈&선벨",
+    "nameEn": "Nozudon & Sambel",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2751,6 +3133,7 @@
   {
     "id": 3836,
     "name": "블루잼",
+    "nameEn": "Bluejam - Sworn to Exact Revenge on the Aristocrats",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2758,6 +3141,7 @@
   {
     "id": 3837,
     "name": "포르쉐미",
+    "nameEn": "Porchemy - Bluejam Pirates Crewmate",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2765,6 +3149,7 @@
   {
     "id": 3875,
     "name": "사사키",
+    "nameEn": "Sasaki - Flying Dinosaur",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2772,6 +3157,7 @@
   {
     "id": 3876,
     "name": "후즈 후",
+    "nameEn": "Who's-Who - Clinging Onto a God's Legend",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2779,6 +3165,7 @@
   {
     "id": 3906,
     "name": "이나즈마",
+    "nameEn": "Inazuma - Snipping Through the Paramount War",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2786,6 +3173,7 @@
   {
     "id": 3929,
     "name": "보아 마리골드",
+    "nameEn": "Boa Marigold - Gorgon's Execution",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2793,6 +3181,7 @@
   {
     "id": 3930,
     "name": "히나",
+    "nameEn": "Hina - Royal Escort's Duty",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2800,6 +3189,7 @@
   {
     "id": 3977,
     "name": "잠발",
+    "nameEn": "Jean Bart - Captain Protecting Fist",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2807,6 +3197,7 @@
   {
     "id": 4001,
     "name": "시키",
+    "nameEn": "Shiki - Sky Shredding Blades",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2814,6 +3205,7 @@
   {
     "id": 4026,
     "name": "더글라스 불릿",
+    "nameEn": "Douglas Bullet - Score-Settling Brawl",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2821,6 +3213,7 @@
   {
     "id": 4027,
     "name": "앤",
+    "nameEn": "Ann - Diva of the Pirates Expo",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2828,6 +3221,7 @@
   {
     "id": 4049,
     "name": "네코마무시",
+    "nameEn": "Cat Viper - Gun-Point Towards the Navy Admiral",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2835,6 +3229,7 @@
   {
     "id": 4069,
     "name": "포트거스 D. 에이스",
+    "nameEn": "Portgas D. Ace - Invading Onigashima",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2842,6 +3237,7 @@
   {
     "id": 4090,
     "name": "롤로노아 조로",
+    "nameEn": "Roronoa Zoro - Splitting the Warm Eddy",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2849,6 +3245,7 @@
   {
     "id": 4091,
     "name": "브룩",
+    "nameEn": "Brook - Unexplainable Familiarity",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2856,6 +3253,7 @@
   {
     "id": 4148,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Astonished by Future Science",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2863,6 +3261,7 @@
   {
     "id": 4178,
     "name": "깅",
+    "nameEn": "Gin - Offered Meal",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2870,6 +3269,7 @@
   {
     "id": 4192,
     "name": "하그왈 D 사우로",
+    "nameEn": "Jaguar D. Saul - Shouting the Future for a Friend",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2877,6 +3277,7 @@
   {
     "id": 4207,
     "name": "하찌",
+    "nameEn": "Hatchan - Enjoying a Game",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2884,6 +3285,7 @@
   {
     "id": 4248,
     "name": "산후안 울프",
+    "nameEn": "San Juan Wolf - Blackbeard Pirates Seventh Ship Captain",
     "stars": "5",
     "type": "DEX",
     "category": "pirate"
@@ -2891,6 +3293,7 @@
   {
     "id": 4264,
     "name": "츠루",
+    "nameEn": "Tsuru - Glaring at Swallow Island",
     "stars": "5",
     "type": "STR",
     "category": "pirate"
@@ -2898,6 +3301,7 @@
   {
     "id": 4360,
     "name": "사카즈키",
+    "nameEn": "Sakazuki - Intercepting Fleet Admiral",
     "stars": "5",
     "type": "PSY",
     "category": "pirate"
@@ -2905,6 +3309,7 @@
   {
     "id": 4386,
     "name": "Dr. 베가펑크 ‘릴리스’&베가포스 01",
+    "nameEn": "Dr. Vegapunk \"Lilith the Evil\" & Vegaforce-01 - Ship-Carrying Giant Robot",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2912,6 +3317,7 @@
   {
     "id": 4400,
     "name": "캐럿",
+    "nameEn": "Carrot - Diving into the Wonderland with a Floatie",
     "stars": "5",
     "type": "QCK",
     "category": "pirate"
@@ -2919,6 +3325,7 @@
   {
     "id": 4415,
     "name": "알파",
+    "nameEn": "Alpha",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2926,6 +3333,7 @@
   {
     "id": 4590,
     "name": "나미",
+    "nameEn": "Nami - Wandering Navigator",
     "stars": "5",
     "type": "INT",
     "category": "pirate"
@@ -2933,6 +3341,7 @@
   {
     "id": 2388,
     "name": "마키",
+    "nameEn": "Makino - Kindness for the Three Brothers",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -2940,6 +3349,7 @@
   {
     "id": 2389,
     "name": "츠루",
+    "nameEn": "Tsuru - Watchful Great Advisor",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -2947,6 +3357,7 @@
   {
     "id": 2390,
     "name": "코니스",
+    "nameEn": "Conis - Angel Unafraid of Judgment",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -2954,6 +3365,7 @@
   {
     "id": 2391,
     "name": "사보",
+    "nameEn": "Sabo - Determination to Protect a Brother",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -2961,6 +3373,7 @@
   {
     "id": 2392,
     "name": "아이스버그",
+    "nameEn": "Iceburg - Encouraging Senior Disciple",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -2968,6 +3381,7 @@
   {
     "id": 2435,
     "name": "다가마",
+    "nameEn": "Dagama - Tactician's Orders",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -2975,6 +3389,7 @@
   {
     "id": 2436,
     "name": "올럼버스",
+    "nameEn": "Orlumbus - Grand Fleet Commodore Dignity",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -2982,6 +3397,7 @@
   {
     "id": 2460,
     "name": "샬롯 오븐",
+    "nameEn": "Charlotte Oven - Red-Hot Encirclement Blocking the Path of Retreat",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -2989,6 +3405,7 @@
   {
     "id": 2461,
     "name": "나좀즈",
+    "nameEn": "Mystoms - Mysterious Masked Man Helping the Escape",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -2996,6 +3413,7 @@
   {
     "id": 2501,
     "name": "코우시로",
+    "nameEn": "Koshiro - Young Swordsman's Master",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3003,6 +3421,7 @@
   {
     "id": 2502,
     "name": "슈트로이젠",
+    "nameEn": "Streusen - Musical Chef",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3010,6 +3429,7 @@
   {
     "id": 2800,
     "name": "샬롯 브륄레",
+    "nameEn": "Charlotte Brulee - Little Sister Taking Care of Her Brother",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3017,6 +3437,7 @@
   {
     "id": 2851,
     "name": "캐럿",
+    "nameEn": "Carrot - Bath Time Wonderland",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3024,6 +3445,7 @@
   {
     "id": 3159,
     "name": "샬롯 다이후쿠",
+    "nameEn": "Charlotte Daifuku - Summoning the Genie",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3031,6 +3453,7 @@
   {
     "id": 3160,
     "name": "시저 클라운",
+    "nameEn": "Caesar Clown - Master of Experiments",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3038,6 +3461,7 @@
   {
     "id": 3161,
     "name": "슈텐마루",
+    "nameEn": "Shutenmaru - Samurai Who Lost the Chance for a Meaningful Death",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3045,6 +3469,7 @@
   {
     "id": 3162,
     "name": "겟코 모리아",
+    "nameEn": "Gecko Moria - Lord of Shadows",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3052,6 +3477,7 @@
   {
     "id": 3200,
     "name": "니코 로빈",
+    "nameEn": "Nico Robin - Blooming Beauty",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3059,6 +3485,7 @@
   {
     "id": 3201,
     "name": "토니토니 쵸파",
+    "nameEn": "Tony Tony Chopper - Becoming the Miracle Cure",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3066,6 +3493,7 @@
   {
     "id": 3265,
     "name": "Mr.1&미스 더블 핑거",
+    "nameEn": "Mr. 1 & Miss Doublefinger",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3073,6 +3501,7 @@
   {
     "id": 3266,
     "name": "Mr.3&미스 골든 위크",
+    "nameEn": "Mr. 3 & Miss Goldenweek",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3080,6 +3509,7 @@
   {
     "id": 3267,
     "name": "Mr.4&미스 메리크리스마스",
+    "nameEn": "Mr. 4 & Miss Merry Christmas",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3087,6 +3517,7 @@
   {
     "id": 3268,
     "name": "Mr.5&미스 발렌타인",
+    "nameEn": "Mr. 5 & Miss Valentine",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3094,6 +3525,7 @@
   {
     "id": 3465,
     "name": "쥬라큘 미호크",
+    "nameEn": "Dracule Mihawk - Unreachable Strength",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3101,6 +3533,7 @@
   {
     "id": 3500,
     "name": "포트거스 D. 에이스",
+    "nameEn": "Portgas D. Ace - Waiting on the High Seas",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3108,6 +3541,7 @@
   {
     "id": 3530,
     "name": "사보",
+    "nameEn": "Sabo - Cups of the Three Brothers",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3115,6 +3549,7 @@
   {
     "id": 3570,
     "name": "오토코",
+    "nameEn": "Otoko - Unstoppable Laughter",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3122,6 +3557,7 @@
   {
     "id": 3622,
     "name": "화이티 베이",
+    "nameEn": "Whitey Bay - Evenly Matched Young Pirate",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3129,6 +3565,7 @@
   {
     "id": 3667,
     "name": "네펠타리 비비",
+    "nameEn": "Nefeltari Vivi - Port of Separation",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3136,6 +3573,7 @@
   {
     "id": 3717,
     "name": "브룩",
+    "nameEn": "Brook - Musician Entering Battle",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3143,6 +3581,7 @@
   {
     "id": 3759,
     "name": "캐럿",
+    "nameEn": "Carrot - Respite Before the Battle",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3150,6 +3589,7 @@
   {
     "id": 3802,
     "name": "퀸",
+    "nameEn": "Queen - Unrelenting Assault",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3157,6 +3597,7 @@
   {
     "id": 3846,
     "name": "코넬리아&코타츠",
+    "nameEn": "Cornelia & Kotatsu",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3164,6 +3605,7 @@
   {
     "id": 3901,
     "name": "오타마",
+    "nameEn": "Otama - Full-Force Rally",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3171,6 +3613,7 @@
   {
     "id": 3914,
     "name": "거대 소용돌이 거미 스쿼드",
+    "nameEn": "Whirl Spider Squard - Tempted Treachery",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3178,6 +3621,7 @@
   {
     "id": 3939,
     "name": "모다",
+    "nameEn": "Moda",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3185,6 +3629,7 @@
   {
     "id": 3982,
     "name": "코즈키 모모노스케",
+    "nameEn": "Kozuki Momonosuke - Reckless Collision",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3192,6 +3637,7 @@
   {
     "id": 4036,
     "name": "바르톨로메오",
+    "nameEn": "Bartolomeo - Barrier to Subdue the Diva",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3199,6 +3645,7 @@
   {
     "id": 4077,
     "name": "이누아라시&네코마무시",
+    "nameEn": "Dogstorm & Cat Viper - Vassals Following Their Master",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3206,6 +3653,7 @@
   {
     "id": 4117,
     "name": "바오황",
+    "nameEn": "Bao Huang - Surveillance Force \"Marys\"",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3213,6 +3661,7 @@
   {
     "id": 4165,
     "name": "우솝",
+    "nameEn": "Usopp - Future Clothing of the Science Island",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3220,6 +3669,7 @@
   {
     "id": 4196,
     "name": "라분",
+    "nameEn": "Laboon - Favorite Pirate Song",
     "stars": "5",
     "type": "INT",
     "category": "support"
@@ -3227,6 +3677,7 @@
   {
     "id": 4236,
     "name": "부들부들 푸르르",
+    "nameEn": "Pururu the Brr-rave",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3234,6 +3685,7 @@
   {
     "id": 4255,
     "name": "돌 중장",
+    "nameEn": "Vice Admiral Doll",
     "stars": "5",
     "type": "STR",
     "category": "support"
@@ -3241,6 +3693,7 @@
   {
     "id": 4273,
     "name": "쥬얼리 보니",
+    "nameEn": "Jewelry Bonney - Girl's False Tears",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3248,6 +3701,7 @@
   {
     "id": 4305,
     "name": "시라호시",
+    "nameEn": "Shirahoshi - Mermaid Princess Being Assaulted",
     "stars": "5",
     "type": "PSY",
     "category": "support"
@@ -3255,6 +3709,7 @@
   {
     "id": 4332,
     "name": "후쿠로",
+    "nameEn": "Fukuro - CP0 Abducting the Princess",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3262,6 +3717,7 @@
   {
     "id": 4377,
     "name": "S-스네이크",
+    "nameEn": "S-Snake - Transferred Love",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3269,6 +3725,7 @@
   {
     "id": 4407,
     "name": "알비다&코비",
+    "nameEn": "Alvida & Coby",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3276,6 +3733,7 @@
   {
     "id": 4438,
     "name": "오이모",
+    "nameEn": "Oimo - Crewmate of the Giant Pirate Crew",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3283,6 +3741,7 @@
   {
     "id": 4474,
     "name": "베라미",
+    "nameEn": "Bellamy - The Last Brawl",
     "stars": "5",
     "type": "QCK",
     "category": "support"
@@ -3290,6 +3749,7 @@
   {
     "id": 4504,
     "name": "게르니카&마하&요셉",
+    "nameEn": "Guernica & Maha & Joseph",
     "stars": "5",
     "type": "DEX",
     "category": "support"
@@ -3297,6 +3757,7 @@
   {
     "id": 4534,
     "name": "반 오거",
+    "nameEn": "Van Ogre - Stepping into a World of Ice",
     "stars": "5",
     "type": "QCK",
     "category": "support"

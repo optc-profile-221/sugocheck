@@ -8,93 +8,104 @@
   <meta name="sugocheck-metrics-endpoint" content="https://sugocheck-private-metrics.jay159488.workers.dev">
   <title>페스 한정 레어</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
   <script src="app.js" defer></script>
   <script src="site-metrics.js" defer></script>
 </head>
 <body data-collection="festival-rare">
   <header class="hero">
     <div class="hero__inner">
-      <div class="brand" aria-label="페스 한정 레어">
+      <div class="brand" aria-label="페스 한정 레어" data-i18n-aria-label="brand.rare">
         <img class="brand__mark" src="assets/treasure-cruise-logo.png" alt="ONE PIECE TREASURE CRUISE">
-        <span class="brand__copy"><b>페스 한정 레어</b><small>보유·육성 현황</small></span>
+        <span class="brand__copy"><b data-i18n="brand.rare">페스 한정 레어</b><small data-i18n="brand.subtitle">보유·육성 현황</small></span>
       </div>
+      <details class="language-menu">
+        <summary aria-label="언어 선택" data-i18n-aria-label="language.label">
+          <svg class="language-menu__globe" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M3 16h26M16 3c4 4 6 8 6 13s-2 9-6 13M16 3c-4 4-6 8-6 13s2 9 6 13M6 9c3 2 6 3 10 3s7-1 10-3M6 23c3-2 6-3 10-3s7 1 10 3"/></svg>
+          <span id="language-current">한국어</span><span class="language-menu__arrow" aria-hidden="true"></span>
+        </summary>
+        <div class="language-menu__options" role="menu">
+          <button type="button" data-language="ko" role="menuitemradio" aria-checked="true">한국어</button>
+          <button type="button" data-language="en" role="menuitemradio" aria-checked="false">English</button>
+        </div>
+      </details>
       <label class="search">
-        <span class="sr-only">캐릭터 검색</span>
-        <input id="search" type="search" placeholder="이름 또는 도감번호 검색" autocomplete="off">
+        <span class="sr-only" data-i18n="search.label">캐릭터 검색</span>
+        <input id="search" type="search" placeholder="이름 또는 도감번호 검색" data-i18n-placeholder="search.placeholder" autocomplete="off">
         <kbd>/</kbd>
       </label>
     </div>
   </header>
 
   <main class="app-shell">
-    <nav class="collection-nav" aria-label="도감 선택">
-      <a class="collection-nav__link" href="index.html">스고 캐릭터</a>
-      <a class="collection-nav__link is-active" href="festival-rare.html" aria-current="page">페스 한정 레어</a>
+    <nav class="collection-nav" aria-label="도감 선택" data-i18n-aria-label="nav.label">
+      <a class="collection-nav__link" href="index.html" data-i18n="nav.sugo">스고 캐릭터</a>
+      <a class="collection-nav__link is-active" href="festival-rare.html" aria-current="page" data-i18n="nav.rare">페스 한정 레어</a>
     </nav>
-    <section class="dashboard" aria-label="전체 진행 현황">
+    <section class="dashboard" aria-label="전체 진행 현황" data-i18n-aria-label="dashboard.label">
       <div class="dashboard__intro">
-        <p class="eyebrow">원피스 트레저 크루즈</p>
-        <h1>페스 한정 레어 보유/육성 현황</h1>
+        <p class="eyebrow" data-i18n="dashboard.eyebrow">원피스 트레저 크루즈</p>
+        <h1 data-i18n="dashboard.rareTitle">페스 한정 레어 보유/육성 현황</h1>
       </div>
       <div class="metrics">
-        <div class="metric metric--owned"><span>전체 캐릭터</span><strong id="count-owned">0 / 0</strong></div>
-        <div class="metric metric--rainbow"><span>무지개</span><strong id="count-rainbow">0 / 0</strong></div>
-        <div class="metric metric--super"><span>초무지개</span><strong id="count-super">0 / 0</strong></div>
-        <div class="metric metric--key"><span>해적제한돌</span><strong id="count-pirate">0 / 0</strong></div>
+        <div class="metric metric--owned"><span data-i18n="metric.owned">전체 캐릭터</span><strong id="count-owned">0 / 0</strong></div>
+        <div class="metric metric--rainbow" data-i18n-title="metric.rainbowFormal"><span data-i18n="metric.rainbow">무지개</span><strong id="count-rainbow">0 / 0</strong></div>
+        <div class="metric metric--super" data-i18n-title="metric.superFormal"><span data-i18n="metric.super">초무지개</span><strong id="count-super">0 / 0</strong></div>
+        <div class="metric metric--key" data-i18n-title="metric.rumbleFormal"><span data-i18n="metric.rumble">해적제한돌</span><strong id="count-pirate">0 / 0</strong></div>
       </div>
     </section>
 
-    <section class="command-deck" aria-label="체크리스트 도구">
-      <div class="mode-picker" id="mode-picker" role="radiogroup" aria-label="표시 모드">
-        <button class="mode is-active" data-mode="owned" role="radio" aria-checked="true"><i class="dot dot--owned"></i>보유</button>
-        <button class="mode" data-mode="rainbow" role="radio" aria-checked="false"><i class="dot dot--rainbow"></i>무지개</button>
-        <button class="mode" data-mode="super" role="radio" aria-checked="false"><i class="dot dot--super"></i>초무지개</button>
-        <button class="mode" data-mode="pirate" role="radio" aria-checked="false"><img class="mode__key-icon" src="assets/pirate-limit-key.webp" alt="" aria-hidden="true">해적제한돌</button>
-        <button class="mode" data-mode="llb" role="radio" aria-checked="false"><i class="dot dot--llb">Lv</i>레벨상한돌파</button>
-        <button class="mode" data-mode="hide" role="radio" aria-checked="false"><i class="dot dot--hide">×</i>목록에서 제거</button>
+    <section class="command-deck" aria-label="체크리스트 도구" data-i18n-aria-label="tools.label">
+      <div class="mode-picker" id="mode-picker" role="radiogroup" aria-label="표시 모드" data-i18n-aria-label="mode.label">
+        <button class="mode is-active" data-mode="owned" role="radio" aria-checked="true" data-i18n-title="mode.ownedFormal"><i class="dot dot--owned"></i><span data-i18n="mode.owned">보유</span></button>
+        <button class="mode" data-mode="rainbow" role="radio" aria-checked="false" data-i18n-title="mode.rainbowFormal"><i class="dot dot--rainbow"></i><span data-i18n="mode.rainbow">무지개</span></button>
+        <button class="mode" data-mode="super" role="radio" aria-checked="false" data-i18n-title="mode.superFormal"><i class="dot dot--super"></i><span data-i18n="mode.super">초무지개</span></button>
+        <button class="mode" data-mode="pirate" role="radio" aria-checked="false" data-i18n-title="mode.rumbleFormal"><img class="mode__key-icon" src="assets/pirate-limit-key.webp" alt="" aria-hidden="true"><span data-i18n="mode.rumble">해적제한돌</span></button>
+        <button class="mode" data-mode="llb" role="radio" aria-checked="false" data-i18n-title="mode.llbFormal"><i class="dot dot--llb">Lv</i><span data-i18n="mode.llb">레벨상한돌파</span></button>
+        <button class="mode" data-mode="hide" role="radio" aria-checked="false" data-i18n-title="mode.hideFormal"><i class="dot dot--hide">×</i><span data-i18n="mode.hide">목록에서 제거</span></button>
       </div>
       <div class="actions">
-        <button id="select-owned-all" class="action action--primary">캐릭터 전체선택</button>
-        <button id="undo" class="action" disabled>되돌리기 (Ctrl+Z)</button>
+        <button id="select-owned-all" class="action action--primary" data-i18n="action.selectAll">캐릭터 전체선택</button>
+        <button id="undo" class="action" disabled data-i18n="action.undo">되돌리기 (Ctrl+Z)</button>
         <button id="toggle-base" class="action">진화 후 형태 제거</button>
         <button id="toggle-pre-evolution" class="action">진화 전 형태 제거</button>
-        <button id="restore-hidden" class="action">지운 캐릭터 복구 <span id="hidden-count">0</span></button>
-        <button id="show-hidden" class="action">지운 캐릭터 목록</button>
-        <button id="export-image" class="action">이미지로 추출</button>
-        <button id="backup" class="action">저장파일 관리</button>
-        <button id="reset" class="action action--danger">초기화</button>
+        <button id="restore-hidden" class="action"><span data-i18n="action.restoreHidden">지운 캐릭터 복구</span> <span id="hidden-count">0</span></button>
+        <button id="show-hidden" class="action" data-i18n="action.showHidden">지운 캐릭터 목록</button>
+        <button id="export-image" class="action" data-i18n="action.exportImage">이미지로 추출</button>
+        <button id="backup" class="action" data-i18n="action.backup">저장파일 관리</button>
+        <button id="reset" class="action action--danger" data-i18n="action.reset">초기화</button>
       </div>
     </section>
 
-    <div id="empty-search" class="empty-search" hidden>검색 결과가 없습니다.</div>
+    <div id="empty-search" class="empty-search" hidden data-i18n="search.empty">검색 결과가 없습니다.</div>
     <div id="checklists" class="checklists" aria-live="polite"></div>
   </main>
 
   <footer>
     <p>© Eiichiro Oda/Shueisha, Toei Animation © Bandai Namco Entertainment Inc.</p>
-    <p class="footer__disclaimer">This is an unofficial fan-made tool and is not affiliated with or endorsed by the rights holders or the official service.</p>
+    <p class="footer__disclaimer" data-i18n="footer.disclaimer">This is an unofficial fan-made tool and is not affiliated with or endorsed by the rights holders or the official service.</p>
   </footer>
 
   <dialog id="hidden-dialog" class="sheet">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">제외 목록</p><h2>지운 캐릭터</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
-    <p class="sheet__help">복구할 캐릭터를 누르세요.</p>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow" data-i18n="hidden.eyebrow">제외 목록</p><h2 data-i18n="hidden.title">지운 캐릭터</h2></div><button class="icon-button" aria-label="닫기" data-i18n-aria-label="action.close">×</button></form>
+    <p class="sheet__help" data-i18n="hidden.help">복구할 캐릭터를 누르세요.</p>
     <div id="hidden-list" class="hidden-list"></div>
   </dialog>
 
   <dialog id="backup-dialog" class="sheet sheet--small">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">저장 데이터</p><h2>저장파일 관리</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
-    <p class="sheet__help">체크 현황은 이 브라우저에 자동 저장됩니다. 다른 기기로 옮길 때 JSON 파일을 이용하세요.</p>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow" data-i18n="backup.eyebrow">저장 데이터</p><h2 data-i18n="backup.title">저장파일 관리</h2></div><button class="icon-button" aria-label="닫기" data-i18n-aria-label="action.close">×</button></form>
+    <p class="sheet__help" data-i18n="backup.help">체크 현황은 이 브라우저에 자동 저장됩니다. 다른 기기로 옮길 때 JSON 파일을 이용하세요.</p>
     <div class="backup-actions">
-      <button id="download-save" class="action action--primary">저장파일 내려받기</button>
-      <label class="action file-action">저장파일 불러오기<input id="upload-save" type="file" accept="application/json,.json"></label>
+      <button id="download-save" class="action action--primary" data-i18n="action.downloadSave">저장파일 내려받기</button>
+      <label class="action file-action"><span data-i18n="action.uploadSave">저장파일 불러오기</span><input id="upload-save" type="file" accept="application/json,.json"></label>
     </div>
   </dialog>
 
   <dialog id="export-dialog" class="sheet export-sheet">
-    <form method="dialog" class="sheet__bar"><div><p class="eyebrow">도감 공유</p><h2>도감 이미지</h2></div><button class="icon-button" aria-label="닫기">×</button></form>
-    <p id="export-status" class="sheet__help">이미지를 준비하고 있습니다.</p>
+    <form method="dialog" class="sheet__bar"><div><p class="eyebrow" data-i18n="export.eyebrow">도감 공유</p><h2 data-i18n="export.title">도감 이미지</h2></div><button class="icon-button" aria-label="닫기" data-i18n-aria-label="action.close">×</button></form>
+    <p id="export-status" class="sheet__help" data-i18n="export.preparing">이미지를 준비하고 있습니다.</p>
     <div id="export-preview" class="export-preview"></div>
-    <button id="download-image" class="action action--primary" hidden>PNG 내려받기</button>
+    <button id="download-image" class="action action--primary" hidden data-i18n="action.downloadPng">PNG 내려받기</button>
   </dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>

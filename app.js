@@ -7,19 +7,20 @@
   const DATA_URL = IS_FESTIVAL_RARE ? 'data/festival-rare-characters.json' : 'data/characters.json';
   const ICON_DIR = IS_FESTIVAL_RARE ? 'assets/rare-icons' : 'assets/icons';
   const EXPORT_NAME = IS_FESTIVAL_RARE ? 'festival-rare-logbook' : 'sugo-logbook';
-  const EXPORT_TITLE = IS_FESTIVAL_RARE ? '페스 한정 레어 보유/육성 현황' : '스고 보유/육성 현황';
+  const LANGUAGE_KEY = 'sugocheck-language';
+  const TRANSLATIONS = window.SUGOCHECK_I18N || {};
   const categoryConfig = IS_FESTIVAL_RARE ? [
-    { id: 'treasure', name: '트레저맵 한정', note: '트레저맵 페스 한정 가챠', accent: '#59d2ba', wide: true },
-    { id: 'kizuna', name: '유대결전 한정', note: '유대결전 페스 한정 가챠', accent: '#63b5ff', wide: true },
-    { id: 'pirate', name: '해적제 한정', note: '해적제 페스 한정 가챠', accent: '#bb8cff', wide: true },
-    { id: 'support', name: '서포트 한정', note: '서폿페스 한정 가챠', accent: '#f2c85e', wide: true }
+    { id: 'treasure', key: 'category.treasureRare', accent: '#59d2ba', wide: true },
+    { id: 'kizuna', key: 'category.kizunaRare', accent: '#63b5ff', wide: true },
+    { id: 'pirate', key: 'category.pirateRare', accent: '#bb8cff', wide: true },
+    { id: 'support', key: 'category.supportRare', accent: '#f2c85e', wide: true }
   ] : [
-    { id: 'super', name: '초스고', note: '초스고페스 한정', accent: '#ff7878', wide: true },
-    { id: 'anniversary', name: '주년 스고', note: '주년페스 한정', accent: '#f2c85e', wide: true },
-    { id: 'pirate', name: '해적제 스고', note: '해적제페스 한정', accent: '#bb8cff', wide: false },
-    { id: 'treasure', name: '트맵 스고', note: '트레저 맵 페스 한정', accent: '#59d2ba', wide: false },
-    { id: 'kizuna', name: '유대 스고', note: '유대결전 페스 한정', accent: '#63b5ff', wide: false },
-    { id: 'regular', name: '일반 스고', note: '통상스고', accent: '#8fa8b7', wide: true }
+    { id: 'super', key: 'category.super', accent: '#ff7878', wide: true },
+    { id: 'anniversary', key: 'category.anniversary', accent: '#f2c85e', wide: true },
+    { id: 'pirate', key: 'category.pirateLegend', accent: '#bb8cff', wide: false },
+    { id: 'treasure', key: 'category.treasureLegend', accent: '#59d2ba', wide: false },
+    { id: 'kizuna', key: 'category.kizunaLegend', accent: '#63b5ff', wide: false },
+    { id: 'regular', key: 'category.regular', accent: '#8fa8b7', wide: true }
   ];
 
   let characters = [];
@@ -28,6 +29,7 @@
   let exportBlob = null;
   let exportUrl = null;
   let toastTimer = null;
+  let language = localStorage.getItem(LANGUAGE_KEY) === 'en' ? 'en' : 'ko';
   const undoStack = [];
   const UNDO_LIMIT = 50;
   const LLB_LABELS = ['', '105', '110', '120', '130', 'MAX'];
@@ -35,6 +37,49 @@
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+  function t(key, values = {}) {
+    let text = TRANSLATIONS[language]?.[key] ?? TRANSLATIONS.ko?.[key] ?? key;
+    Object.entries(values).forEach(([name, value]) => {
+      text = text.replaceAll(`{{${name}}}`, String(value));
+    });
+    return text;
+  }
+
+  function categoryText(category, field) {
+    return t(`${category.key}.${field}`);
+  }
+
+  function characterName(character) {
+    return language === 'en' && character.nameEn ? character.nameEn : character.name;
+  }
+
+  function exportTitle() {
+    return t(IS_FESTIVAL_RARE ? 'dashboard.rareTitle' : 'dashboard.sugoTitle');
+  }
+
+  function applyStaticTranslations() {
+    document.documentElement.lang = language;
+    document.title = t(IS_FESTIVAL_RARE ? 'page.rareTitle' : 'page.sugoTitle');
+    const description = $('meta[name="description"]');
+    if (description) description.content = t(IS_FESTIVAL_RARE ? 'meta.rareDescription' : 'meta.sugoDescription');
+    $$('[data-i18n]').forEach((element) => { element.textContent = t(element.dataset.i18n); });
+    $$('[data-i18n-placeholder]').forEach((element) => { element.placeholder = t(element.dataset.i18nPlaceholder); });
+    $$('[data-i18n-title]').forEach((element) => { element.title = t(element.dataset.i18nTitle); });
+    $$('[data-i18n-aria-label]').forEach((element) => { element.setAttribute('aria-label', t(element.dataset.i18nAriaLabel)); });
+    $('#language-current').textContent = language === 'en' ? 'English' : '한국어';
+    $$('[data-language]').forEach((button) => button.setAttribute('aria-checked', String(button.dataset.language === language)));
+  }
+
+  function setLanguage(nextLanguage) {
+    if (!TRANSLATIONS[nextLanguage]) return;
+    language = nextLanguage;
+    localStorage.setItem(LANGUAGE_KEY, language);
+    applyStaticTranslations();
+    renderChecklists();
+    syncView();
+    $('.language-menu')?.removeAttribute('open');
+  }
 
   function blankUnitState() {
     return { owned: false, rainbow: false, super: false, pirate: false, llb: 0, hidden: false };
@@ -90,13 +135,13 @@
   function undoLastChange() {
     const previous = undoStack.pop();
     if (!previous) {
-      showToast('되돌릴 작업이 없습니다.');
+      showToast(t('toast.undoEmpty'));
       return;
     }
     state = previous;
     saveState();
     syncView();
-    showToast('마지막 작업을 되돌렸습니다.');
+    showToast(t('toast.undoDone'));
   }
 
   function isAvailable(character) {
@@ -139,8 +184,8 @@
     button.type = 'button';
     button.className = 'unit';
     button.dataset.id = character.id;
-    button.dataset.search = `${character.id} ${character.name}`.toLocaleLowerCase('ko');
-    button.title = `${character.name} · No.${character.id} · ★${character.stars}`;
+    button.dataset.search = `${character.id} ${character.name} ${character.nameEn || ''}`.toLocaleLowerCase();
+    button.title = `${characterName(character)} · No.${character.id} · ★${character.stars}`;
     button.setAttribute('aria-label', button.title);
 
     const image = document.createElement('img');
@@ -159,17 +204,21 @@
 
   function renderChecklists() {
     const root = $('#checklists');
+    const previousOpen = new Set($$('.checklist[open]', root).map((section) => section.dataset.category));
+    const hadSections = root.children.length > 0;
     root.replaceChildren();
     categoryConfig.forEach((category) => {
       const details = document.createElement('details');
       details.className = `checklist${category.wide ? '' : ' checklist--compact'}`;
       details.dataset.category = category.id;
       details.style.setProperty('--accent', category.accent);
-      details.open = true;
+      details.open = hadSections ? previousOpen.has(category.id) : true;
 
       const summary = document.createElement('summary');
       summary.className = 'checklist__summary';
-      summary.innerHTML = `<div><h2>${category.name}</h2><p>${category.note}</p></div><span class="checklist__count" data-category-count></span><button type="button" class="category-toggle" data-category-toggle="${category.id}" role="switch" aria-checked="false" aria-label="${category.name} 전체선택"><span class="category-toggle__track" aria-hidden="true"></span><span class="category-toggle__label">선택</span></button><span class="checklist__chevron">⌄</span>`;
+      const name = categoryText(category, 'name');
+      const formalName = categoryText(category, 'formal');
+      summary.innerHTML = `<div title="${formalName}"><h2>${name}</h2><p>${categoryText(category, 'note')}</p></div><span class="checklist__count" data-category-count></span><button type="button" class="category-toggle" data-category-toggle="${category.id}" role="switch" aria-checked="false" aria-label="${name} ${t('category.selectAll')}"><span class="category-toggle__track" aria-hidden="true"></span><span class="category-toggle__label">${t('category.select')}</span></button><span class="checklist__chevron">⌄</span>`;
       details.append(summary);
 
       const grid = document.createElement('div');
@@ -213,7 +262,7 @@
   }
 
   function syncView() {
-    const query = $('#search').value.trim().toLocaleLowerCase('ko');
+    const query = $('#search').value.trim().toLocaleLowerCase();
     let searchMatches = 0;
     $$('.unit[data-id]').forEach((button) => {
       const character = characterById.get(Number(button.dataset.id));
@@ -229,14 +278,16 @@
       const owned = available.filter((character) => unitState(character.id).owned).length;
       const unchecked = available.length - owned;
       const label = $(`[data-category="${category.id}"] [data-category-count]`);
-      label.innerHTML = `<b>${available.length}</b>종 <span>[-${unchecked}]</span>`;
+      label.innerHTML = t('category.count', { total: available.length, unchecked });
       const categoryToggle = $(`[data-category-toggle="${category.id}"]`);
       const allOwned = available.length > 0 && owned === available.length;
       categoryToggle.classList.toggle('is-active', allOwned);
       categoryToggle.setAttribute('aria-checked', String(allOwned));
-      categoryToggle.setAttribute('aria-label', `${category.name} ${allOwned ? '전체해제' : '전체선택'}`);
-      categoryToggle.title = allOwned ? `${category.name} 전체해제` : `${category.name} 전체선택`;
-      $('.category-toggle__label', categoryToggle).textContent = allOwned ? '해제' : '선택';
+      const categoryName = categoryText(category, 'name');
+      const actionLabel = t(allOwned ? 'category.clearAll' : 'category.selectAll');
+      categoryToggle.setAttribute('aria-label', `${categoryName} ${actionLabel}`);
+      categoryToggle.title = `${categoryName} · ${categoryText(category, 'formal')} · ${actionLabel}`;
+      $('.category-toggle__label', categoryToggle).textContent = t(allOwned ? 'category.clear' : 'category.select');
       categoryToggle.disabled = available.length === 0;
       const grid = $(`[data-grid="${category.id}"]`);
       const hasSearchMatch = $$('.unit:not([hidden])', grid).length > 0;
@@ -272,13 +323,13 @@
     });
     if ($('#undo')) $('#undo').disabled = undoStack.length === 0;
     const evolvedButton = $('#toggle-base');
-    const evolvedLabel = IS_FESTIVAL_RARE ? '진화 후 형태' : '초진화 형태';
-    evolvedButton.textContent = `${evolvedLabel} ${state.hideBase ? '표시' : '제거'}`;
+    const evolvedLabel = t(IS_FESTIVAL_RARE ? 'toggle.rareEvolved' : 'toggle.sugoEvolved');
+    evolvedButton.textContent = `${evolvedLabel} · ${t(state.hideBase ? 'toggle.show' : 'toggle.remove')}`;
     evolvedButton.classList.toggle('is-active', state.hideBase);
     const preEvolutionButton = $('#toggle-pre-evolution');
     if (preEvolutionButton) {
-      const preEvolutionLabel = IS_FESTIVAL_RARE ? '진화 전 형태' : '초진화 전 형태';
-      preEvolutionButton.textContent = `${preEvolutionLabel} ${state.hidePreEvolution ? '표시' : '제거'}`;
+      const preEvolutionLabel = t(IS_FESTIVAL_RARE ? 'toggle.rarePre' : 'toggle.sugoPre');
+      preEvolutionButton.textContent = `${preEvolutionLabel} · ${t(state.hidePreEvolution ? 'toggle.show' : 'toggle.remove')}`;
       preEvolutionButton.classList.toggle('is-active', state.hidePreEvolution);
     }
   }
@@ -317,7 +368,7 @@
     });
     saveState();
     syncView();
-    showToast('캐릭터를 모두 선택했습니다.');
+    showToast(t('toast.selectAll'));
   }
 
   function toggleCategoryOwned(categoryId) {
@@ -332,8 +383,12 @@
     });
     saveState();
     syncView();
-    const categoryName = categoryConfig.find((category) => category.id === categoryId)?.name || '해당 항목';
-    showToast(`${categoryName}를 모두 ${allOwned ? '해제' : '선택'}했습니다.`);
+    const category = categoryConfig.find((item) => item.id === categoryId);
+    const categoryName = category ? categoryText(category, 'name') : '';
+    showToast(t('toast.categoryChanged', {
+      category: categoryName,
+      action: t(allOwned ? 'category.clear' : 'category.select')
+    }));
   }
 
   function renderHiddenList() {
@@ -341,7 +396,7 @@
     root.replaceChildren();
     const hidden = characters.filter((character) => unitState(character.id).hidden);
     if (!hidden.length) {
-      root.innerHTML = '<p class="sheet__help">지운 캐릭터가 없습니다.</p>';
+      root.innerHTML = `<p class="sheet__help">${t('toast.hiddenEmpty')}</p>`;
       return;
     }
     hidden.forEach((character) => {
@@ -410,7 +465,7 @@
         .map((section) => section.dataset.category)
     );
     const available = characters.filter((character) => expandedCategoryIds.has(character.category) && isAvailable(character));
-    $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 0 / ${available.length}`;
+    $('#export-status').textContent = t('export.loading', { done: 0, total: available.length });
     await document.fonts.ready;
     await Promise.all([
       document.fonts.load('400 13px "S-Core Dream"'),
@@ -418,7 +473,7 @@
       document.fonts.load('800 20px "S-Core Dream"')
     ]);
     const [images, keyImage] = await Promise.all([
-      loadImagesWithProgress(available, (done, total) => { $('#export-status').textContent = `캐릭터 이미지를 불러오는 중 ${done} / ${total}`; }),
+      loadImagesWithProgress(available, (done, total) => { $('#export-status').textContent = t('export.loading', { done, total }); }),
       loadImage('assets/pirate-limit-key.webp')
     ]);
 
@@ -433,7 +488,7 @@
     const sections = categoryConfig.filter((category) => expandedCategoryIds.has(category.id)).map((category) => {
       const units = getAvailableCharacters(category.id);
       const rows = Math.max(1, Math.ceil(units.length / columns));
-      return { ...category, units, height: 72 + rows * (icon + gap) + 14 };
+      return { ...category, name: categoryText(category, 'name'), units, height: 72 + rows * (icon + gap) + 14 };
     });
     const footerHeight = 48;
     const height = headerHeight + sections.reduce((sum, category) => sum + category.height + sectionGap, 0) + margin + footerHeight;
@@ -458,15 +513,15 @@
     }
     context.fillStyle = '#e8e1d6';
     context.font = `800 21px ${uiFont}`;
-    context.fillText(EXPORT_TITLE, margin, 33);
+    context.fillText(exportTitle(), margin, 33);
     context.fillStyle = '#9f8b65';
     context.font = `400 11px ${uiFont}`;
-    context.fillText('ONE PIECE TREASURE CRUISE · 비공식 팬 제작 도구', margin, 48);
+    context.fillText(t('export.fanTool'), margin, 48);
     const owned = available.filter((character) => unitState(character.id).owned).length;
     const rainbow = available.filter((character) => unitState(character.id).rainbow || unitState(character.id).super).length;
     const superCount = available.filter((character) => unitState(character.id).super).length;
     const pirate = available.filter((character) => unitState(character.id).pirate).length;
-    const metrics = [['전체', owned], ['무지개', rainbow], ['초무지개', superCount], ['해적제한돌', pirate]];
+    const metrics = [[t('export.total'), owned], [t('metric.rainbow'), rainbow], [t('metric.super'), superCount], [t('metric.rumble'), pirate]];
     metrics.forEach(([label, value], index) => {
       const x = margin + index * 275;
       context.fillStyle = '#362319';
@@ -492,7 +547,7 @@
       context.fillStyle = '#eee8dc'; context.font = `800 20px ${uiFont}`; context.fillText(category.name, margin + 34, y + 40);
       const unchecked = category.units.filter((character) => !unitState(character.id).owned).length;
       context.fillStyle = '#b9a474'; context.font = `500 13px ${uiFont}`;
-      context.fillText(`총 ${category.units.length}종  [-${unchecked}]`, width - margin - 150, y + 39);
+      context.fillText(t('export.categoryCount', { total: category.units.length, unchecked }), width - margin - 150, y + 39);
 
       category.units.forEach((character, index) => {
         const current = unitState(character.id);
@@ -599,17 +654,26 @@
       exportUrl = URL.createObjectURL(exportBlob);
       const preview = new Image();
       preview.src = exportUrl;
-      preview.alt = `${EXPORT_TITLE} 이미지 미리보기`;
+      preview.alt = t('export.previewAlt', { title: exportTitle() });
       $('#export-preview').append(preview);
-      $('#export-status').textContent = '이미지가 완성되었습니다.';
+      $('#export-status').textContent = t('export.complete');
       $('#download-image').hidden = false;
     } catch (error) {
       console.error(error);
-      $('#export-status').textContent = '이미지 생성에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+      $('#export-status').textContent = t('export.failed');
     }
   }
 
   function bindEvents() {
+    $('.language-menu')?.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-language]');
+      if (!button) return;
+      setLanguage(button.dataset.language);
+    });
+    document.addEventListener('click', (event) => {
+      const menu = $('.language-menu');
+      if (menu?.open && !menu.contains(event.target)) menu.removeAttribute('open');
+    });
     $('#mode-picker').addEventListener('click', (event) => {
       const button = event.target.closest('[data-mode]');
       if (!button) return;
@@ -650,7 +714,7 @@
     $('#restore-hidden').addEventListener('click', () => {
       rememberUndo();
       characters.forEach((character) => { unitState(character.id).hidden = false; });
-      saveState(); syncView(); showToast('지운 캐릭터를 모두 복구했습니다.');
+      saveState(); syncView(); showToast(t('toast.restoredAll'));
     });
     $('#show-hidden').addEventListener('click', () => { renderHiddenList(); $('#hidden-dialog').showModal(); });
     $('#hidden-list').addEventListener('click', (event) => {
@@ -662,10 +726,10 @@
       if (!$('#hidden-list').children.length) renderHiddenList();
     });
     $('#reset').addEventListener('click', () => {
-      if (!confirm('모든 체크 현황을 초기화할까요?')) return;
+      if (!confirm(t('toast.resetConfirm'))) return;
       rememberUndo();
       state = { mode: 'owned', hideBase: false, hidePreEvolution: false, units: {} };
-      saveState(); syncView(); showToast('체크리스트를 초기화했습니다.');
+      saveState(); syncView(); showToast(t('toast.resetDone'));
     });
     $('#backup').addEventListener('click', () => $('#backup-dialog').showModal());
     $('#download-save').addEventListener('click', () => {
@@ -677,7 +741,7 @@
       if (!file) return;
       try {
         const payload = JSON.parse(await file.text());
-        if (payload.app !== APP_ID || !payload.state?.units) throw new Error('잘못된 저장파일');
+        if (payload.app !== APP_ID || !payload.state?.units) throw new Error('invalid save');
         rememberUndo();
         state = {
           mode: payload.state.mode || 'owned',
@@ -686,9 +750,9 @@
           units: {}
         };
         Object.entries(payload.state.units).forEach(([id, value]) => { state.units[id] = normalizeUnit(value); });
-        saveState(); syncView(); $('#backup-dialog').close(); showToast('저장파일을 불러왔습니다.');
+        saveState(); syncView(); $('#backup-dialog').close(); showToast(t('toast.saveLoaded'));
       } catch (error) {
-        showToast('올바른 저장파일이 아닙니다.');
+        showToast(t('toast.invalidSave'));
       } finally {
         event.target.value = '';
       }
@@ -704,6 +768,7 @@
       characters = await response.json();
       characterById = new Map(characters.map((character) => [Number(character.id), character]));
       loadState();
+      applyStaticTranslations();
       renderChecklists();
       bindEvents();
       syncView();
