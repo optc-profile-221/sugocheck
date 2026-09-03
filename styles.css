@@ -296,6 +296,29 @@ button { color: inherit; }
 .toast.is-visible { transform: translate(-50%, 0); opacity: 1; }
 footer { padding: 26px 20px 40px; border-top: 1px solid var(--line); text-align: center; color: #687d89; font-size: 11px; }
 footer p { margin: 4px; }
+.feedback-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 14px;
+  padding: 9px 16px;
+  border: 1px solid rgba(214, 163, 56, .58);
+  border-radius: 999px;
+  color: #f2d27a;
+  background: rgba(42, 20, 8, .72);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: inset 0 1px rgba(255,255,255,.08);
+  transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+.feedback-link:hover {
+  color: #fff8df;
+  border-color: #f0c95b;
+  background: rgba(91, 47, 17, .9);
+  transform: translateY(-1px);
+}
+.feedback-link:focus-visible { outline: 3px solid rgba(245, 199, 79, .35); outline-offset: 3px; }
 
 @media (max-width: 980px) {
   .dashboard { grid-template-columns: 1fr 120px; }
