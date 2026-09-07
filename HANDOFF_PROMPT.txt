@@ -1,0 +1,42 @@
+다음 내용을 이 프로젝트를 이어서 작업할 Codex/ChatGPT에 전달하세요.
+
+--- 인수인계 프롬프트 시작 ---
+
+다음 두 sugocheck 폴더를 한 작업의 동기화된 복제본으로 취급해 주세요.
+
+- 배포/원본 저장소: C:\Users\jay15\OneDrive\Documents\GitHub\sugocheck
+- Codex 연속 작업용 복사본: C:\Users\jay15\Documents\Codex\sugocheck
+
+작업을 시작하기 전에 두 폴더의 Git 상태, HEAD 커밋, 수정 대상 파일을 비교하세요. 실제 프로젝트 파일을 변경할 때는 반드시 양쪽 폴더에 동일한 변경을 적용하고, 완료 후 수정 파일의 해시 또는 내용을 비교해 일치 여부를 검증하세요. 양쪽 내용이 이미 다르거나 한쪽에만 사용자 변경이 있으면 임의로 덮어쓰지 말고 차이를 보고한 뒤 안전하게 병합하세요.
+
+C:\Users\jay15\Documents\Codex\sugocheck\WORK_LOG.txt를 먼저 읽어 현재 상태와 최근 작업을 파악하세요. .tmp.driveupload 폴더는 기존 임시 폴더이므로 삭제하거나 수정하지 마세요. Git 커밋과 푸시는 사용자가 명시적으로 요청할 때만 수행하세요.
+
+최근 확인한 main 브랜치 HEAD는 6681ffd이며 이후 작업 트리에 한국어/English 전환 관련 미커밋 변경이 있으니 반드시 git status를 확인하세요. 서비스 워커 캐시는 sugo-logbook-v40입니다. 최근 추가 캐릭터는 4628 빈스모크 레이주, 4629 로키, 4630 스코퍼 가반, 4631 루피&조로, 4632 네펠타리 비비 from ONE PIECE magazine, 4634 게루즈, 4635 리플리, 4640 마인 오즈입니다. 아이콘 규격은 112x112 PNG입니다. 진화/초진화 관계가 있는 캐릭터는 도감번호가 멀리 떨어져 있어도 데이터 배열에서 항상 바로 옆에 배치하세요.
+
+2026-08-30에 OPTC 인게임 UI 분위기로 화면을 개편했습니다. 최상단 퍼센트 원형 게이지는 제거했고, 붉은 두루마리 제목·금색 테두리·목재 버튼·양피지 목록 스타일을 적용했습니다. 2026-09-01부터 상단 지구본 메뉴에서 한국어/English를 선택할 수 있으며 선택값은 localStorage의 sugocheck-language에 저장되어 두 페이지에 공통 적용됩니다. 주요 변경 파일은 index.html, festival-rare.html, app.js, i18n.js, styles.css, sw.js이며, 한국어가 기본 언어입니다.
+
+화면의 영문 상태·분류명은 Legends, Limited RRs, Rainbowed, Rainbow+, Rumble Key, LLB처럼 실제 사용성을 고려한 권장 약칭을 표시하고, title 도움말에는 정식 명칭을 제공합니다. UI 사전은 i18n.js에 있고 스고 566종과 페스 한정 레어 461종의 영문 캐릭터명은 각 JSON의 nameEn 필드에 있습니다. 검색은 한국어명과 영문명을 동시에 대상으로 하며 이미지 추출도 현재 선택 언어를 따릅니다. 새 문자열을 추가할 때 한국어와 영어 키를 모두 추가하고 공식 명칭과 화면 약칭을 구분하세요.
+
+화면 글꼴은 assets/fonts/SCDream1.otf~SCDream9.otf를 사용하는 S-Core Dream으로 통일되어 있습니다. 9개 굵기(100~900)를 모두 유지하고, 새 UI를 추가할 때도 같은 글꼴을 우선 사용하세요.
+
+현재 시각 테마는 공식 2026년 8월 해적동맹 이벤트 메인·랭킹 페이지를 참고한 저채도 버전입니다. 중앙형 최대 1100px 레이아웃, 짙은 갈색·검정 패널, 무광 금색 테두리, 번트 오렌지 선택 상태를 유지하고 밝은 황토색 배경이나 강한 발광·선명한 빨강은 다시 사용하지 마세요.
+
+assets/backgrounds/optc-dark-pattern.png는 페이지 전체·헤더·푸터의 어두운 문양 배경이고, assets/backgrounds/optc-world-map.png는 현황판·도구 패널·캐릭터 목록·팝업의 지도 질감입니다. 두 이미지 위의 어두운 오버레이를 유지해 텍스트와 캐릭터 아이콘의 가독성이 떨어지지 않게 하세요. 캐릭터 박스 전체 스크린샷은 UI가 포함된 참고 자료라 실제 배경 파일로 저장하지 않았습니다.
+
+페이지와 이미지 추출 결과 하단에는 원피스·토에이 애니메이션·반다이남코 저작권 표기와 영문 비공식 팬 제작 도구 안내가 있습니다. 해당 문구를 임의로 제거하지 마세요. 이미지 추출 캔버스도 웹페이지와 동일한 저채도 갈색·무광 금색 테마 및 S-Core Dream 폰트를 사용해야 합니다.
+
+이미지 추출은 현재 화면에서 펼쳐진 카테고리만 포함합니다. 접힌 카테고리는 캐릭터 로딩, 집계, 캔버스 패널에서 모두 제외되는 동작을 유지하세요.
+
+비표시 방문 통계가 Cloudflare에서 활성화되어 있습니다. 공개 클라이언트는 site-metrics.js이고 index.html/festival-rare.html의 sugocheck-metrics-endpoint는 https://sugocheck-private-metrics.jay159488.workers.dev 입니다. Worker는 analytics-worker 루트에서 배포되며 D1 prod-d1-tutorial에 연결되어 있고 마이그레이션도 적용되었습니다. VISITOR_HASH_SECRET과 ADMIN_TOKEN은 Cloudflare Worker secret으로 등록되어 있으므로 절대 파일이나 GitHub에 기록하지 마세요. Worker의 /admin은 사이트에 링크하지 않으며 ADMIN_TOKEN이 있어야 통계를 조회할 수 있습니다. 국가·광역 지역 통계는 Cloudflare 접속 지역 정보를 합계로만 저장하고 IP 원문과 도시 정보는 저장하지 않습니다.
+
+Cloudflare D1 prod-d1-tutorial(database_id: 8dae7d81-5a9b-4ce0-a7e9-626ac6c5a768)은 analytics-worker/wrangler.toml에 연결되어 있고 migrations 0001/0002가 적용되었습니다. 실제 통계 Worker 이름은 sugocheck-private-metrics이며 빠른 시작용 d1-get-started Worker와 혼동하지 마세요.
+
+'현재 모드 전체 적용' 기능은 사용자 요청으로 완전히 제거되었습니다. 임의로 다시 추가하지 마세요. '캐릭터 전체선택'과 각 카테고리별 전체선택은 유지합니다.
+
+festival-rare.html은 별도의 '페스 한정 레어' 페이지입니다. data/festival-rare-characters.json과 assets/rare-icons를 사용하며 트레저맵 한정 232종, 유대결전 한정 107종, 해적제 한정 69종, 서포트 한정 53종으로 총 461종입니다. 4성·5성·5+만 포함하고 6성·6+ 스고 및 최종 진화가 6성/6+ 스고로 이어지는 5성 전 단계도 제외합니다. 분류 근거는 C:\Users\jay15\Desktop\New project\optcDB_Ko-main\common\data\flags.js의 tmlrr, kclrr, pflrr, slrr 플래그와 evolutions.js의 진화 경로입니다. 이 페이지와 기존 index.html은 상단 도감 전환 메뉴로 연결되며, 체크 상태와 백업 데이터는 서로 분리되어 있습니다.
+
+아이콘이나 characters.json처럼 페이지에 영향을 주는 파일을 변경하면 sw.js의 CACHE_NAME을 다음 버전으로 올려 기존 브라우저 캐시를 무효화하세요. 작은 한글 속성 배지가 있는 아이콘은 생성형 복원으로 글꼴을 바꾸지 말고 원본 픽셀을 보존하는 방식으로 처리하세요.
+
+작업이 끝날 때마다 C:\Users\jay15\Documents\Codex\sugocheck\WORK_LOG.txt에 날짜, 변경 파일, 결정 사항, 검증 결과, 남은 작업을 갱신하여 다른 PC에서도 바로 이어갈 수 있게 해 주세요.
+
+--- 인수인계 프롬프트 끝 ---
