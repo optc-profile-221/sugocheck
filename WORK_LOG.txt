@@ -2,7 +2,7 @@ SUGOCHECK 작업 기록
 최종 갱신: 2026-09-07 (Asia/Seoul)
 
 [2026-09-07 추가]
-- 4640 마인 오즈(Devil Oars - Legend Received After 500 Years)를 6성 INT 일반 스고로 추가했다.
+- 4640 마인 오즈(Devil Oars - Legend Received After 500 Years)를 6성 INT 해적제 스고로 추가했다.
 - 첨부 원본에서 프레임 바깥 배경과 하단 검은 띠를 제거하고 업스케일한 뒤, 페이지용 112x112 아이콘을 assets/icons/4640.png로 적용했다.
 - 신규 데이터와 아이콘이 즉시 반영되도록 서비스 워커 캐시를 sugo-logbook-v40으로 갱신했다.
 
