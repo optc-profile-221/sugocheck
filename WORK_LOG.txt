@@ -1,5 +1,10 @@
 SUGOCHECK 작업 기록
-최종 갱신: 2026-09-13 (Asia/Seoul)
+최종 갱신: 2026-09-14 (Asia/Seoul)
+
+[2026-09-14 추가]
+- 페스 한정 레어 페이지의 트레저맵 한정 목록에 4642 키바(Tusk, PSY)와 4643 블레이드(Blade, DEX)를 5성으로 추가했다.
+- 제공된 112x112 PNG를 화질 변형 없이 assets/rare-icons/4642.png 및 4643.png로 적용했다.
+- 신규 데이터와 아이콘이 즉시 반영되도록 서비스 워커 캐시를 sugo-logbook-v42로 갱신했다.
 
 [2026-09-13 추가]
 - 4641 사우로(Saul - Student-Protecting Giant's Fist)를 6성 DEX 트레저맵 스고로 추가했다.
