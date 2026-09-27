@@ -1,5 +1,16 @@
 SUGOCHECK 작업 기록
-최종 갱신: 2026-09-14 (Asia/Seoul)
+최종 갱신: 2026-09-27 (Asia/Seoul)
+
+[2026-09-27 추가]
+- 통상 스고 목록에 4648 조로&로빈(Zoro & Robin - Jolly Halloween Party)과 4649 우솝&프랑키(Usopp & Franky - Jolly Halloween Party)를 6성 PSY로 추가했다.
+- 제공된 112x112 PNG를 assets/icons/4648.png 및 4649.png로 적용했으며 외부 링크는 데이터에 저장하지 않았다.
+- 신규 데이터와 아이콘이 즉시 반영되도록 서비스 워커 캐시를 sugo-logbook-v43으로 갱신했다.
+- 4647 역재의 퀸(Queen the Plague - Impeding Lead Performer)을 3378의 6+ DEX 초진화형으로 추가하고 두 형태를 배열에서 나란히 배치했다.
+- 제공된 112x112 PNG를 assets/icons/4647.png로 적용했으며 외부 링크는 데이터에 저장하지 않았다.
+- 서비스 워커 캐시를 sugo-logbook-v44로 갱신했다.
+- 4644 쵸파&보니(Chopper & Bonney)를 6성 DEX 유대결전 스고로 추가했다.
+- 제공된 112x112 PNG를 assets/icons/4644.png로 적용했으며 외부 링크는 데이터에 저장하지 않았다.
+- 서비스 워커 캐시를 sugo-logbook-v45로 갱신했다.
 
 [2026-09-14 추가]
 - 페스 한정 레어 페이지의 트레저맵 한정 목록에 4642 키바(Tusk, PSY)와 4643 블레이드(Blade, DEX)를 5성으로 추가했다.
