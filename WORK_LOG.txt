@@ -11,6 +11,9 @@ SUGOCHECK 작업 기록
 - 4644 쵸파&보니(Chopper & Bonney)를 6성 DEX 유대결전 스고로 추가했다.
 - 제공된 112x112 PNG를 assets/icons/4644.png로 적용했으며 외부 링크는 데이터에 저장하지 않았다.
 - 서비스 워커 캐시를 sugo-logbook-v45로 갱신했다.
+- 페스 한정 레어 페이지의 유대결전 한정 목록에 4645 비브로(Biblo)와 4646 안제(Ange)를 5성 DEX로 추가했다.
+- 제공된 112x112 PNG를 assets/rare-icons/4645.png 및 4646.png로 적용했다.
+- 서비스 워커 캐시를 sugo-logbook-v46으로 갱신했다.
 
 [2026-09-14 추가]
 - 페스 한정 레어 페이지의 트레저맵 한정 목록에 4642 키바(Tusk, PSY)와 4643 블레이드(Blade, DEX)를 5성으로 추가했다.
