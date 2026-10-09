@@ -1,3 +1,15 @@
+[2026-10-09 페스 한정 레어 추가]
+- 4654 상디(Sanji - Jolly Halloween Party)와 4655 브룩(Brook - Jolly Halloween Party)을 5성 PSY 트레저맵 가챠 한정으로 추가했다.
+- 제공된 112x112 PNG를 assets/rare-icons/4654.png 및 4655.png로 적용했다.
+- 서비스 워커 캐시를 sugo-logbook-v48로 갱신했다.
+- 검증 결과: JSON 파싱 및 중복 ID 검사 정상, 아이콘 112x112, 양쪽 저장소 변경 파일 해시 일치.
+
+[2026-10-09 신규 일반 스고 추가]
+- 4652 골드버그(Goldberg - New Giant Pirates Cook)를 6성 PSY 해적제 스고로, 4653 루피&쵸파(Luffy & Chopper - Jolly Halloween Party)를 6성 PSY 트레저맵 스고로 추가했다.
+- 제공된 112x112 PNG를 assets/icons/4652.png 및 4653.png로 적용했다.
+- 서비스 워커 캐시를 sugo-logbook-v47로 갱신했다.
+- 검증 결과: 캐릭터 ID 중복 없음, 아이콘 112x112, 양쪽 저장소 변경 파일 해시 일치.
+
 SUGOCHECK 작업 기록
 최종 갱신: 2026-09-27 (Asia/Seoul)
 
