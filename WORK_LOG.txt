@@ -1,3 +1,16 @@
+[2026-10-23 초스고 추가]
+- 4663 군코(임 빙의)(Saintess Gunko (Imu Possessed) - Will of God Descending from the Sacred Land), 4664 도리(Dorry - Bestowed Form of the Demon), 4665 브로기(Broggy - Bestowed Form of the Demon)를 6성 QCK 초스고로 추가했다.
+- 제공된 112x112 PNG를 assets/icons/4663.png~4665.png로 적용했다.
+- 서비스 워커 캐시를 sugo-logbook-v50으로 갱신했다.
+- 검증 결과: JSON 파싱 및 중복 ID 검사 정상, 아이콘 112x112, 양쪽 저장소 변경 파일 해시 일치.
+
+[2026-10-23 유대 스고 및 유대 한정 레어 추가]
+- 4657 벨로 베티&몰리&린드 버그&카라스(Belo Betty & Morley & Lindbergh & Karasu)를 6성 DEX 유대 스고로 추가했다.
+- 4658 지론(Jiron), 4659 갬보(Gambo), 4660 아히루(Ahiru), 4661 우시아노(Ushiano)를 5성 DEX 유대결전 한정 레어로 추가했다.
+- 제공된 112x112 PNG를 assets/icons/4657.png 및 assets/rare-icons/4658.png~4661.png로 적용했다.
+- 서비스 워커 캐시를 sugo-logbook-v49로 갱신했다.
+- 검증 결과: 두 JSON 파싱 및 중복 ID 검사 정상, 모든 아이콘 112x112, 양쪽 저장소 변경 파일 해시 일치.
+
 [2026-10-09 페스 한정 레어 추가]
 - 4654 상디(Sanji - Jolly Halloween Party)와 4655 브룩(Brook - Jolly Halloween Party)을 5성 PSY 트레저맵 가챠 한정으로 추가했다.
 - 제공된 112x112 PNG를 assets/rare-icons/4654.png 및 4655.png로 적용했다.
