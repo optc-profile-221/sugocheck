@@ -1,3 +1,8 @@
+[2026-10-25 초스고에서 주년 스고로 분류 변경]
+- 4664 도리와 4665 브로기의 category를 super에서 anniversary로 변경했다.
+- 캐릭터 데이터 변경에 맞춰 서비스 워커 캐시를 sugo-logbook-v51로 갱신했다.
+- 검증 결과: 두 캐릭터가 주년 스고로 분류되고, 양쪽 저장소의 수정 파일 해시가 일치한다.
+
 [2026-10-23 초스고 추가]
 - 4663 군코(임 빙의)(Saintess Gunko (Imu Possessed) - Will of God Descending from the Sacred Land), 4664 도리(Dorry - Bestowed Form of the Demon), 4665 브로기(Broggy - Bestowed Form of the Demon)를 6성 QCK 초스고로 추가했다.
 - 제공된 112x112 PNG를 assets/icons/4663.png~4665.png로 적용했다.
